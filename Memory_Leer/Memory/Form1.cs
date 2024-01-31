@@ -650,6 +650,7 @@ namespace Memory
             }
         }
 
+        // PIC 11 CLICK
         private void pictureBox11_Click(object sender, EventArgs e)
         {
             switch (_currentGameState)
@@ -666,6 +667,7 @@ namespace Memory
             }
         }
 
+        // PIC 11 CLICK
         private void pictureBox12_Click(object sender, EventArgs e)
         {
             switch (_currentGameState)
@@ -682,6 +684,7 @@ namespace Memory
             }
         }
 
+        // PIC 13 CLICK
         private void pictureBox13_Click(object sender, EventArgs e)
         {
             switch (_currentGameState)
@@ -698,6 +701,7 @@ namespace Memory
             }
         }
 
+        // PIC 14 CLICK
         private void pictureBox14_Click(object sender, EventArgs e)
         {
             switch (_currentGameState)
@@ -714,6 +718,7 @@ namespace Memory
             }
         }
 
+        // PIC 15 CLICK
         private void pictureBox15_Click(object sender, EventArgs e)
         {
             switch (_currentGameState)
@@ -730,6 +735,7 @@ namespace Memory
             }
         }
 
+        // PIC 16 CLICK
         private void pictureBox16_Click(object sender, EventArgs e)
         {
             switch (_currentGameState)
@@ -746,6 +752,7 @@ namespace Memory
             }
         }
 
+        // PIC 17 CLICK
         private void pictureBox17_Click(object sender, EventArgs e)
         {
             switch (_currentGameState)
@@ -762,6 +769,7 @@ namespace Memory
             }
         }
 
+        // PIC 18 CLICK
         private void pictureBox18_Click(object sender, EventArgs e)
         {
             switch (_currentGameState)
@@ -778,6 +786,7 @@ namespace Memory
             }
         }
 
+        // PIC 19 CLICK
         private void pictureBox19_Click(object sender, EventArgs e)
         {
             switch (_currentGameState)
@@ -794,6 +803,7 @@ namespace Memory
             }
         }
 
+        // PIC 20 CLICK
         private void pictureBox20_Click(object sender, EventArgs e)
         {
             switch (_currentGameState)
