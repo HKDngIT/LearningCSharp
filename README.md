@@ -1,4 +1,4 @@
 # Content
-This Repository currently contains these projects in C# using Windows Forms:
+This Repository currently contains files for the following projects in C# using Windows Forms:
 - Calculator
 - Memory
