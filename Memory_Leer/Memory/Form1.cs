@@ -344,7 +344,7 @@ namespace Memory
             {
                 if (positionVisual == cardField[i].getCardPosition())
                 {
-                    digitalPosition = cardField[i].getCardPosition();
+                    digitalPosition = i;
                 }
             }
             return digitalPosition;
@@ -692,7 +692,6 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    int check = searchForCard(20);
                     pictureBox20.Image = cardField[searchForCard(20)].getImage();
 
                     break;
