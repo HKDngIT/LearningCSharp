@@ -93,7 +93,7 @@
             // 
             labelTries.AutoSize = true;
             labelTries.Font = new Font("Microsoft Sans Serif", 15.25F, FontStyle.Bold, GraphicsUnit.Point);
-            labelTries.Location = new Point(642, 110);
+            labelTries.Location = new Point(666, 110);
             labelTries.Name = "labelTries";
             labelTries.Size = new Size(92, 25);
             labelTries.TabIndex = 1;
@@ -112,17 +112,20 @@
             // 
             // textBoxTries
             // 
+            textBoxTries.Font = new Font("Microsoft Sans Serif", 15.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxTries.Location = new Point(642, 138);
             textBoxTries.Name = "textBoxTries";
             textBoxTries.ReadOnly = true;
-            textBoxTries.Size = new Size(139, 23);
+            textBoxTries.Size = new Size(139, 31);
             textBoxTries.TabIndex = 3;
+            textBoxTries.Text = "0";
+            textBoxTries.TextAlign = HorizontalAlignment.Center;
             // 
             // labelTimer
             // 
             labelTimer.AutoSize = true;
             labelTimer.Font = new Font("Microsoft Sans Serif", 15.25F, FontStyle.Bold, GraphicsUnit.Point);
-            labelTimer.Location = new Point(645, 164);
+            labelTimer.Location = new Point(669, 185);
             labelTimer.Name = "labelTimer";
             labelTimer.Size = new Size(89, 25);
             labelTimer.TabIndex = 4;
@@ -131,7 +134,7 @@
             // textBoxTimer
             // 
             textBoxTimer.Font = new Font("Microsoft Sans Serif", 15.25F, FontStyle.Bold, GraphicsUnit.Point);
-            textBoxTimer.Location = new Point(642, 192);
+            textBoxTimer.Location = new Point(642, 213);
             textBoxTimer.Name = "textBoxTimer";
             textBoxTimer.ReadOnly = true;
             textBoxTimer.Size = new Size(139, 31);

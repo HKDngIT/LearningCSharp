@@ -351,7 +351,7 @@ namespace Memory
         }
 
 
-        /*#################################################################*/
+        /*#################################################################################################################################*/
 
         //Searches for a card in the array with the corresponding position and returns its index in the array
         private int searchForCard(int positionVisual)
@@ -370,7 +370,7 @@ namespace Memory
         // Handles the opened cards when a third would be opened
         public void handleOpenCardLimit()
         {
-            if(_openCards == 2)
+            if (_openCards == 2)
             {
                 putCoverCardOnToPosition(_pointerFirstCard);
                 putCoverCardOnToPosition(_pointerSecondCard);
@@ -379,21 +379,24 @@ namespace Memory
                 _pointerFirstCard = -1;
                 _pointerSecondCard = -1;
                 _openCards = 0;
+                _tries++;
+                textBoxTries.Text = _tries.ToString();
             }
         }
 
         // virtually open the cards
         public void openCard(int position)
         {
-            if(_pointerFirstCard == -1)
+            if (_pointerFirstCard == -1)
             {
                 _pointerFirstCard = position;
-            } else if(_pointerSecondCard == -1)
+            }
+            else if (_pointerSecondCard == -1)
             {
                 _pointerSecondCard = position;
             }
             handleOpenCardLimit();
-            if(_openCards == 0)
+            if (_openCards == 0)
             {
                 _pointerFirstCard = position;
             }
@@ -407,7 +410,7 @@ namespace Memory
             {
                 openCard(cardPosition);
                 cardField[searchForCard(cardPosition)].setIsOpen(true);
-                switch(cardPosition)
+                switch (cardPosition)
                 {
                     case 1:
                         pictureBox1.Image = cardField[searchForCard(cardPosition)].getImage();
@@ -472,6 +475,9 @@ namespace Memory
                 }
             }
         }
+
+        /*#################################################################################################################################*/
+        // BUTTON/ CARD CLICK HANDLING
 
         // PIC 1 CLICK
         private void pictureBox1_Click(object sender, EventArgs e)
