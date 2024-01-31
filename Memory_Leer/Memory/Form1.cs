@@ -270,7 +270,6 @@ namespace Memory
             if (gameState.gSStart == _currentGameState)
             {
                 timer1.Start();
-                //pictureBox1.Image = Memory.Properties.Resources.Background;
 
                 //Generate a new random 20-field
                 int[] rField = new int[20];
@@ -320,7 +319,58 @@ namespace Memory
          */
         private void buttonRestart_Click(object sender, EventArgs e)
         {
+            if(_currentGameState != gameState.gSStart)
+            {
+                _currentGameState = gameState.gSRun;
+                _timer = 0;
+                timer1.Start();
 
+                int[] rField = new int[20];
+                bool check = false; // check to see if searched number is in the array
+                for (int index = 0; index < 20; index++)
+                {
+                    var rng = new Random();
+                    var number = rng.Next(0, 21);
+                    int newNumber = number;
+                    for (int index2nd = 0; index2nd < 20; index2nd++)
+                    {
+                        if (rField[index2nd] == newNumber)
+                        {
+                            check = true;
+                        }
+                    }
+                    if (check)
+                    {
+                        check = false;
+                        index--;
+                    }
+                    else
+                    {
+                        rField[index] = newNumber;
+                    }
+                }
+
+                // set new positions
+                for (int i = 0; i < 20; i++)
+                {
+                    cardField[i].setCardPosition(rField[i]);
+                }
+
+                // "flips" the cards
+                for (int i = 0; i < 20; i++)
+                {
+                    putCoverCardOnToPosition(i + 1);
+                }
+
+                _pairsFound = 0;
+                _openCards = 0;
+                _pointerFirstCard = -1;
+                _pointerSecondCard = -1;
+                _tries = 0;
+
+                textBoxFoundPairs.Text = _pairsFound.ToString();
+                textBoxTimer.Text = "0:00";
+            }
         }
 
 
@@ -406,10 +456,18 @@ namespace Memory
             _openCards++;
         }
         // extra found pairs check for the last pair
-        void lastPairFound()
+        void checkPairFound()
         {
-            if(_pointerFirstCard != -1 && _pointerSecondCard != -1 && cardField[searchForCard(_pointerFirstCard)].getColor().Equals(cardField[searchForCard(_pointerSecondCard)].getColor()))
+            if (_pointerFirstCard != -1 && _pointerSecondCard != -1 && cardField[searchForCard(_pointerFirstCard)].getColor().Equals(cardField[searchForCard(_pointerSecondCard)].getColor()))
             {
+                cardField[searchForCard(_pointerFirstCard)].setIsSolved(true);
+                cardField[searchForCard(_pointerSecondCard)].setIsSolved(true);
+                _pointerFirstCard = -1;
+                _pointerSecondCard = -1;
+                _openCards = 0;
+                _tries++;
+                textBoxTries.Text = _tries.ToString();
+                _pairsFound++;
                 textBoxFoundPairs.Text = _pairsFound.ToString();
             }
         }
@@ -419,18 +477,7 @@ namespace Memory
         {
             if (cardField[searchForCard(cardPosition)].getIsOpen() == false)
             {
-                if (_pointerFirstCard!= -1 && _pointerSecondCard != -1 && cardField[searchForCard(_pointerFirstCard)].getColor().Equals(cardField[searchForCard(_pointerSecondCard)].getColor()))
-                {
-                    cardField[searchForCard(_pointerFirstCard)].setIsSolved(true);
-                    cardField[searchForCard(_pointerSecondCard)].setIsSolved(true);
-                    _pointerFirstCard = -1;
-                    _pointerSecondCard = -1;
-                    _openCards = 0;
-                    _tries++;
-                    textBoxTries.Text = _tries.ToString();
-                    _pairsFound++;
-                    textBoxFoundPairs.Text = _pairsFound.ToString();
-                }
+                checkPairFound();
                 openCard(cardPosition);
                 cardField[searchForCard(cardPosition)].setIsOpen(true);
                 switch (cardPosition)
@@ -496,18 +543,7 @@ namespace Memory
                         pictureBox20.Image = cardField[searchForCard(cardPosition)].getImage();
                         break;
                 }
-                if (_pointerFirstCard != -1 && _pointerSecondCard != -1 && cardField[searchForCard(_pointerFirstCard)].getColor().Equals(cardField[searchForCard(_pointerSecondCard)].getColor()))
-                {
-                    cardField[searchForCard(_pointerFirstCard)].setIsSolved(true);
-                    cardField[searchForCard(_pointerSecondCard)].setIsSolved(true);
-                    _pointerFirstCard = -1;
-                    _pointerSecondCard = -1;
-                    _openCards = 0;
-                    _tries++;
-                    textBoxTries.Text = _tries.ToString();
-                    _pairsFound++;
-                    textBoxFoundPairs.Text = _pairsFound.ToString();
-                }
+                checkPairFound();
                 handleEndGameSituation();
             }
         }
