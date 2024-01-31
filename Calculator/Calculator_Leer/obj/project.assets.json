@@ -8,23 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\praktikantME\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Trang Khiem\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Calculator\\Calculator_Leer\\Calculator_Leer.csproj",
+      "projectUniqueName": "D:\\SELFSTUDY\\GITREPOS\\LearningCSharp\\Calculator\\Calculator_Leer\\Calculator_Leer.csproj",
       "projectName": "Calculator_Leer",
-      "projectPath": "D:\\Calculator\\Calculator_Leer\\Calculator_Leer.csproj",
-      "packagesPath": "C:\\Users\\praktikantME\\.nuget\\packages\\",
-      "outputPath": "D:\\Calculator\\Calculator_Leer\\obj\\",
+      "projectPath": "D:\\SELFSTUDY\\GITREPOS\\LearningCSharp\\Calculator\\Calculator_Leer\\Calculator_Leer.csproj",
+      "packagesPath": "C:\\Users\\Trang Khiem\\.nuget\\packages\\",
+      "outputPath": "D:\\SELFSTUDY\\GITREPOS\\LearningCSharp\\Calculator\\Calculator_Leer\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\praktikantME\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Trang Khiem\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,6 +56,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -68,7 +82,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

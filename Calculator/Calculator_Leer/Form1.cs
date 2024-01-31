@@ -433,5 +433,6 @@ namespace Calculator_Leer
             number = number * number;
             textBoxResult.Text = number.ToString(CultureInfo.InvariantCulture);
         }
+
     }
 }

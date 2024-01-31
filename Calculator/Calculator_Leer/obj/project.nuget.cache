@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "EzAmPvAfLCE/EQ6ps13QDNWIFRYJ8H56byXMRLGpFv/kw7A9aJnnDecGgxVLPQYFs+nJCjSkj5VljUE88D/gmg==",
+  "dgSpecHash": "g9dOX3BLErFqusV+RPrnCCG/DuQutwJH06/7T36HX/8Ra57OlEAFGcl3R9fUVm7/Y4w8tCgZpbq4tSX9Mr5Byg==",
   "success": true,
-  "projectFilePath": "D:\\Calculator\\Calculator_Leer\\Calculator_Leer.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\SELFSTUDY\\GITREPOS\\LearningCSharp\\Calculator\\Calculator_Leer\\Calculator_Leer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Trang Khiem\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Trang Khiem\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Trang Khiem\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Trang Khiem\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
+  ],
   "logs": []
 }

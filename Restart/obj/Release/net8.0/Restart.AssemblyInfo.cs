@@ -11,15 +11,13 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Calculator_Leer")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Restart")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5557d5c532efa5d28e5da53a01df895def27b9f3")]
-[assembly: System.Reflection.AssemblyProductAttribute("Calculator_Leer")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Calculator_Leer")]
+[assembly: System.Reflection.AssemblyProductAttribute("Restart")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Restart")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
-[assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
-[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 
 // Von der MSBuild WriteCodeFragment-Klasse generiert.
 
