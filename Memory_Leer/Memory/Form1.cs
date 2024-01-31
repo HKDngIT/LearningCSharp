@@ -300,14 +300,6 @@ namespace Memory
                 {
                     cardField[i].setCardPosition(rField[i]);
                 }
-                /*
-                //put the cards from the "digital" field onto the "visual" field
-                for (int index = 0; index < 20; index++)
-                {
-                    putCardOnToPosition(cardField[index].getCardPosition(), cardField[index]);
-                }
-                _currentGameState = gameState.gSRun;
-                */
 
                 // "flips" the cards
                 for (int i = 0; i < 20; i++)
@@ -382,12 +374,15 @@ namespace Memory
             {
                 putCoverCardOnToPosition(_pointerFirstCard);
                 putCoverCardOnToPosition(_pointerSecondCard);
+                cardField[searchForCard(_pointerFirstCard)].setIsOpen(false);
+                cardField[searchForCard(_pointerSecondCard)].setIsOpen(false);
                 _pointerFirstCard = -1;
                 _pointerSecondCard = -1;
                 _openCards = 0;
             }
         }
 
+        // virtually open the cards
         public void openCard(int position)
         {
             if(_pointerFirstCard == -1)
@@ -405,6 +400,79 @@ namespace Memory
             _openCards++;
         }
 
+        // handles the situation when a card is clicked
+        public void handleCardPressed(int cardPosition)
+        {
+            if (cardField[searchForCard(cardPosition)].getIsOpen() == false)
+            {
+                openCard(cardPosition);
+                cardField[searchForCard(cardPosition)].setIsOpen(true);
+                switch(cardPosition)
+                {
+                    case 1:
+                        pictureBox1.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 2:
+                        pictureBox2.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 3:
+                        pictureBox3.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 4:
+                        pictureBox4.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 5:
+                        pictureBox5.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 6:
+                        pictureBox6.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 7:
+                        pictureBox7.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 8:
+                        pictureBox8.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 9:
+                        pictureBox9.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 10:
+                        pictureBox10.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 11:
+                        pictureBox11.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 12:
+                        pictureBox12.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 13:
+                        pictureBox13.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 14:
+                        pictureBox14.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 15:
+                        pictureBox15.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 16:
+                        pictureBox16.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 17:
+                        pictureBox17.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 18:
+                        pictureBox18.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 19:
+                        pictureBox19.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                    case 20:
+                        pictureBox20.Image = cardField[searchForCard(cardPosition)].getImage();
+                        break;
+                }
+            }
+        }
+
         // PIC 1 CLICK
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -414,8 +482,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(1);
-                    pictureBox1.Image = cardField[searchForCard(1)].getImage();
+                    handleCardPressed(1);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -432,8 +499,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(2);
-                    pictureBox2.Image = cardField[searchForCard(2)].getImage();
+                    handleCardPressed(2);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -450,8 +516,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(3);
-                    pictureBox3.Image = cardField[searchForCard(3)].getImage();
+                    handleCardPressed(3);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -468,8 +533,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(4);
-                    pictureBox4.Image = cardField[searchForCard(4)].getImage();
+                    handleCardPressed(4);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -486,8 +550,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(5);
-                    pictureBox5.Image = cardField[searchForCard(5)].getImage();
+                    handleCardPressed(5);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -504,8 +567,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(6);
-                    pictureBox6.Image = cardField[searchForCard(6)].getImage();
+                    handleCardPressed(6);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -522,8 +584,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(7);
-                    pictureBox7.Image = cardField[searchForCard(7)].getImage();
+                    handleCardPressed(7);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -540,8 +601,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(8);
-                    pictureBox8.Image = cardField[searchForCard(8)].getImage();
+                    handleCardPressed(8);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -559,8 +619,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(9);
-                    pictureBox9.Image = cardField[searchForCard(9)].getImage();
+                    handleCardPressed(9);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -577,8 +636,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(10);
-                    pictureBox10.Image = cardField[searchForCard(10)].getImage();
+                    handleCardPressed(10);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -594,8 +652,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(11);
-                    pictureBox11.Image = cardField[searchForCard(11)].getImage();
+                    handleCardPressed(11);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -611,8 +668,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(12);
-                    pictureBox12.Image = cardField[searchForCard(12)].getImage();
+                    handleCardPressed(12);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -628,8 +684,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(13);
-                    pictureBox13.Image = cardField[searchForCard(13)].getImage();
+                    handleCardPressed(13);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -645,8 +700,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(14);
-                    pictureBox14.Image = cardField[searchForCard(14)].getImage();
+                    handleCardPressed(14);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -662,8 +716,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(15);
-                    pictureBox15.Image = cardField[searchForCard(15)].getImage();
+                    handleCardPressed(15);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -679,8 +732,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(16);
-                    pictureBox16.Image = cardField[searchForCard(16)].getImage();
+                    handleCardPressed(16);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -696,8 +748,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(17);
-                    pictureBox17.Image = cardField[searchForCard(17)].getImage();
+                    handleCardPressed(17);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -713,8 +764,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(18);
-                    pictureBox18.Image = cardField[searchForCard(18)].getImage();
+                    handleCardPressed(18);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -730,8 +780,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(19);
-                    pictureBox19.Image = cardField[searchForCard(19)].getImage();
+                    handleCardPressed(19);
                     break;
                 case gameState.gSEnd:
                     // do nothing
@@ -747,8 +796,7 @@ namespace Memory
                     // do nothing
                     break;
                 case gameState.gSRun:
-                    openCard(20);
-                    pictureBox20.Image = cardField[searchForCard(20)].getImage();
+                    handleCardPressed(20);
                     break;
                 case gameState.gSEnd:
                     // do nothing
