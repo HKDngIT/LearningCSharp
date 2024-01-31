@@ -56,6 +56,8 @@
             pictureBox18 = new PictureBox();
             pictureBox19 = new PictureBox();
             pictureBox20 = new PictureBox();
+            textBoxFoundPairs = new TextBox();
+            labelFound = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -83,7 +85,7 @@
             buttonStart.Font = new Font("Microsoft Sans Serif", 15.25F, FontStyle.Bold, GraphicsUnit.Point);
             buttonStart.Location = new Point(642, 13);
             buttonStart.Name = "buttonStart";
-            buttonStart.Size = new Size(139, 44);
+            buttonStart.Size = new Size(172, 44);
             buttonStart.TabIndex = 0;
             buttonStart.Text = "START";
             buttonStart.UseVisualStyleBackColor = true;
@@ -93,7 +95,7 @@
             // 
             labelTries.AutoSize = true;
             labelTries.Font = new Font("Microsoft Sans Serif", 15.25F, FontStyle.Bold, GraphicsUnit.Point);
-            labelTries.Location = new Point(666, 110);
+            labelTries.Location = new Point(682, 110);
             labelTries.Name = "labelTries";
             labelTries.Size = new Size(92, 25);
             labelTries.TabIndex = 1;
@@ -104,7 +106,7 @@
             buttonRestart.Font = new Font("Microsoft Sans Serif", 15.25F, FontStyle.Bold, GraphicsUnit.Point);
             buttonRestart.Location = new Point(642, 63);
             buttonRestart.Name = "buttonRestart";
-            buttonRestart.Size = new Size(139, 44);
+            buttonRestart.Size = new Size(172, 44);
             buttonRestart.TabIndex = 2;
             buttonRestart.Text = "RESTART";
             buttonRestart.UseVisualStyleBackColor = true;
@@ -116,7 +118,7 @@
             textBoxTries.Location = new Point(642, 138);
             textBoxTries.Name = "textBoxTries";
             textBoxTries.ReadOnly = true;
-            textBoxTries.Size = new Size(139, 31);
+            textBoxTries.Size = new Size(172, 31);
             textBoxTries.TabIndex = 3;
             textBoxTries.Text = "0";
             textBoxTries.TextAlign = HorizontalAlignment.Center;
@@ -125,7 +127,7 @@
             // 
             labelTimer.AutoSize = true;
             labelTimer.Font = new Font("Microsoft Sans Serif", 15.25F, FontStyle.Bold, GraphicsUnit.Point);
-            labelTimer.Location = new Point(669, 185);
+            labelTimer.Location = new Point(685, 185);
             labelTimer.Name = "labelTimer";
             labelTimer.Size = new Size(89, 25);
             labelTimer.TabIndex = 4;
@@ -137,7 +139,7 @@
             textBoxTimer.Location = new Point(642, 213);
             textBoxTimer.Name = "textBoxTimer";
             textBoxTimer.ReadOnly = true;
-            textBoxTimer.Size = new Size(139, 31);
+            textBoxTimer.Size = new Size(172, 31);
             textBoxTimer.TabIndex = 5;
             textBoxTimer.Text = "0:00";
             textBoxTimer.TextAlign = HorizontalAlignment.Center;
@@ -326,11 +328,34 @@
             pictureBox20.TabStop = false;
             pictureBox20.Click += pictureBox20_Click;
             // 
+            // textBoxFoundPairs
+            // 
+            textBoxFoundPairs.Font = new Font("Microsoft Sans Serif", 15.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxFoundPairs.Location = new Point(642, 323);
+            textBoxFoundPairs.Name = "textBoxFoundPairs";
+            textBoxFoundPairs.ReadOnly = true;
+            textBoxFoundPairs.Size = new Size(172, 31);
+            textBoxFoundPairs.TabIndex = 26;
+            textBoxFoundPairs.Text = "0";
+            textBoxFoundPairs.TextAlign = HorizontalAlignment.Center;
+            // 
+            // labelFound
+            // 
+            labelFound.AutoSize = true;
+            labelFound.Font = new Font("Microsoft Sans Serif", 15.25F, FontStyle.Bold, GraphicsUnit.Point);
+            labelFound.Location = new Point(642, 295);
+            labelFound.Name = "labelFound";
+            labelFound.Size = new Size(172, 25);
+            labelFound.TabIndex = 27;
+            labelFound.Text = "PAIRS FOUND:";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(789, 634);
+            ClientSize = new Size(821, 528);
+            Controls.Add(labelFound);
+            Controls.Add(textBoxFoundPairs);
             Controls.Add(pictureBox20);
             Controls.Add(pictureBox19);
             Controls.Add(pictureBox18);
@@ -412,5 +437,7 @@
         private PictureBox pictureBox19;
         private PictureBox pictureBox20;
         public PictureBox pictureBox1;
+        private TextBox textBoxFoundPairs;
+        private Label labelFound;
     }
 }

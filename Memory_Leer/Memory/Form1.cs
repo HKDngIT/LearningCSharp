@@ -112,6 +112,9 @@ namespace Memory
         // counter for tries
         private int _tries = 0;
 
+        // found pairs
+        private int _pairsFound = 0;
+
         // pointer
         private int _pointerFirstCard = -1;
         private int _pointerSecondCard = -1;
@@ -402,12 +405,32 @@ namespace Memory
             }
             _openCards++;
         }
+        // extra found pairs check for the last pair
+        void lastPairFound()
+        {
+            if(_pointerFirstCard != -1 && _pointerSecondCard != -1 && cardField[searchForCard(_pointerFirstCard)].getColor().Equals(cardField[searchForCard(_pointerSecondCard)].getColor()))
+            {
+                textBoxFoundPairs.Text = _pairsFound.ToString();
+            }
+        }
 
         // handles the situation when a card is clicked
         public void handleCardPressed(int cardPosition)
         {
             if (cardField[searchForCard(cardPosition)].getIsOpen() == false)
             {
+                if (_pointerFirstCard!= -1 && _pointerSecondCard != -1 && cardField[searchForCard(_pointerFirstCard)].getColor().Equals(cardField[searchForCard(_pointerSecondCard)].getColor()))
+                {
+                    cardField[searchForCard(_pointerFirstCard)].setIsSolved(true);
+                    cardField[searchForCard(_pointerSecondCard)].setIsSolved(true);
+                    _pointerFirstCard = -1;
+                    _pointerSecondCard = -1;
+                    _openCards = 0;
+                    _tries++;
+                    textBoxTries.Text = _tries.ToString();
+                    _pairsFound++;
+                    textBoxFoundPairs.Text = _pairsFound.ToString();
+                }
                 openCard(cardPosition);
                 cardField[searchForCard(cardPosition)].setIsOpen(true);
                 switch (cardPosition)
@@ -473,6 +496,29 @@ namespace Memory
                         pictureBox20.Image = cardField[searchForCard(cardPosition)].getImage();
                         break;
                 }
+                if (_pointerFirstCard != -1 && _pointerSecondCard != -1 && cardField[searchForCard(_pointerFirstCard)].getColor().Equals(cardField[searchForCard(_pointerSecondCard)].getColor()))
+                {
+                    cardField[searchForCard(_pointerFirstCard)].setIsSolved(true);
+                    cardField[searchForCard(_pointerSecondCard)].setIsSolved(true);
+                    _pointerFirstCard = -1;
+                    _pointerSecondCard = -1;
+                    _openCards = 0;
+                    _tries++;
+                    textBoxTries.Text = _tries.ToString();
+                    _pairsFound++;
+                    textBoxFoundPairs.Text = _pairsFound.ToString();
+                }
+                handleEndGameSituation();
+            }
+        }
+
+        // Handles the situation when all pairs have been found;
+        public void handleEndGameSituation()
+        {
+            if(_pairsFound == 10)
+            {
+                _currentGameState = gameState.gSEnd;
+                timer1.Stop();
             }
         }
 
