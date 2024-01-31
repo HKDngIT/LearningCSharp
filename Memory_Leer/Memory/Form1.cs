@@ -367,9 +367,15 @@ namespace Memory
                 _pointerFirstCard = -1;
                 _pointerSecondCard = -1;
                 _tries = 0;
-
+                textBoxTries.Text = "0";
                 textBoxFoundPairs.Text = _pairsFound.ToString();
                 textBoxTimer.Text = "0:00";
+
+                for(int index = 0; index < 20; index++)
+                {
+                    cardField[index].setIsOpen(false);
+                    cardField[index].setIsSolved(false);
+                }
             }
         }
 
