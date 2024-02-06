@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Calculator_Leer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5557d5c532efa5d28e5da53a01df895def27b9f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10912de8b6f303f382f504fff9e412e0f3113ee8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Calculator_Leer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Calculator_Leer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SELFSTUDY\\GITREPOS\\LearningCSharp\\Memory_Leer\\Memory\\Memory.csproj": {}
+    "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\Memory_Leer\\Memory\\Memory.csproj": {}
   },
   "projects": {
-    "D:\\SELFSTUDY\\GITREPOS\\LearningCSharp\\Memory_Leer\\Memory\\Memory.csproj": {
+    "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\Memory_Leer\\Memory\\Memory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SELFSTUDY\\GITREPOS\\LearningCSharp\\Memory_Leer\\Memory\\Memory.csproj",
+        "projectUniqueName": "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\Memory_Leer\\Memory\\Memory.csproj",
         "projectName": "Memory",
-        "projectPath": "D:\\SELFSTUDY\\GITREPOS\\LearningCSharp\\Memory_Leer\\Memory\\Memory.csproj",
+        "projectPath": "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\Memory_Leer\\Memory\\Memory.csproj",
         "packagesPath": "C:\\Users\\Trang Khiem\\.nuget\\packages\\",
-        "outputPath": "D:\\SELFSTUDY\\GITREPOS\\LearningCSharp\\Memory_Leer\\Memory\\obj\\",
+        "outputPath": "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\Memory_Leer\\Memory\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Trang Khiem\\AppData\\Roaming\\NuGet\\NuGet.Config",
