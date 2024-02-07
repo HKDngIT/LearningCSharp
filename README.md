@@ -4,7 +4,7 @@ This Repository currently contains files for the following projects in C# using 
 - A Memory Game
 
 ![Calculator](./Images/Calc_SS.jpg)  
-*The Calculator*
+*A Calculator*
 
 ![Memory](./Images/Memory_SS.jpg)  
-*The Memory Game*
+*A Memory Game*
