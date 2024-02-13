@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StarDeltaTransform")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2006b95d8ecd9a7df06a9c25d93e6497c613ad4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15a1b77242809a739716d51280726749e6459d9a")]
 [assembly: System.Reflection.AssemblyProductAttribute("StarDeltaTransform")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StarDeltaTransform")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
