@@ -290,8 +290,8 @@
             Controls.Add(label1);
             Controls.Add(pictureBoxStar);
             Controls.Add(pictureBoxDelta);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "StarDeltaCalculator";
+            Text = "StarDeltaCalculator";
             ((System.ComponentModel.ISupportInitialize)pictureBoxDelta).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxStar).EndInit();
             ResumeLayout(false);
