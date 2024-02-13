@@ -43,6 +43,14 @@
             textBox4 = new TextBox();
             textBox5 = new TextBox();
             textBox6 = new TextBox();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
+            button1 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBoxDelta).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxStar).BeginInit();
             SuspendLayout();
@@ -175,11 +183,99 @@
             textBox6.Size = new Size(148, 52);
             textBox6.TabIndex = 13;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Location = new Point(245, 434);
+            label7.Name = "label7";
+            label7.Size = new Size(37, 37);
+            label7.TabIndex = 14;
+            label7.Text = "Ω";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.Location = new Point(245, 508);
+            label8.Name = "label8";
+            label8.Size = new Size(37, 37);
+            label8.TabIndex = 15;
+            label8.Text = "Ω";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.Location = new Point(245, 582);
+            label9.Name = "label9";
+            label9.Size = new Size(37, 37);
+            label9.TabIndex = 16;
+            label9.Text = "Ω";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label10.Location = new Point(679, 434);
+            label10.Name = "label10";
+            label10.Size = new Size(37, 37);
+            label10.TabIndex = 17;
+            label10.Text = "Ω";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label11.Location = new Point(679, 508);
+            label11.Name = "label11";
+            label11.Size = new Size(37, 37);
+            label11.TabIndex = 18;
+            label11.Text = "Ω";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label12.Location = new Point(679, 582);
+            label12.Name = "label12";
+            label12.Size = new Size(37, 37);
+            label12.TabIndex = 19;
+            label12.Text = "Ω";
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI", 25F);
+            button1.Location = new Point(306, 493);
+            button1.Name = "button1";
+            button1.Size = new Size(84, 62);
+            button1.TabIndex = 20;
+            button1.Text = ">";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI", 25F);
+            button2.Location = new Point(735, 493);
+            button2.Name = "button2";
+            button2.Size = new Size(84, 62);
+            button2.TabIndex = 21;
+            button2.Text = "<";
+            button2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(847, 768);
+            ClientSize = new Size(847, 658);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(label12);
+            Controls.Add(label11);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
             Controls.Add(textBox6);
             Controls.Add(textBox5);
             Controls.Add(textBox4);
@@ -218,5 +314,13 @@
         private TextBox textBox4;
         private TextBox textBox5;
         private TextBox textBox6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private Label label11;
+        private Label label12;
+        private Button button1;
+        private Button button2;
     }
 }
