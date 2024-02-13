@@ -29,49 +29,194 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            pictureBoxDelta = new PictureBox();
+            pictureBoxStar = new PictureBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            textBox5 = new TextBox();
+            textBox6 = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxDelta).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxStar).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBoxDelta
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(400, 400);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            pictureBoxDelta.Image = (Image)resources.GetObject("pictureBoxDelta.Image");
+            pictureBoxDelta.Location = new Point(12, 12);
+            pictureBoxDelta.Name = "pictureBoxDelta";
+            pictureBoxDelta.Size = new Size(400, 400);
+            pictureBoxDelta.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxDelta.TabIndex = 0;
+            pictureBoxDelta.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBoxStar
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(435, 12);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(400, 400);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            pictureBoxStar.Image = (Image)resources.GetObject("pictureBoxStar.Image");
+            pictureBoxStar.Location = new Point(435, 12);
+            pictureBoxStar.Name = "pictureBoxStar";
+            pictureBoxStar.Size = new Size(400, 400);
+            pictureBoxStar.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxStar.TabIndex = 1;
+            pictureBoxStar.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(12, 425);
+            label1.Name = "label1";
+            label1.Size = new Size(73, 37);
+            label1.TabIndex = 2;
+            label1.Text = "R1 =";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(12, 499);
+            label2.Name = "label2";
+            label2.Size = new Size(73, 37);
+            label2.TabIndex = 3;
+            label2.Text = "R2 =";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(12, 573);
+            label3.Name = "label3";
+            label3.Size = new Size(73, 37);
+            label3.TabIndex = 4;
+            label3.Text = "R3 =";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(435, 425);
+            label4.Name = "label4";
+            label4.Size = new Size(84, 37);
+            label4.TabIndex = 5;
+            label4.Text = "R1* =";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(435, 499);
+            label5.Name = "label5";
+            label5.Size = new Size(84, 37);
+            label5.TabIndex = 6;
+            label5.Text = "R2* =";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(435, 573);
+            label6.Name = "label6";
+            label6.Size = new Size(84, 37);
+            label6.TabIndex = 7;
+            label6.Text = "R3* =";
+            // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Segoe UI", 25F);
+            textBox1.Location = new Point(91, 425);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(148, 52);
+            textBox1.TabIndex = 8;
+            // 
+            // textBox2
+            // 
+            textBox2.Font = new Font("Segoe UI", 25F);
+            textBox2.Location = new Point(91, 499);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(148, 52);
+            textBox2.TabIndex = 9;
+            // 
+            // textBox3
+            // 
+            textBox3.Font = new Font("Segoe UI", 25F);
+            textBox3.Location = new Point(91, 573);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(148, 52);
+            textBox3.TabIndex = 10;
+            // 
+            // textBox4
+            // 
+            textBox4.Font = new Font("Segoe UI", 25F);
+            textBox4.Location = new Point(525, 425);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(148, 52);
+            textBox4.TabIndex = 11;
+            // 
+            // textBox5
+            // 
+            textBox5.Font = new Font("Segoe UI", 25F);
+            textBox5.Location = new Point(525, 499);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(148, 52);
+            textBox5.TabIndex = 12;
+            // 
+            // textBox6
+            // 
+            textBox6.Font = new Font("Segoe UI", 25F);
+            textBox6.Location = new Point(525, 573);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(148, 52);
+            textBox6.TabIndex = 13;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(847, 1033);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
+            ClientSize = new Size(847, 768);
+            Controls.Add(textBox6);
+            Controls.Add(textBox5);
+            Controls.Add(textBox4);
+            Controls.Add(textBox3);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(pictureBoxStar);
+            Controls.Add(pictureBoxDelta);
             Name = "Form1";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxDelta).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxStar).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
+        private PictureBox pictureBoxDelta;
+        private PictureBox pictureBoxStar;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private TextBox textBox3;
+        private TextBox textBox4;
+        private TextBox textBox5;
+        private TextBox textBox6;
     }
 }
