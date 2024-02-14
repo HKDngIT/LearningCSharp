@@ -16,4 +16,4 @@ This Repository currently contains files for the following projects in C# using 
 ## Program for Star-Delta-Transformation calculation
 ![StarDeltaCalculator](/Images/StarDeltaCalculator.jpg)  
 - with error handling for invalid inputs
-- in case of error a pop up message box pops up with further detailed information
+- in case of error a message box will show up with further detailed information
