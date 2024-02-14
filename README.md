@@ -9,3 +9,5 @@ This Repository currently contains files for the following projects in C# using 
 
 ![StarDeltaCalculator](/Images/StarDeltaCalculator.jpg)  
 *A simple application for Star Delta Transformation*
+- with error handling for invalid input
+- in case of error a pop up message box pops up
