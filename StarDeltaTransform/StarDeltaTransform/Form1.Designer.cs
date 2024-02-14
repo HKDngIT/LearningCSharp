@@ -35,24 +35,24 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
+            textBoxR1 = new TextBox();
+            textBoxR2 = new TextBox();
+            textBoxR3 = new TextBox();
+            textBoxR4 = new TextBox();
+            textBoxR5 = new TextBox();
+            textBoxR6 = new TextBox();
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
             label10 = new Label();
             label11 = new Label();
             label12 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            buttonToStar = new Button();
+            buttonToDelta = new Button();
+            pictureBoxDelta = new PictureBox();
+            pictureBoxStar = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxDelta).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxStar).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -115,53 +115,53 @@
             label6.TabIndex = 7;
             label6.Text = "R3* =";
             // 
-            // textBox1
+            // textBoxR1
             // 
-            textBox1.Font = new Font("Segoe UI", 25F);
-            textBox1.Location = new Point(91, 425);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(148, 52);
-            textBox1.TabIndex = 8;
+            textBoxR1.Font = new Font("Segoe UI", 25F);
+            textBoxR1.Location = new Point(91, 425);
+            textBoxR1.Name = "textBoxR1";
+            textBoxR1.Size = new Size(148, 52);
+            textBoxR1.TabIndex = 8;
             // 
-            // textBox2
+            // textBoxR2
             // 
-            textBox2.Font = new Font("Segoe UI", 25F);
-            textBox2.Location = new Point(91, 499);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(148, 52);
-            textBox2.TabIndex = 9;
+            textBoxR2.Font = new Font("Segoe UI", 25F);
+            textBoxR2.Location = new Point(91, 499);
+            textBoxR2.Name = "textBoxR2";
+            textBoxR2.Size = new Size(148, 52);
+            textBoxR2.TabIndex = 9;
             // 
-            // textBox3
+            // textBoxR3
             // 
-            textBox3.Font = new Font("Segoe UI", 25F);
-            textBox3.Location = new Point(91, 573);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(148, 52);
-            textBox3.TabIndex = 10;
+            textBoxR3.Font = new Font("Segoe UI", 25F);
+            textBoxR3.Location = new Point(91, 573);
+            textBoxR3.Name = "textBoxR3";
+            textBoxR3.Size = new Size(148, 52);
+            textBoxR3.TabIndex = 10;
             // 
-            // textBox4
+            // textBoxR4
             // 
-            textBox4.Font = new Font("Segoe UI", 25F);
-            textBox4.Location = new Point(525, 425);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(148, 52);
-            textBox4.TabIndex = 11;
+            textBoxR4.Font = new Font("Segoe UI", 25F);
+            textBoxR4.Location = new Point(525, 425);
+            textBoxR4.Name = "textBoxR4";
+            textBoxR4.Size = new Size(148, 52);
+            textBoxR4.TabIndex = 11;
             // 
-            // textBox5
+            // textBoxR5
             // 
-            textBox5.Font = new Font("Segoe UI", 25F);
-            textBox5.Location = new Point(525, 499);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(148, 52);
-            textBox5.TabIndex = 12;
+            textBoxR5.Font = new Font("Segoe UI", 25F);
+            textBoxR5.Location = new Point(525, 499);
+            textBoxR5.Name = "textBoxR5";
+            textBoxR5.Size = new Size(148, 52);
+            textBoxR5.TabIndex = 12;
             // 
-            // textBox6
+            // textBoxR6
             // 
-            textBox6.Font = new Font("Segoe UI", 25F);
-            textBox6.Location = new Point(525, 573);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(148, 52);
-            textBox6.TabIndex = 13;
+            textBoxR6.Font = new Font("Segoe UI", 25F);
+            textBoxR6.Location = new Point(525, 573);
+            textBoxR6.Name = "textBoxR6";
+            textBoxR6.Size = new Size(148, 52);
+            textBoxR6.TabIndex = 13;
             // 
             // label7
             // 
@@ -223,69 +223,71 @@
             label12.TabIndex = 19;
             label12.Text = "Ω";
             // 
-            // button1
+            // buttonToStar
             // 
-            button1.Font = new Font("Segoe UI", 25F);
-            button1.Location = new Point(306, 493);
-            button1.Name = "button1";
-            button1.Size = new Size(84, 62);
-            button1.TabIndex = 20;
-            button1.Text = ">";
-            button1.UseVisualStyleBackColor = true;
+            buttonToStar.Font = new Font("Segoe UI", 25F);
+            buttonToStar.Location = new Point(306, 493);
+            buttonToStar.Name = "buttonToStar";
+            buttonToStar.Size = new Size(84, 62);
+            buttonToStar.TabIndex = 20;
+            buttonToStar.Text = ">";
+            buttonToStar.UseVisualStyleBackColor = true;
+            buttonToStar.Click += buttonToStar_Click;
             // 
-            // button2
+            // buttonToDelta
             // 
-            button2.Font = new Font("Segoe UI", 25F);
-            button2.Location = new Point(735, 493);
-            button2.Name = "button2";
-            button2.Size = new Size(84, 62);
-            button2.TabIndex = 21;
-            button2.Text = "<";
-            button2.UseVisualStyleBackColor = true;
+            buttonToDelta.Font = new Font("Segoe UI", 25F);
+            buttonToDelta.Location = new Point(735, 493);
+            buttonToDelta.Name = "buttonToDelta";
+            buttonToDelta.Size = new Size(84, 62);
+            buttonToDelta.TabIndex = 21;
+            buttonToDelta.Text = "<";
+            buttonToDelta.UseVisualStyleBackColor = true;
+            buttonToDelta.Click += buttonToDelta_Click;
             // 
-            // pictureBox1
+            // pictureBoxDelta
             // 
-            pictureBox1.BackColor = SystemColors.ButtonFace;
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(400, 400);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 22;
-            pictureBox1.TabStop = false;
+            pictureBoxDelta.BackColor = SystemColors.ButtonFace;
+            pictureBoxDelta.BackgroundImage = (Image)resources.GetObject("pictureBoxDelta.BackgroundImage");
+            pictureBoxDelta.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBoxDelta.Location = new Point(12, 12);
+            pictureBoxDelta.Name = "pictureBoxDelta";
+            pictureBoxDelta.Size = new Size(400, 400);
+            pictureBoxDelta.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxDelta.TabIndex = 22;
+            pictureBoxDelta.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBoxStar
             // 
-            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Location = new Point(435, 12);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(400, 400);
-            pictureBox2.TabIndex = 23;
-            pictureBox2.TabStop = false;
+            pictureBoxStar.BackgroundImage = (Image)resources.GetObject("pictureBoxStar.BackgroundImage");
+            pictureBoxStar.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBoxStar.Location = new Point(435, 12);
+            pictureBoxStar.Name = "pictureBoxStar";
+            pictureBoxStar.Size = new Size(400, 400);
+            pictureBoxStar.TabIndex = 23;
+            pictureBoxStar.TabStop = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(847, 658);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(pictureBoxStar);
+            Controls.Add(pictureBoxDelta);
+            Controls.Add(buttonToDelta);
+            Controls.Add(buttonToStar);
             Controls.Add(label12);
             Controls.Add(label11);
             Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(textBoxR6);
+            Controls.Add(textBoxR5);
+            Controls.Add(textBoxR4);
+            Controls.Add(textBoxR3);
+            Controls.Add(textBoxR2);
+            Controls.Add(textBoxR1);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -294,8 +296,8 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "StarDeltaCalculator";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxDelta).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxStar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -307,21 +309,21 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
+        private TextBox textBoxR1;
+        private TextBox textBoxR2;
+        private TextBox textBoxR3;
+        private TextBox textBoxR4;
+        private TextBox textBoxR5;
+        private TextBox textBoxR6;
         private Label label7;
         private Label label8;
         private Label label9;
         private Label label10;
         private Label label11;
         private Label label12;
-        private Button button1;
-        private Button button2;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
+        private Button buttonToStar;
+        private Button buttonToDelta;
+        private PictureBox pictureBoxDelta;
+        private PictureBox pictureBoxStar;
     }
 }

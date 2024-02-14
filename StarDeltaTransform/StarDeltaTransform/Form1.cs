@@ -6,5 +6,15 @@ namespace StarDeltaTransform
         {
             InitializeComponent();
         }
+
+        private void buttonToStar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonToDelta_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
