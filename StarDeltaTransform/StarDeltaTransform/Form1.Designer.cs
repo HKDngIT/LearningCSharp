@@ -35,12 +35,12 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            textBoxR1 = new TextBox();
-            textBoxR2 = new TextBox();
-            textBoxR3 = new TextBox();
-            textBoxR4 = new TextBox();
-            textBoxR5 = new TextBox();
-            textBoxR6 = new TextBox();
+            textBoxR1Delta = new TextBox();
+            textBoxR2Delta = new TextBox();
+            textBoxR3Delta = new TextBox();
+            textBoxR1Star = new TextBox();
+            textBoxR2Star = new TextBox();
+            textBoxR3Star = new TextBox();
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
@@ -115,53 +115,53 @@
             label6.TabIndex = 7;
             label6.Text = "R3* =";
             // 
-            // textBoxR1
+            // textBoxR1Delta
             // 
-            textBoxR1.Font = new Font("Segoe UI", 25F);
-            textBoxR1.Location = new Point(91, 425);
-            textBoxR1.Name = "textBoxR1";
-            textBoxR1.Size = new Size(148, 52);
-            textBoxR1.TabIndex = 8;
+            textBoxR1Delta.Font = new Font("Segoe UI", 25F);
+            textBoxR1Delta.Location = new Point(91, 425);
+            textBoxR1Delta.Name = "textBoxR1Delta";
+            textBoxR1Delta.Size = new Size(148, 52);
+            textBoxR1Delta.TabIndex = 8;
             // 
-            // textBoxR2
+            // textBoxR2Delta
             // 
-            textBoxR2.Font = new Font("Segoe UI", 25F);
-            textBoxR2.Location = new Point(91, 499);
-            textBoxR2.Name = "textBoxR2";
-            textBoxR2.Size = new Size(148, 52);
-            textBoxR2.TabIndex = 9;
+            textBoxR2Delta.Font = new Font("Segoe UI", 25F);
+            textBoxR2Delta.Location = new Point(91, 499);
+            textBoxR2Delta.Name = "textBoxR2Delta";
+            textBoxR2Delta.Size = new Size(148, 52);
+            textBoxR2Delta.TabIndex = 9;
             // 
-            // textBoxR3
+            // textBoxR3Delta
             // 
-            textBoxR3.Font = new Font("Segoe UI", 25F);
-            textBoxR3.Location = new Point(91, 573);
-            textBoxR3.Name = "textBoxR3";
-            textBoxR3.Size = new Size(148, 52);
-            textBoxR3.TabIndex = 10;
+            textBoxR3Delta.Font = new Font("Segoe UI", 25F);
+            textBoxR3Delta.Location = new Point(91, 573);
+            textBoxR3Delta.Name = "textBoxR3Delta";
+            textBoxR3Delta.Size = new Size(148, 52);
+            textBoxR3Delta.TabIndex = 10;
             // 
-            // textBoxR4
+            // textBoxR1Star
             // 
-            textBoxR4.Font = new Font("Segoe UI", 25F);
-            textBoxR4.Location = new Point(525, 425);
-            textBoxR4.Name = "textBoxR4";
-            textBoxR4.Size = new Size(148, 52);
-            textBoxR4.TabIndex = 11;
+            textBoxR1Star.Font = new Font("Segoe UI", 25F);
+            textBoxR1Star.Location = new Point(525, 425);
+            textBoxR1Star.Name = "textBoxR1Star";
+            textBoxR1Star.Size = new Size(148, 52);
+            textBoxR1Star.TabIndex = 11;
             // 
-            // textBoxR5
+            // textBoxR2Star
             // 
-            textBoxR5.Font = new Font("Segoe UI", 25F);
-            textBoxR5.Location = new Point(525, 499);
-            textBoxR5.Name = "textBoxR5";
-            textBoxR5.Size = new Size(148, 52);
-            textBoxR5.TabIndex = 12;
+            textBoxR2Star.Font = new Font("Segoe UI", 25F);
+            textBoxR2Star.Location = new Point(525, 499);
+            textBoxR2Star.Name = "textBoxR2Star";
+            textBoxR2Star.Size = new Size(148, 52);
+            textBoxR2Star.TabIndex = 12;
             // 
-            // textBoxR6
+            // textBoxR3Star
             // 
-            textBoxR6.Font = new Font("Segoe UI", 25F);
-            textBoxR6.Location = new Point(525, 573);
-            textBoxR6.Name = "textBoxR6";
-            textBoxR6.Size = new Size(148, 52);
-            textBoxR6.TabIndex = 13;
+            textBoxR3Star.Font = new Font("Segoe UI", 25F);
+            textBoxR3Star.Location = new Point(525, 573);
+            textBoxR3Star.Name = "textBoxR3Star";
+            textBoxR3Star.Size = new Size(148, 52);
+            textBoxR3Star.TabIndex = 13;
             // 
             // label7
             // 
@@ -271,7 +271,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(847, 658);
+            ClientSize = new Size(847, 766);
             Controls.Add(pictureBoxStar);
             Controls.Add(pictureBoxDelta);
             Controls.Add(buttonToDelta);
@@ -282,12 +282,12 @@
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label7);
-            Controls.Add(textBoxR6);
-            Controls.Add(textBoxR5);
-            Controls.Add(textBoxR4);
-            Controls.Add(textBoxR3);
-            Controls.Add(textBoxR2);
-            Controls.Add(textBoxR1);
+            Controls.Add(textBoxR3Star);
+            Controls.Add(textBoxR2Star);
+            Controls.Add(textBoxR1Star);
+            Controls.Add(textBoxR3Delta);
+            Controls.Add(textBoxR2Delta);
+            Controls.Add(textBoxR1Delta);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -309,12 +309,12 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private TextBox textBoxR1;
-        private TextBox textBoxR2;
-        private TextBox textBoxR3;
-        private TextBox textBoxR4;
-        private TextBox textBoxR5;
-        private TextBox textBoxR6;
+        private TextBox textBoxR1Delta;
+        private TextBox textBoxR2Delta;
+        private TextBox textBoxR3Delta;
+        private TextBox textBoxR1Star;
+        private TextBox textBoxR2Star;
+        private TextBox textBoxR3Star;
         private Label label7;
         private Label label8;
         private Label label9;
