@@ -51,6 +51,7 @@
             buttonToDelta = new Button();
             pictureBoxDelta = new PictureBox();
             pictureBoxStar = new PictureBox();
+            labelAttention = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBoxDelta).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxStar).BeginInit();
             SuspendLayout();
@@ -122,6 +123,7 @@
             textBoxR1Delta.Name = "textBoxR1Delta";
             textBoxR1Delta.Size = new Size(148, 52);
             textBoxR1Delta.TabIndex = 8;
+            textBoxR1Delta.TextAlign = HorizontalAlignment.Right;
             // 
             // textBoxR2Delta
             // 
@@ -130,6 +132,7 @@
             textBoxR2Delta.Name = "textBoxR2Delta";
             textBoxR2Delta.Size = new Size(148, 52);
             textBoxR2Delta.TabIndex = 9;
+            textBoxR2Delta.TextAlign = HorizontalAlignment.Right;
             // 
             // textBoxR3Delta
             // 
@@ -138,6 +141,7 @@
             textBoxR3Delta.Name = "textBoxR3Delta";
             textBoxR3Delta.Size = new Size(148, 52);
             textBoxR3Delta.TabIndex = 10;
+            textBoxR3Delta.TextAlign = HorizontalAlignment.Right;
             // 
             // textBoxR1Star
             // 
@@ -146,6 +150,7 @@
             textBoxR1Star.Name = "textBoxR1Star";
             textBoxR1Star.Size = new Size(148, 52);
             textBoxR1Star.TabIndex = 11;
+            textBoxR1Star.TextAlign = HorizontalAlignment.Right;
             // 
             // textBoxR2Star
             // 
@@ -154,6 +159,7 @@
             textBoxR2Star.Name = "textBoxR2Star";
             textBoxR2Star.Size = new Size(148, 52);
             textBoxR2Star.TabIndex = 12;
+            textBoxR2Star.TextAlign = HorizontalAlignment.Right;
             // 
             // textBoxR3Star
             // 
@@ -162,6 +168,7 @@
             textBoxR3Star.Name = "textBoxR3Star";
             textBoxR3Star.Size = new Size(148, 52);
             textBoxR3Star.TabIndex = 13;
+            textBoxR3Star.TextAlign = HorizontalAlignment.Right;
             // 
             // label7
             // 
@@ -267,11 +274,22 @@
             pictureBoxStar.TabIndex = 23;
             pictureBoxStar.TabStop = false;
             // 
+            // labelAttention
+            // 
+            labelAttention.AutoSize = true;
+            labelAttention.Font = new Font("Segoe UI", 24.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelAttention.Location = new Point(175, 670);
+            labelAttention.Name = "labelAttention";
+            labelAttention.Size = new Size(464, 45);
+            labelAttention.TabIndex = 24;
+            labelAttention.Text = "Use ',' instead of '.' for comma!";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(847, 766);
+            Controls.Add(labelAttention);
             Controls.Add(pictureBoxStar);
             Controls.Add(pictureBoxDelta);
             Controls.Add(buttonToDelta);
@@ -325,5 +343,6 @@
         private Button buttonToDelta;
         private PictureBox pictureBoxDelta;
         private PictureBox pictureBoxStar;
+        private Label labelAttention;
     }
 }
