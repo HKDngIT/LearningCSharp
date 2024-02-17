@@ -28,32 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
+            textBoxM1m1n1 = new TextBox();
+            textBoxM1m1n2 = new TextBox();
+            textBoxM1m1n3 = new TextBox();
+            textBoxM1m2n1 = new TextBox();
+            textBoxM1m2n2 = new TextBox();
+            textBoxM1m2n3 = new TextBox();
+            textBoxM1m3n1 = new TextBox();
+            textBoxM1m3n2 = new TextBox();
+            textBoxM1m3n3 = new TextBox();
             label1 = new Label();
             label2 = new Label();
-            textBox10 = new TextBox();
-            textBox11 = new TextBox();
-            textBox12 = new TextBox();
+            textBoxV1m3 = new TextBox();
+            textBoxV1m2 = new TextBox();
+            textBoxV1m1 = new TextBox();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            textBox13 = new TextBox();
-            textBox14 = new TextBox();
-            textBox15 = new TextBox();
-            textBox16 = new TextBox();
-            textBox17 = new TextBox();
-            textBox18 = new TextBox();
-            textBox19 = new TextBox();
-            textBox20 = new TextBox();
-            textBox21 = new TextBox();
+            this.textBoxML1m3 = new TextBox();
+            this.textBoxML1m2 = new TextBox();
+            textBoxML1m1 = new TextBox();
             label6 = new Label();
             label7 = new Label();
             textBox22 = new TextBox();
@@ -76,7 +70,7 @@
             textBox37 = new TextBox();
             textBox38 = new TextBox();
             textBox39 = new TextBox();
-            button1 = new Button();
+            buttonCalcMulV1 = new Button();
             button2 = new Button();
             textBox40 = new TextBox();
             button3 = new Button();
@@ -142,68 +136,68 @@
             textBox85 = new TextBox();
             SuspendLayout();
             // 
-            // textBox1
+            // textBoxM1m1n1
             // 
-            textBox1.Location = new Point(80, 12);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 0;
+            textBoxM1m1n1.Location = new Point(80, 12);
+            textBoxM1m1n1.Name = "textBoxM1m1n1";
+            textBoxM1m1n1.Size = new Size(100, 23);
+            textBoxM1m1n1.TabIndex = 0;
             // 
-            // textBox2
+            // textBoxM1m1n2
             // 
-            textBox2.Location = new Point(186, 12);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 1;
+            textBoxM1m1n2.Location = new Point(186, 12);
+            textBoxM1m1n2.Name = "textBoxM1m1n2";
+            textBoxM1m1n2.Size = new Size(100, 23);
+            textBoxM1m1n2.TabIndex = 1;
             // 
-            // textBox3
+            // textBoxM1m1n3
             // 
-            textBox3.Location = new Point(292, 12);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 2;
+            textBoxM1m1n3.Location = new Point(292, 12);
+            textBoxM1m1n3.Name = "textBoxM1m1n3";
+            textBoxM1m1n3.Size = new Size(100, 23);
+            textBoxM1m1n3.TabIndex = 2;
             // 
-            // textBox4
+            // textBoxM1m2n1
             // 
-            textBox4.Location = new Point(80, 41);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 3;
+            textBoxM1m2n1.Location = new Point(80, 41);
+            textBoxM1m2n1.Name = "textBoxM1m2n1";
+            textBoxM1m2n1.Size = new Size(100, 23);
+            textBoxM1m2n1.TabIndex = 3;
             // 
-            // textBox5
+            // textBoxM1m2n2
             // 
-            textBox5.Location = new Point(186, 41);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 4;
+            textBoxM1m2n2.Location = new Point(186, 41);
+            textBoxM1m2n2.Name = "textBoxM1m2n2";
+            textBoxM1m2n2.Size = new Size(100, 23);
+            textBoxM1m2n2.TabIndex = 4;
             // 
-            // textBox6
+            // textBoxM1m2n3
             // 
-            textBox6.Location = new Point(292, 41);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 23);
-            textBox6.TabIndex = 5;
+            textBoxM1m2n3.Location = new Point(292, 41);
+            textBoxM1m2n3.Name = "textBoxM1m2n3";
+            textBoxM1m2n3.Size = new Size(100, 23);
+            textBoxM1m2n3.TabIndex = 5;
             // 
-            // textBox7
+            // textBoxM1m3n1
             // 
-            textBox7.Location = new Point(80, 70);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(100, 23);
-            textBox7.TabIndex = 6;
+            textBoxM1m3n1.Location = new Point(80, 70);
+            textBoxM1m3n1.Name = "textBoxM1m3n1";
+            textBoxM1m3n1.Size = new Size(100, 23);
+            textBoxM1m3n1.TabIndex = 6;
             // 
-            // textBox8
+            // textBoxM1m3n2
             // 
-            textBox8.Location = new Point(186, 70);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(100, 23);
-            textBox8.TabIndex = 7;
+            textBoxM1m3n2.Location = new Point(186, 70);
+            textBoxM1m3n2.Name = "textBoxM1m3n2";
+            textBoxM1m3n2.Size = new Size(100, 23);
+            textBoxM1m3n2.TabIndex = 7;
             // 
-            // textBox9
+            // textBoxM1m3n3
             // 
-            textBox9.Location = new Point(292, 70);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(100, 23);
-            textBox9.TabIndex = 8;
+            textBoxM1m3n3.Location = new Point(292, 70);
+            textBoxM1m3n3.Name = "textBoxM1m3n3";
+            textBoxM1m3n3.Size = new Size(100, 23);
+            textBoxM1m3n3.TabIndex = 8;
             // 
             // label1
             // 
@@ -225,26 +219,26 @@
             label2.TabIndex = 10;
             label2.Text = ") ⋅ (";
             // 
-            // textBox10
+            // textBoxV1m3
             // 
-            textBox10.Location = new Point(536, 70);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(100, 23);
-            textBox10.TabIndex = 13;
+            textBoxV1m3.Location = new Point(536, 70);
+            textBoxV1m3.Name = "textBoxV1m3";
+            textBoxV1m3.Size = new Size(100, 23);
+            textBoxV1m3.TabIndex = 13;
             // 
-            // textBox11
+            // textBoxV1m2
             // 
-            textBox11.Location = new Point(536, 41);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(100, 23);
-            textBox11.TabIndex = 12;
+            textBoxV1m2.Location = new Point(536, 41);
+            textBoxV1m2.Name = "textBoxV1m2";
+            textBoxV1m2.Size = new Size(100, 23);
+            textBoxV1m2.TabIndex = 12;
             // 
-            // textBox12
+            // textBoxV1m1
             // 
-            textBox12.Location = new Point(536, 12);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(100, 23);
-            textBox12.TabIndex = 11;
+            textBoxV1m1.Location = new Point(536, 12);
+            textBoxV1m1.Name = "textBoxV1m1";
+            textBoxV1m1.Size = new Size(100, 23);
+            textBoxV1m1.TabIndex = 11;
             // 
             // label3
             // 
@@ -260,7 +254,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(1441, 7);
+            label4.Location = new Point(1229, 7);
             label4.Name = "label4";
             label4.Size = new Size(74, 86);
             label4.TabIndex = 27;
@@ -276,68 +270,26 @@
             label5.TabIndex = 26;
             label5.Text = "(";
             // 
-            // textBox13
+            // textBoxML1m3
             // 
-            textBox13.Location = new Point(1335, 70);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(100, 23);
-            textBox13.TabIndex = 25;
+            this.textBoxML1m3.Location = new Point(1123, 70);
+            this.textBoxML1m3.Name = "textBoxML1m3";
+            this.textBoxML1m3.Size = new Size(100, 23);
+            this.textBoxML1m3.TabIndex = 23;
             // 
-            // textBox14
+            // textBoxML1m2
             // 
-            textBox14.Location = new Point(1229, 70);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(100, 23);
-            textBox14.TabIndex = 24;
+            this.textBoxML1m2.Location = new Point(1123, 41);
+            this.textBoxML1m2.Name = "textBoxML1m2";
+            this.textBoxML1m2.Size = new Size(100, 23);
+            this.textBoxML1m2.TabIndex = 20;
             // 
-            // textBox15
+            // textBoxML1m1
             // 
-            textBox15.Location = new Point(1123, 70);
-            textBox15.Name = "textBox15";
-            textBox15.Size = new Size(100, 23);
-            textBox15.TabIndex = 23;
-            // 
-            // textBox16
-            // 
-            textBox16.Location = new Point(1335, 41);
-            textBox16.Name = "textBox16";
-            textBox16.Size = new Size(100, 23);
-            textBox16.TabIndex = 22;
-            // 
-            // textBox17
-            // 
-            textBox17.Location = new Point(1229, 41);
-            textBox17.Name = "textBox17";
-            textBox17.Size = new Size(100, 23);
-            textBox17.TabIndex = 21;
-            // 
-            // textBox18
-            // 
-            textBox18.Location = new Point(1123, 41);
-            textBox18.Name = "textBox18";
-            textBox18.Size = new Size(100, 23);
-            textBox18.TabIndex = 20;
-            // 
-            // textBox19
-            // 
-            textBox19.Location = new Point(1335, 12);
-            textBox19.Name = "textBox19";
-            textBox19.Size = new Size(100, 23);
-            textBox19.TabIndex = 19;
-            // 
-            // textBox20
-            // 
-            textBox20.Location = new Point(1229, 12);
-            textBox20.Name = "textBox20";
-            textBox20.Size = new Size(100, 23);
-            textBox20.TabIndex = 18;
-            // 
-            // textBox21
-            // 
-            textBox21.Location = new Point(1123, 12);
-            textBox21.Name = "textBox21";
-            textBox21.Size = new Size(100, 23);
-            textBox21.TabIndex = 17;
+            textBoxML1m1.Location = new Point(1123, 12);
+            textBoxML1m1.Name = "textBoxML1m1";
+            textBoxML1m1.Size = new Size(100, 23);
+            textBoxML1m1.TabIndex = 17;
             // 
             // label6
             // 
@@ -505,15 +457,15 @@
             textBox39.Size = new Size(100, 23);
             textBox39.TabIndex = 45;
             // 
-            // button1
+            // buttonCalcMulV1
             // 
-            button1.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(911, 21);
-            button1.Name = "button1";
-            button1.Size = new Size(132, 72);
-            button1.TabIndex = 56;
-            button1.Text = "=";
-            button1.UseVisualStyleBackColor = true;
+            buttonCalcMulV1.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            buttonCalcMulV1.Location = new Point(911, 21);
+            buttonCalcMulV1.Name = "buttonCalcMulV1";
+            buttonCalcMulV1.Size = new Size(132, 72);
+            buttonCalcMulV1.TabIndex = 56;
+            buttonCalcMulV1.Text = "=";
+            buttonCalcMulV1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -763,11 +715,11 @@
             // 
             label17.AutoSize = true;
             label17.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label17.Location = new Point(435, 267);
+            label17.Location = new Point(417, 267);
             label17.Name = "label17";
-            label17.Size = new Size(95, 86);
+            label17.Size = new Size(118, 86);
             label17.TabIndex = 84;
-            label17.Text = "⋅ (";
+            label17.Text = "+ (";
             // 
             // textBox59
             // 
@@ -939,11 +891,11 @@
             // 
             label21.AutoSize = true;
             label21.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label21.Location = new Point(435, 396);
+            label21.Location = new Point(435, 397);
             label21.Name = "label21";
-            label21.Size = new Size(95, 86);
+            label21.Size = new Size(100, 86);
             label21.TabIndex = 107;
-            label21.Text = "⋅ (";
+            label21.Text = "- (";
             // 
             // textBox77
             // 
@@ -1012,7 +964,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1563, 794);
+            ClientSize = new Size(1569, 786);
             Controls.Add(button6);
             Controls.Add(label18);
             Controls.Add(label19);
@@ -1076,7 +1028,7 @@
             Controls.Add(button3);
             Controls.Add(textBox40);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(buttonCalcMulV1);
             Controls.Add(label8);
             Controls.Add(label9);
             Controls.Add(textBox31);
@@ -1101,30 +1053,24 @@
             Controls.Add(textBox30);
             Controls.Add(label4);
             Controls.Add(label5);
-            Controls.Add(textBox13);
-            Controls.Add(textBox14);
-            Controls.Add(textBox15);
-            Controls.Add(textBox16);
-            Controls.Add(textBox17);
-            Controls.Add(textBox18);
-            Controls.Add(textBox19);
-            Controls.Add(textBox20);
-            Controls.Add(textBox21);
+            Controls.Add(this.textBoxML1m3);
+            Controls.Add(this.textBoxML1m2);
+            Controls.Add(textBoxML1m1);
             Controls.Add(label3);
-            Controls.Add(textBox10);
-            Controls.Add(textBox11);
-            Controls.Add(textBox12);
+            Controls.Add(textBoxV1m3);
+            Controls.Add(textBoxV1m2);
+            Controls.Add(textBoxV1m1);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox9);
-            Controls.Add(textBox8);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(textBoxM1m3n3);
+            Controls.Add(textBoxM1m3n2);
+            Controls.Add(textBoxM1m3n1);
+            Controls.Add(textBoxM1m2n3);
+            Controls.Add(textBoxM1m2n2);
+            Controls.Add(textBoxM1m2n1);
+            Controls.Add(textBoxM1m1n3);
+            Controls.Add(textBoxM1m1n2);
+            Controls.Add(textBoxM1m1n1);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -1133,20 +1079,20 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private TextBox textBox9;
+        private TextBox textBoxM1m1n1;
+        private TextBox textBoxM1m1n2;
+        private TextBox textBoxM1m1n3;
+        private TextBox textBoxM1m2n1;
+        private TextBox textBoxM1m2n2;
+        private TextBox textBoxM1m2n3;
+        private TextBox textBoxM1m3n1;
+        private TextBox textBoxM1m3n2;
+        private TextBox textBoxM1m3n3;
         private Label label1;
         private Label label2;
-        private TextBox textBox10;
-        private TextBox textBox11;
-        private TextBox textBox12;
+        private TextBox textBoxV1m3;
+        private TextBox textBoxV1m2;
+        private TextBox textBoxV1m1;
         private Label label3;
         private Label label4;
         private Label label5;
@@ -1155,10 +1101,10 @@
         private TextBox textBox15;
         private TextBox textBox16;
         private TextBox textBox17;
-        private TextBox textBox18;
-        private TextBox textBox19;
-        private TextBox textBox20;
-        private TextBox textBox21;
+        private TextBox textBoxML1m2n1;
+        private TextBox textBoxML1m1n3;
+        private TextBox textBoxML1m1n2;
+        private TextBox textBoxML1m1;
         private Label label6;
         private Label label7;
         private TextBox textBox22;
@@ -1181,7 +1127,7 @@
         private TextBox textBox37;
         private TextBox textBox38;
         private TextBox textBox39;
-        private Button button1;
+        private Button buttonCalcMulV1;
         private Button button2;
         private TextBox textBox40;
         private Button button3;
