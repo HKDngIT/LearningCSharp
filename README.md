@@ -23,3 +23,5 @@ This Repository currently contains files for the following projects in C# using 
 - in case of an error, a message box will show up with further detailed information
 
 # Programs for math problems
+## Matrice operations
+![Matrices](/Images/Matrices.jpg)
