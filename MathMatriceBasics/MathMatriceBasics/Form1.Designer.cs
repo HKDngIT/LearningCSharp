@@ -45,8 +45,6 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            this.textBoxML1m3 = new TextBox();
-            this.textBoxML1m2 = new TextBox();
             textBoxML1m1 = new TextBox();
             label6 = new Label();
             label7 = new Label();
@@ -134,6 +132,8 @@
             textBox83 = new TextBox();
             textBox84 = new TextBox();
             textBox85 = new TextBox();
+            textBoxML1m2 = new TextBox();
+            textBoxML1m3 = new TextBox();
             SuspendLayout();
             // 
             // textBoxM1m1n1
@@ -269,20 +269,6 @@
             label5.Size = new Size(56, 86);
             label5.TabIndex = 26;
             label5.Text = "(";
-            // 
-            // textBoxML1m3
-            // 
-            this.textBoxML1m3.Location = new Point(1123, 70);
-            this.textBoxML1m3.Name = "textBoxML1m3";
-            this.textBoxML1m3.Size = new Size(100, 23);
-            this.textBoxML1m3.TabIndex = 23;
-            // 
-            // textBoxML1m2
-            // 
-            this.textBoxML1m2.Location = new Point(1123, 41);
-            this.textBoxML1m2.Name = "textBoxML1m2";
-            this.textBoxML1m2.Size = new Size(100, 23);
-            this.textBoxML1m2.TabIndex = 20;
             // 
             // textBoxML1m1
             // 
@@ -466,6 +452,7 @@
             buttonCalcMulV1.TabIndex = 56;
             buttonCalcMulV1.Text = "=";
             buttonCalcMulV1.UseVisualStyleBackColor = true;
+            buttonCalcMulV1.Click += buttonCalcMulV1_Click;
             // 
             // button2
             // 
@@ -960,11 +947,27 @@
             textBox85.Size = new Size(100, 23);
             textBox85.TabIndex = 98;
             // 
+            // textBoxML1m2
+            // 
+            textBoxML1m2.Location = new Point(1123, 41);
+            textBoxML1m2.Name = "textBoxML1m2";
+            textBoxML1m2.Size = new Size(100, 23);
+            textBoxML1m2.TabIndex = 121;
+            // 
+            // textBoxML1m3
+            // 
+            textBoxML1m3.Location = new Point(1123, 70);
+            textBoxML1m3.Name = "textBoxML1m3";
+            textBoxML1m3.Size = new Size(100, 23);
+            textBoxML1m3.TabIndex = 122;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1569, 786);
+            Controls.Add(textBoxML1m3);
+            Controls.Add(textBoxML1m2);
             Controls.Add(button6);
             Controls.Add(label18);
             Controls.Add(label19);
@@ -1053,8 +1056,6 @@
             Controls.Add(textBox30);
             Controls.Add(label4);
             Controls.Add(label5);
-            Controls.Add(this.textBoxML1m3);
-            Controls.Add(this.textBoxML1m2);
             Controls.Add(textBoxML1m1);
             Controls.Add(label3);
             Controls.Add(textBoxV1m3);
@@ -1191,5 +1192,7 @@
         private TextBox textBox83;
         private TextBox textBox84;
         private TextBox textBox85;
+        private TextBox textBoxML1m2;
+        private TextBox textBoxML1m3;
     }
 }
