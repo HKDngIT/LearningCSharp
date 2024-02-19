@@ -1073,7 +1073,7 @@
             Controls.Add(textBoxM1m1n2);
             Controls.Add(textBoxM1m1n1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Matrice Operations";
             ResumeLayout(false);
             PerformLayout();
         }

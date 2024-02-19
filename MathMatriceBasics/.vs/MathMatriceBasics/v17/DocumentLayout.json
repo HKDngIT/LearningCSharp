@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\MathMatriceBasics\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{57BD0076-3B15-4BFD-865E-14A98257FDA7}|MathMatriceBasics\\MathMatriceBasics.csproj|d:\\productive\\repos\\learningcsharp\\mathmatricebasics\\mathmatricebasics\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{57BD0076-3B15-4BFD-865E-14A98257FDA7}|MathMatriceBasics\\MathMatriceBasics.csproj|solutionrelative:mathmatricebasics\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{57BD0076-3B15-4BFD-865E-14A98257FDA7}|MathMatriceBasics\\MathMatriceBasics.csproj|d:\\productive\\repos\\learningcsharp\\mathmatricebasics\\mathmatricebasics\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{57BD0076-3B15-4BFD-865E-14A98257FDA7}|MathMatriceBasics\\MathMatriceBasics.csproj|solutionrelative:mathmatricebasics\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57BD0076-3B15-4BFD-865E-14A98257FDA7}|MathMatriceBasics\\MathMatriceBasics.csproj|d:\\productive\\repos\\learningcsharp\\mathmatricebasics\\mathmatricebasics\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{57BD0076-3B15-4BFD-865E-14A98257FDA7}|MathMatriceBasics\\MathMatriceBasics.csproj|solutionrelative:mathmatricebasics\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +30,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Entwurf]",
               "DocumentMoniker": "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\MathMatriceBasics\\MathMatriceBasics\\Form1.cs",
               "RelativeDocumentMoniker": "MathMatriceBasics\\Form1.cs",
@@ -42,13 +42,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\MathMatriceBasics\\MathMatriceBasics\\Form1.cs",
               "RelativeDocumentMoniker": "MathMatriceBasics\\Form1.cs",
               "ToolTip": "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\MathMatriceBasics\\MathMatriceBasics\\Form1.cs",
               "RelativeToolTip": "MathMatriceBasics\\Form1.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAiwD8AAAAkAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAowFoAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-17T11:13:15.744Z",
               "EditorCaption": ""
