@@ -65,8 +65,8 @@ namespace MathMatriceBasics
         }
 
         /* MATRIX 1 CHECK
-         * checks if all values in the textboxes for M1 are valid or not
-         * returns true if every input is valid
+         * checks if matrix 1 contains any non numbers
+         * returns true if there is a non number
          * returns false if not
          */
         private bool checkM1HasNonNumber()
@@ -175,9 +175,9 @@ namespace MathMatriceBasics
             return check;
         }
 
-        /* VECTOR 1 CHECK
-         * checks if all values in the textboxes for V1 are valid or not
-         * returns true if every input is valid
+        /* MATRIX 1 CHECK
+         * checks if vector 1 contains any non numbers
+         * returns true if there is a non number
          * returns false if not
          */
         private bool checkV1HasNonNumber()
@@ -220,10 +220,20 @@ namespace MathMatriceBasics
          */
         private void buttonCalcMulV1_Click(object sender, EventArgs e)
         {
-            //checkM1HasNullOrEmpty();
-            //checkM1HasNonNumber();
-            //checkV1HasNullOrEmpty();
-            checkV1HasNonNumber();
+            bool validInputs = true;
+            if(checkM1HasNullOrEmpty() || checkV1HasNullOrEmpty())
+            {
+                validInputs = false;
+            }
+            if (checkM1HasNonNumber() || checkV1HasNonNumber())
+            {
+                validInputs = false;
+            }
+
+            if(validInputs)
+            {
+                MessageBox.Show("INPUTS ARE FINE", "GOOD", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
