@@ -147,7 +147,7 @@ namespace MathMatriceBasics
             return check;
         }
 
-        /*
+        /* VECTOR 1 CHECK
          * checks if the textboxes for vector 1 are empty or not
          * returns true if there is at least one empty text box
          * returns false if there are no empty text boxes
@@ -167,6 +167,48 @@ namespace MathMatriceBasics
             {
                 check = true;
             }
+
+            if (check == true)
+            {
+                MessageBox.Show("VECTOR 1 CONTAINS EMPTY SPACES!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            return check;
+        }
+
+        /* VECTOR 1 CHECK
+         * checks if all values in the textboxes for V1 are valid or not
+         * returns true if every input is valid
+         * returns false if not
+         */
+        private bool checkV1HasNonNumber()
+        {
+            bool check = false;
+            foreach (char c in textBoxV1m1.Text)
+            {
+                if (!char.IsDigit(c) && c != '-' && c != ',')
+                {
+                    check = true;
+                }
+            }
+            foreach (char c in textBoxV1m2.Text)
+            {
+                if (!char.IsDigit(c) && c != '-' && c != ',')
+                {
+                    check = true;
+                }
+            }
+            foreach (char c in textBoxV1m3.Text)
+            {
+                if (!char.IsDigit(c) && c != '-' && c != ',')
+                {
+                    check = true;
+                }
+            }
+
+            if (check == true)
+            {
+                MessageBox.Show("VECTOR 1 CONTAINS NON-DIGITS!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             return check;
         }
 
@@ -179,7 +221,9 @@ namespace MathMatriceBasics
         private void buttonCalcMulV1_Click(object sender, EventArgs e)
         {
             //checkM1HasNullOrEmpty();
-            checkM1HasNonNumber();
+            //checkM1HasNonNumber();
+            //checkV1HasNullOrEmpty();
+            checkV1HasNonNumber();
         }
     }
 }
