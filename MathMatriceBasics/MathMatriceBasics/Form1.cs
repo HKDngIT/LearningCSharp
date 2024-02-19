@@ -8,8 +8,8 @@ namespace MathMatriceBasics
             InitializeComponent();
         }
 
-        // textBox input checks
-        /*####################################################################################################*/
+        // TEXTBOX INPUT CHECKS
+        /*#############################################################################################################################*/
 
         /* MATRIX 1 CHECK
          * checks if the textboxes for matrix 1 are empty or not
@@ -147,9 +147,32 @@ namespace MathMatriceBasics
             return check;
         }
 
+        /*
+         * checks if the textboxes for vector 1 are empty or not
+         * returns true if there is at least one empty text box
+         * returns false if there are no empty text boxes
+         */
+        private bool checkV1HasNullOrEmpty()
+        {
+            bool check = false;
+            if (string.IsNullOrEmpty(textBoxV1m1.Text))
+            {
+                check = true;
+            }
+            if (string.IsNullOrEmpty(textBoxV1m2.Text))
+            {
+                check = true;
+            }
+            if (string.IsNullOrEmpty(textBoxV1m3.Text))
+            {
+                check = true;
+            }
+            return check;
+        }
+
 
         // BUTTON PRESS
-        /*####################################################################################################*/
+        /*#############################################################################################################################*/
         /*
          * BUTTON PRESS handling to multiply matrix with the vector
          */
