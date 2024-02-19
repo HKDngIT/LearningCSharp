@@ -8,6 +8,11 @@ namespace MathMatriceBasics
             InitializeComponent();
         }
 
+        // Variables
+        /*#############################################################################################################################*/
+        double[,] m_matrix1 = new double[3, 3];
+        double[] m_vector1 = new double[3];
+
         // TEXTBOX INPUT CHECKS
         /*#############################################################################################################################*/
 
@@ -212,10 +217,27 @@ namespace MathMatriceBasics
             return check;
         }
 
+        // PROCESS INPUT FROM TEXT BOXES
+        /*#############################################################################################################################*/
+
+        private void processM1()
+        {
+            double.TryParse(textBoxM1m1n1.Text, out m_matrix1[0, 0]);
+            double.TryParse(textBoxM1m1n2.Text, out m_matrix1[0, 1]);
+            double.TryParse(textBoxM1m1n3.Text, out m_matrix1[0, 2]);
+
+            double.TryParse(textBoxM1m2n1.Text, out m_matrix1[1, 0]);
+            double.TryParse(textBoxM1m2n2.Text, out m_matrix1[1, 1]);
+            double.TryParse(textBoxM1m2n3.Text, out m_matrix1[1, 2]);
+
+            double.TryParse(textBoxM1m3n1.Text, out m_matrix1[2, 0]);
+            double.TryParse(textBoxM1m3n2.Text, out m_matrix1[2, 1]);
+            double.TryParse(textBoxM1m3n3.Text, out m_matrix1[2, 2]);
+        }
 
         // BUTTON PRESS
         /*#############################################################################################################################*/
-        
+
         /*
          * BUTTON PRESS handling to multiply matrix with the vector
          */
@@ -233,7 +255,10 @@ namespace MathMatriceBasics
 
             if(validInputs)
             {
-                MessageBox.Show("INPUTS ARE FINE", "GOOD", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                processM1();
+                textBoxVL1m1.Text = m_matrix1[0, 0].ToString();
+                textBoxVL1m2.Text = m_matrix1[1, 0].ToString();
+                textBoxVL1m3.Text = m_matrix1[2, 0].ToString();
             }
         }
     }

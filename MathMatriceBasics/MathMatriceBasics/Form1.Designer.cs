@@ -133,7 +133,7 @@
             textBox84 = new TextBox();
             textBox85 = new TextBox();
             textBoxVL1m2 = new TextBox();
-            f = new TextBox();
+            textBoxVL1m3 = new TextBox();
             SuspendLayout();
             // 
             // textBoxM1m1n1
@@ -954,19 +954,19 @@
             textBoxVL1m2.Size = new Size(100, 23);
             textBoxVL1m2.TabIndex = 121;
             // 
-            // f
+            // textBoxVL1m3
             // 
-            f.Location = new Point(1123, 70);
-            f.Name = "f";
-            f.Size = new Size(100, 23);
-            f.TabIndex = 122;
+            textBoxVL1m3.Location = new Point(1123, 70);
+            textBoxVL1m3.Name = "textBoxVL1m3";
+            textBoxVL1m3.Size = new Size(100, 23);
+            textBoxVL1m3.TabIndex = 122;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1569, 786);
-            Controls.Add(f);
+            Controls.Add(textBoxVL1m3);
             Controls.Add(textBoxVL1m2);
             Controls.Add(button6);
             Controls.Add(label18);
@@ -1193,6 +1193,6 @@
         private TextBox textBox84;
         private TextBox textBox85;
         private TextBox textBoxVL1m2;
-        private TextBox f;
+        private TextBox textBoxVL1m3;
     }
 }
