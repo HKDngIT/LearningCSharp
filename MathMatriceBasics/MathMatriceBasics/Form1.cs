@@ -439,6 +439,9 @@ namespace MathMatriceBasics
             m_matrixL[2, 2] = m_matrix1[2, 0] * m_matrix2[0, 2] + m_matrix1[2, 1] * m_matrix2[1, 2] + m_matrix1[2, 2] * m_matrix2[2, 2];
         }
 
+        /* OPERATION 3
+         * adds matrix 2 to matrix 1
+         */
         private void calculateM1AddM2()
         {
             m_matrixL[0, 0] = m_matrix1[0, 0] + m_matrix2[0, 0];
@@ -539,6 +542,9 @@ namespace MathMatriceBasics
             }
         }
 
+        /*
+         * BUTTON PRESS handling to add matrix 2 to matrix 1
+         */
         private void buttonAddM2_Click(object sender, EventArgs e)
         {
             bool validInputs = true;
