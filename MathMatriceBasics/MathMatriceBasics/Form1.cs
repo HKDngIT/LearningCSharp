@@ -220,6 +220,9 @@ namespace MathMatriceBasics
         // PROCESS INPUT FROM TEXT BOXES
         /*#############################################################################################################################*/
 
+        /* MATRIX 1
+         * writes the value of the textboxes of matrix 1 into the member variables of matrix 1
+         */
         private void processM1()
         {
             double.TryParse(textBoxM1m1n1.Text, out m_matrix1[0, 0]);
@@ -233,6 +236,23 @@ namespace MathMatriceBasics
             double.TryParse(textBoxM1m3n1.Text, out m_matrix1[2, 0]);
             double.TryParse(textBoxM1m3n2.Text, out m_matrix1[2, 1]);
             double.TryParse(textBoxM1m3n3.Text, out m_matrix1[2, 2]);
+        }
+
+        /* VECTOR 1
+         * writes the value of the textboxes of vector 1 into the member variables of vector 1
+         */
+        private void processV1()
+        {
+            double.TryParse(textBoxV1m1.Text, out m_vector1[0]);
+            double.TryParse(textBoxV1m2.Text, out m_vector1[1]);
+            double.TryParse(textBoxV1m2.Text, out m_vector1[2]);
+        }
+
+        // CALCULATIONS
+        /*#############################################################################################################################*/
+        private void calculateM1mulV1()
+        {
+
         }
 
         // BUTTON PRESS
@@ -256,9 +276,7 @@ namespace MathMatriceBasics
             if(validInputs)
             {
                 processM1();
-                textBoxVL1m1.Text = m_matrix1[0, 0].ToString();
-                textBoxVL1m2.Text = m_matrix1[1, 0].ToString();
-                textBoxVL1m3.Text = m_matrix1[2, 0].ToString();
+                processV1();
             }
         }
     }
