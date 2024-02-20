@@ -510,7 +510,17 @@ namespace MathMatriceBasics
 
         private void transpose()
         {
-            
+            double save = m_matrixAdjunct[0, 1];
+            m_matrixAdjunct[0, 1] = m_matrixAdjunct[1, 0];
+            m_matrixAdjunct[1, 0] = save;
+
+            save = m_matrixAdjunct[0, 2];
+            m_matrixAdjunct[0, 2] = m_matrixAdjunct[2, 0];
+            m_matrixAdjunct[2, 0] = save;
+
+            save = m_matrixAdjunct[1, 2];
+            m_matrixAdjunct[1, 2] = m_matrixAdjunct[2, 1];
+            m_matrixAdjunct[2, 1] = save;
         }
 
         private void calculateInverse()
@@ -731,6 +741,7 @@ namespace MathMatriceBasics
                 } else
                 {
                     calculateAdjunct();
+                    transpose();
                     calculateInverse();
                     outputInverse();
                 }
