@@ -48,28 +48,28 @@
             textBoxVL1m1 = new TextBox();
             label6 = new Label();
             label7 = new Label();
-            textBox22 = new TextBox();
-            textBox23 = new TextBox();
-            textBox24 = new TextBox();
-            textBox25 = new TextBox();
-            textBox26 = new TextBox();
-            textBox27 = new TextBox();
-            textBox28 = new TextBox();
-            textBox29 = new TextBox();
-            textBox30 = new TextBox();
+            textBoxM2m3n3 = new TextBox();
+            textBoxM2m3n2 = new TextBox();
+            textBoxM2m3n1 = new TextBox();
+            textBoxM2m2n3 = new TextBox();
+            textBoxM2m2n2 = new TextBox();
+            textBoxM2m2n1 = new TextBox();
+            textBoxM2m1n3 = new TextBox();
+            textBoxM2m1n2 = new TextBox();
+            textBoxM2m1n1 = new TextBox();
             label8 = new Label();
             label9 = new Label();
-            textBox31 = new TextBox();
-            textBox32 = new TextBox();
-            textBox33 = new TextBox();
-            textBox34 = new TextBox();
-            textBox35 = new TextBox();
-            textBox36 = new TextBox();
-            textBox37 = new TextBox();
-            textBox38 = new TextBox();
-            textBox39 = new TextBox();
+            textBoxML1m3n3 = new TextBox();
+            textBoxML1m3n2 = new TextBox();
+            textBoxML1m3n1 = new TextBox();
+            textBoxML1m2n3 = new TextBox();
+            textBoxML1m2n2 = new TextBox();
+            textBoxML1m2n1 = new TextBox();
+            textBoxML1m1n3 = new TextBox();
+            textBoxML1m1n2 = new TextBox();
+            textBoxML1m1n1 = new TextBox();
             buttonCalcMulV1 = new Button();
-            button2 = new Button();
+            buttonCalcMulM2 = new Button();
             textBox40 = new TextBox();
             button3 = new Button();
             label10 = new Label();
@@ -297,68 +297,68 @@
             label7.TabIndex = 43;
             label7.Text = "⋅ (";
             // 
-            // textBox22
+            // textBoxM2m3n3
             // 
-            textBox22.Location = new Point(748, 199);
-            textBox22.Name = "textBox22";
-            textBox22.Size = new Size(100, 23);
-            textBox22.TabIndex = 42;
+            textBoxM2m3n3.Location = new Point(748, 199);
+            textBoxM2m3n3.Name = "textBoxM2m3n3";
+            textBoxM2m3n3.Size = new Size(100, 23);
+            textBoxM2m3n3.TabIndex = 42;
             // 
-            // textBox23
+            // textBoxM2m3n2
             // 
-            textBox23.Location = new Point(642, 199);
-            textBox23.Name = "textBox23";
-            textBox23.Size = new Size(100, 23);
-            textBox23.TabIndex = 41;
+            textBoxM2m3n2.Location = new Point(642, 199);
+            textBoxM2m3n2.Name = "textBoxM2m3n2";
+            textBoxM2m3n2.Size = new Size(100, 23);
+            textBoxM2m3n2.TabIndex = 41;
             // 
-            // textBox24
+            // textBoxM2m3n1
             // 
-            textBox24.Location = new Point(536, 199);
-            textBox24.Name = "textBox24";
-            textBox24.Size = new Size(100, 23);
-            textBox24.TabIndex = 40;
+            textBoxM2m3n1.Location = new Point(536, 199);
+            textBoxM2m3n1.Name = "textBoxM2m3n1";
+            textBoxM2m3n1.Size = new Size(100, 23);
+            textBoxM2m3n1.TabIndex = 40;
             // 
-            // textBox25
+            // textBoxM2m2n3
             // 
-            textBox25.Location = new Point(748, 170);
-            textBox25.Name = "textBox25";
-            textBox25.Size = new Size(100, 23);
-            textBox25.TabIndex = 39;
+            textBoxM2m2n3.Location = new Point(748, 170);
+            textBoxM2m2n3.Name = "textBoxM2m2n3";
+            textBoxM2m2n3.Size = new Size(100, 23);
+            textBoxM2m2n3.TabIndex = 39;
             // 
-            // textBox26
+            // textBoxM2m2n2
             // 
-            textBox26.Location = new Point(642, 170);
-            textBox26.Name = "textBox26";
-            textBox26.Size = new Size(100, 23);
-            textBox26.TabIndex = 38;
+            textBoxM2m2n2.Location = new Point(642, 170);
+            textBoxM2m2n2.Name = "textBoxM2m2n2";
+            textBoxM2m2n2.Size = new Size(100, 23);
+            textBoxM2m2n2.TabIndex = 38;
             // 
-            // textBox27
+            // textBoxM2m2n1
             // 
-            textBox27.Location = new Point(536, 170);
-            textBox27.Name = "textBox27";
-            textBox27.Size = new Size(100, 23);
-            textBox27.TabIndex = 37;
+            textBoxM2m2n1.Location = new Point(536, 170);
+            textBoxM2m2n1.Name = "textBoxM2m2n1";
+            textBoxM2m2n1.Size = new Size(100, 23);
+            textBoxM2m2n1.TabIndex = 37;
             // 
-            // textBox28
+            // textBoxM2m1n3
             // 
-            textBox28.Location = new Point(748, 141);
-            textBox28.Name = "textBox28";
-            textBox28.Size = new Size(100, 23);
-            textBox28.TabIndex = 36;
+            textBoxM2m1n3.Location = new Point(748, 141);
+            textBoxM2m1n3.Name = "textBoxM2m1n3";
+            textBoxM2m1n3.Size = new Size(100, 23);
+            textBoxM2m1n3.TabIndex = 36;
             // 
-            // textBox29
+            // textBoxM2m1n2
             // 
-            textBox29.Location = new Point(642, 141);
-            textBox29.Name = "textBox29";
-            textBox29.Size = new Size(100, 23);
-            textBox29.TabIndex = 35;
+            textBoxM2m1n2.Location = new Point(642, 141);
+            textBoxM2m1n2.Name = "textBoxM2m1n2";
+            textBoxM2m1n2.Size = new Size(100, 23);
+            textBoxM2m1n2.TabIndex = 35;
             // 
-            // textBox30
+            // textBoxM2m1n1
             // 
-            textBox30.Location = new Point(536, 141);
-            textBox30.Name = "textBox30";
-            textBox30.Size = new Size(100, 23);
-            textBox30.TabIndex = 34;
+            textBoxM2m1n1.Location = new Point(536, 141);
+            textBoxM2m1n1.Name = "textBoxM2m1n1";
+            textBoxM2m1n1.Size = new Size(100, 23);
+            textBoxM2m1n1.TabIndex = 34;
             // 
             // label8
             // 
@@ -380,68 +380,68 @@
             label9.TabIndex = 54;
             label9.Text = "(";
             // 
-            // textBox31
+            // textBoxML1m3n3
             // 
-            textBox31.Location = new Point(1335, 199);
-            textBox31.Name = "textBox31";
-            textBox31.Size = new Size(100, 23);
-            textBox31.TabIndex = 53;
+            textBoxML1m3n3.Location = new Point(1335, 199);
+            textBoxML1m3n3.Name = "textBoxML1m3n3";
+            textBoxML1m3n3.Size = new Size(100, 23);
+            textBoxML1m3n3.TabIndex = 53;
             // 
-            // textBox32
+            // textBoxML1m3n2
             // 
-            textBox32.Location = new Point(1229, 199);
-            textBox32.Name = "textBox32";
-            textBox32.Size = new Size(100, 23);
-            textBox32.TabIndex = 52;
+            textBoxML1m3n2.Location = new Point(1229, 199);
+            textBoxML1m3n2.Name = "textBoxML1m3n2";
+            textBoxML1m3n2.Size = new Size(100, 23);
+            textBoxML1m3n2.TabIndex = 52;
             // 
-            // textBox33
+            // textBoxML1m3n1
             // 
-            textBox33.Location = new Point(1123, 199);
-            textBox33.Name = "textBox33";
-            textBox33.Size = new Size(100, 23);
-            textBox33.TabIndex = 51;
+            textBoxML1m3n1.Location = new Point(1123, 199);
+            textBoxML1m3n1.Name = "textBoxML1m3n1";
+            textBoxML1m3n1.Size = new Size(100, 23);
+            textBoxML1m3n1.TabIndex = 51;
             // 
-            // textBox34
+            // textBoxML1m2n3
             // 
-            textBox34.Location = new Point(1335, 170);
-            textBox34.Name = "textBox34";
-            textBox34.Size = new Size(100, 23);
-            textBox34.TabIndex = 50;
+            textBoxML1m2n3.Location = new Point(1335, 170);
+            textBoxML1m2n3.Name = "textBoxML1m2n3";
+            textBoxML1m2n3.Size = new Size(100, 23);
+            textBoxML1m2n3.TabIndex = 50;
             // 
-            // textBox35
+            // textBoxML1m2n2
             // 
-            textBox35.Location = new Point(1229, 170);
-            textBox35.Name = "textBox35";
-            textBox35.Size = new Size(100, 23);
-            textBox35.TabIndex = 49;
+            textBoxML1m2n2.Location = new Point(1229, 170);
+            textBoxML1m2n2.Name = "textBoxML1m2n2";
+            textBoxML1m2n2.Size = new Size(100, 23);
+            textBoxML1m2n2.TabIndex = 49;
             // 
-            // textBox36
+            // textBoxML1m2n1
             // 
-            textBox36.Location = new Point(1123, 170);
-            textBox36.Name = "textBox36";
-            textBox36.Size = new Size(100, 23);
-            textBox36.TabIndex = 48;
+            textBoxML1m2n1.Location = new Point(1123, 170);
+            textBoxML1m2n1.Name = "textBoxML1m2n1";
+            textBoxML1m2n1.Size = new Size(100, 23);
+            textBoxML1m2n1.TabIndex = 48;
             // 
-            // textBox37
+            // textBoxML1m1n3
             // 
-            textBox37.Location = new Point(1335, 141);
-            textBox37.Name = "textBox37";
-            textBox37.Size = new Size(100, 23);
-            textBox37.TabIndex = 47;
+            textBoxML1m1n3.Location = new Point(1335, 141);
+            textBoxML1m1n3.Name = "textBoxML1m1n3";
+            textBoxML1m1n3.Size = new Size(100, 23);
+            textBoxML1m1n3.TabIndex = 47;
             // 
-            // textBox38
+            // textBoxML1m1n2
             // 
-            textBox38.Location = new Point(1229, 141);
-            textBox38.Name = "textBox38";
-            textBox38.Size = new Size(100, 23);
-            textBox38.TabIndex = 46;
+            textBoxML1m1n2.Location = new Point(1229, 141);
+            textBoxML1m1n2.Name = "textBoxML1m1n2";
+            textBoxML1m1n2.Size = new Size(100, 23);
+            textBoxML1m1n2.TabIndex = 46;
             // 
-            // textBox39
+            // textBoxML1m1n1
             // 
-            textBox39.Location = new Point(1123, 141);
-            textBox39.Name = "textBox39";
-            textBox39.Size = new Size(100, 23);
-            textBox39.TabIndex = 45;
+            textBoxML1m1n1.Location = new Point(1123, 141);
+            textBoxML1m1n1.Name = "textBoxML1m1n1";
+            textBoxML1m1n1.Size = new Size(100, 23);
+            textBoxML1m1n1.TabIndex = 45;
             // 
             // buttonCalcMulV1
             // 
@@ -454,15 +454,15 @@
             buttonCalcMulV1.UseVisualStyleBackColor = true;
             buttonCalcMulV1.Click += buttonCalcMulV1_Click;
             // 
-            // button2
+            // buttonCalcMulM2
             // 
-            button2.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(911, 149);
-            button2.Name = "button2";
-            button2.Size = new Size(132, 72);
-            button2.TabIndex = 57;
-            button2.Text = "=";
-            button2.UseVisualStyleBackColor = true;
+            buttonCalcMulM2.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            buttonCalcMulM2.Location = new Point(911, 149);
+            buttonCalcMulM2.Name = "buttonCalcMulM2";
+            buttonCalcMulM2.Size = new Size(132, 72);
+            buttonCalcMulM2.TabIndex = 57;
+            buttonCalcMulM2.Text = "=";
+            buttonCalcMulM2.UseVisualStyleBackColor = true;
             // 
             // textBox40
             // 
@@ -1030,30 +1030,30 @@
             Controls.Add(label10);
             Controls.Add(button3);
             Controls.Add(textBox40);
-            Controls.Add(button2);
+            Controls.Add(buttonCalcMulM2);
             Controls.Add(buttonCalcMulV1);
             Controls.Add(label8);
             Controls.Add(label9);
-            Controls.Add(textBox31);
-            Controls.Add(textBox32);
-            Controls.Add(textBox33);
-            Controls.Add(textBox34);
-            Controls.Add(textBox35);
-            Controls.Add(textBox36);
-            Controls.Add(textBox37);
-            Controls.Add(textBox38);
-            Controls.Add(textBox39);
+            Controls.Add(textBoxML1m3n3);
+            Controls.Add(textBoxML1m3n2);
+            Controls.Add(textBoxML1m3n1);
+            Controls.Add(textBoxML1m2n3);
+            Controls.Add(textBoxML1m2n2);
+            Controls.Add(textBoxML1m2n1);
+            Controls.Add(textBoxML1m1n3);
+            Controls.Add(textBoxML1m1n2);
+            Controls.Add(textBoxML1m1n1);
             Controls.Add(label6);
             Controls.Add(label7);
-            Controls.Add(textBox22);
-            Controls.Add(textBox23);
-            Controls.Add(textBox24);
-            Controls.Add(textBox25);
-            Controls.Add(textBox26);
-            Controls.Add(textBox27);
-            Controls.Add(textBox28);
-            Controls.Add(textBox29);
-            Controls.Add(textBox30);
+            Controls.Add(textBoxM2m3n3);
+            Controls.Add(textBoxM2m3n2);
+            Controls.Add(textBoxM2m3n1);
+            Controls.Add(textBoxM2m2n3);
+            Controls.Add(textBoxM2m2n2);
+            Controls.Add(textBoxM2m2n1);
+            Controls.Add(textBoxM2m1n3);
+            Controls.Add(textBoxM2m1n2);
+            Controls.Add(textBoxM2m1n1);
             Controls.Add(label4);
             Controls.Add(label5);
             Controls.Add(textBoxVL1m1);
@@ -1108,28 +1108,28 @@
         private TextBox textBoxVL1m1;
         private Label label6;
         private Label label7;
-        private TextBox textBox22;
-        private TextBox textBox23;
-        private TextBox textBox24;
-        private TextBox textBox25;
-        private TextBox textBox26;
-        private TextBox textBox27;
-        private TextBox textBox28;
-        private TextBox textBox29;
-        private TextBox textBox30;
+        private TextBox textBoxM2m3n3;
+        private TextBox textBoxM2m3n2;
+        private TextBox textBoxM2m3n1;
+        private TextBox textBoxM2m2n3;
+        private TextBox textBoxM2m2n2;
+        private TextBox textBoxM2m2n1;
+        private TextBox textBoxM2m1n3;
+        private TextBox textBoxM2m1n2;
+        private TextBox textBoxM2m1n1;
         private Label label8;
         private Label label9;
-        private TextBox textBox31;
-        private TextBox textBox32;
-        private TextBox textBox33;
-        private TextBox textBox34;
-        private TextBox textBox35;
-        private TextBox textBox36;
-        private TextBox textBox37;
-        private TextBox textBox38;
-        private TextBox textBox39;
+        private TextBox textBoxML1m3n3;
+        private TextBox textBoxML1m3n2;
+        private TextBox textBoxML1m3n1;
+        private TextBox textBoxML1m2n3;
+        private TextBox textBoxML1m2n2;
+        private TextBox textBoxML1m2n1;
+        private TextBox textBoxML1m1n3;
+        private TextBox textBoxML1m1n2;
+        private TextBox textBoxML1m1n1;
         private Button buttonCalcMulV1;
-        private Button button2;
+        private Button buttonCalcMulM2;
         private TextBox textBox40;
         private Button button3;
         private Label label10;

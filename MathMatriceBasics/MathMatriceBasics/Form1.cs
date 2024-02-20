@@ -265,6 +265,9 @@ namespace MathMatriceBasics
         // OUTPUT
         /*#############################################################################################################################*/
 
+        /* Vector L
+         * writes the contents of vector 1 from the member variable to its textbox
+         */
         private void outputVL()
         {
             textBoxVL1m1.Text = m_vectorL[0].ToString();
