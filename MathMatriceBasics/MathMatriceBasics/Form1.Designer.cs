@@ -87,9 +87,9 @@
             textBoxMLm1n2 = new TextBox();
             textBoxMLm1n3 = new TextBox();
             textBoxMLm2n1 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            button5 = new Button();
+            buttonSubM2 = new Button();
+            buttonAddM2 = new Button();
+            buttonMulM2 = new Button();
             SuspendLayout();
             // 
             // textBoxM1m1n1
@@ -555,44 +555,45 @@
             textBoxMLm2n1.Size = new Size(100, 23);
             textBoxMLm2n1.TabIndex = 125;
             // 
-            // button1
+            // buttonSubM2
             // 
-            button1.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(297, 148);
-            button1.Name = "button1";
-            button1.Size = new Size(132, 72);
-            button1.TabIndex = 126;
-            button1.Text = "-";
-            button1.UseVisualStyleBackColor = true;
+            buttonSubM2.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            buttonSubM2.Location = new Point(297, 148);
+            buttonSubM2.Name = "buttonSubM2";
+            buttonSubM2.Size = new Size(132, 72);
+            buttonSubM2.TabIndex = 126;
+            buttonSubM2.Text = "-";
+            buttonSubM2.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // buttonAddM2
             // 
-            button2.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(159, 148);
-            button2.Name = "button2";
-            button2.Size = new Size(132, 72);
-            button2.TabIndex = 127;
-            button2.Text = "+";
-            button2.UseVisualStyleBackColor = true;
+            buttonAddM2.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            buttonAddM2.Location = new Point(159, 148);
+            buttonAddM2.Name = "buttonAddM2";
+            buttonAddM2.Size = new Size(132, 72);
+            buttonAddM2.TabIndex = 127;
+            buttonAddM2.Text = "+";
+            buttonAddM2.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // buttonMulM2
             // 
-            button5.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button5.Location = new Point(21, 148);
-            button5.Name = "button5";
-            button5.Size = new Size(132, 72);
-            button5.TabIndex = 128;
-            button5.Text = "⋅";
-            button5.UseVisualStyleBackColor = true;
+            buttonMulM2.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            buttonMulM2.Location = new Point(21, 148);
+            buttonMulM2.Name = "buttonMulM2";
+            buttonMulM2.Size = new Size(132, 72);
+            buttonMulM2.TabIndex = 128;
+            buttonMulM2.Text = "⋅";
+            buttonMulM2.UseVisualStyleBackColor = true;
+            buttonMulM2.Click += buttonMulM2_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1569, 492);
-            Controls.Add(button5);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(buttonMulM2);
+            Controls.Add(buttonAddM2);
+            Controls.Add(buttonSubM2);
             Controls.Add(textBoxMLm2n1);
             Controls.Add(textBoxMLm1n3);
             Controls.Add(textBoxMLm1n2);
@@ -727,8 +728,8 @@
         private TextBox textBoxMLm1n2;
         private TextBox textBoxMLm1n3;
         private TextBox textBoxMLm2n1;
-        private Button button1;
-        private Button button2;
-        private Button button5;
+        private Button buttonSubM2;
+        private Button buttonAddM2;
+        private Button buttonMulM2;
     }
 }

@@ -11,13 +11,16 @@ namespace MathMatriceBasics
         // Variables
         /*#############################################################################################################################*/
         double[,] m_matrix1 = new double[3, 3];
+        double[,] m_matrix2 = new double[3, 3];
         double[] m_vector1 = new double[3];
         double[] m_vectorL = new double[3];
 
         // TEXTBOX INPUT CHECKS
         /*#############################################################################################################################*/
 
-        /* MATRIX 1 CHECK
+
+
+        /* MATRIX 1 CHECK (1/2)
          * checks if the textboxes for matrix 1 are empty or not
          * returns true if there is at least one empty text box
          * returns false if there are no empty text boxes
@@ -70,7 +73,61 @@ namespace MathMatriceBasics
             return check;
         }
 
-        /* MATRIX 1 CHECK
+        /* MATRIX 2 CHECK (1/2)
+         * checks if the textboxes for matrix 2 are empty or not
+         * returns true if there is at least one empty text box
+         * returns false if there are no empty text boxes
+         */
+        private bool checkM2HasNullOrEmpty()
+        {
+            bool check = false;
+            if (string.IsNullOrEmpty(textBoxM2m1n1.Text))
+            {
+                check = true;
+            }
+            if (string.IsNullOrEmpty(textBoxM2m1n2.Text))
+            {
+                check = true;
+            }
+            if (string.IsNullOrEmpty(textBoxM2m1n3.Text))
+            {
+                check = true;
+            }
+
+            if (string.IsNullOrEmpty(textBoxM2m2n1.Text))
+            {
+                check = true;
+            }
+            if (string.IsNullOrEmpty(textBoxM2m2n2.Text))
+            {
+                check = true;
+            }
+            if (string.IsNullOrEmpty(textBoxM2m2n3.Text))
+            {
+                check = true;
+            }
+
+            if (string.IsNullOrEmpty(textBoxM2m3n1.Text))
+            {
+                check = true;
+            }
+            if (string.IsNullOrEmpty(textBoxM2m3n2.Text))
+            {
+                check = true;
+            }
+            if (string.IsNullOrEmpty(textBoxM2m3n3.Text))
+            {
+                check = true;
+            }
+
+            if (check == true)
+            {
+                MessageBox.Show("MATRIX 2 CONTAINS EMPTY SPACES!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            return check;
+        }
+
+        /* MATRIX 1 CHECK (2/2)
          * checks if matrix 1 contains any non numbers
          * returns true if there is a non number
          * returns false if not
@@ -153,7 +210,89 @@ namespace MathMatriceBasics
             return check;
         }
 
-        /* VECTOR 1 CHECK
+        /* MATRIX 2 CHECK (2/2)
+         * checks if matrix 2 contains any non numbers
+         * returns true if there is a non number
+         * returns false if not
+         */
+        private bool checkM2HasNonNumber()
+        {
+            bool check = false;
+            foreach (char c in textBoxM2m1n1.Text)
+            {
+                if (!char.IsDigit(c) && c != '-' && c != ',')
+                {
+                    check = true;
+                }
+            }
+            foreach (char c in textBoxM2m1n2.Text)
+            {
+                if (!char.IsDigit(c) && c != '-' && c != ',')
+                {
+                    check = true;
+                }
+            }
+            foreach (char c in textBoxM2m1n3.Text)
+            {
+                if (!char.IsDigit(c) && c != '-' && c != ',')
+                {
+                    check = true;
+                }
+            }
+
+            foreach (char c in textBoxM2m2n1.Text)
+            {
+                if (!char.IsDigit(c) && c != '-' && c != ',')
+                {
+                    check = true;
+                }
+            }
+            foreach (char c in textBoxM2m2n2.Text)
+            {
+                if (!char.IsDigit(c) && c != '-' && c != ',')
+                {
+                    check = true;
+                }
+            }
+            foreach (char c in textBoxM2m2n3.Text)
+            {
+                if (!char.IsDigit(c) && c != '-' && c != ',')
+                {
+                    check = true;
+                }
+            }
+
+            foreach (char c in textBoxM2m3n1.Text)
+            {
+                if (!char.IsDigit(c) && c != '-' && c != ',')
+                {
+                    check = true;
+                }
+            }
+            foreach (char c in textBoxM2m3n2.Text)
+            {
+                if (!char.IsDigit(c) && c != '-' && c != ',')
+                {
+                    check = true;
+                }
+            }
+            foreach (char c in textBoxM2m3n3.Text)
+            {
+                if (!char.IsDigit(c) && c != '-' && c != ',')
+                {
+                    check = true;
+                }
+            }
+
+            if (check == true)
+            {
+                MessageBox.Show("MATRIX 2 CONTAINS NON-DIGITS!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            return check;
+        }
+
+        /* VECTOR 1 CHECK (1/2)
          * checks if the textboxes for vector 1 are empty or not
          * returns true if there is at least one empty text box
          * returns false if there are no empty text boxes
@@ -181,7 +320,7 @@ namespace MathMatriceBasics
             return check;
         }
 
-        /* MATRIX 1 CHECK
+        /* VECTOR 1 CHECK (2/2)
          * checks if vector 1 contains any non numbers
          * returns true if there is a non number
          * returns false if not
@@ -302,6 +441,25 @@ namespace MathMatriceBasics
             }
         }
 
-        
+        /*
+         * BUTTON PRESS handling to multiply matrix with the other matrix
+         */
+        private void buttonMulM2_Click(object sender, EventArgs e)
+        {
+            bool validInputs = true;
+            if (checkM1HasNullOrEmpty() || checkM2HasNullOrEmpty())
+            {
+                validInputs = false;
+            }
+            if (checkM1HasNonNumber() || checkM2HasNonNumber())
+            {
+                validInputs = false;
+            }
+
+            if(validInputs)
+            {
+                MessageBox.Show("ALLGOOD!", "ALLGOOD", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }
