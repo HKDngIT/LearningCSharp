@@ -78,9 +78,9 @@ namespace MathMatriceBasics
         private bool checkM1HasNonNumber()
         {
             bool check = false;
-            foreach(char c in textBoxM1m1n1.Text)
+            foreach (char c in textBoxM1m1n1.Text)
             {
-                if(!char.IsDigit(c) && c != '-' && c != ',')
+                if (!char.IsDigit(c) && c != '-' && c != ',')
                 {
                     check = true;
                 }
@@ -251,7 +251,7 @@ namespace MathMatriceBasics
 
         // CALCULATIONS
         /*#############################################################################################################################*/
-        
+
         /* OPERATION 1
          * multiplies the matrix 1 with vector 1
          */
@@ -284,7 +284,7 @@ namespace MathMatriceBasics
         private void buttonCalcMulV1_Click(object sender, EventArgs e)
         {
             bool validInputs = true;
-            if(checkM1HasNullOrEmpty() || checkV1HasNullOrEmpty())
+            if (checkM1HasNullOrEmpty() || checkV1HasNullOrEmpty())
             {
                 validInputs = false;
             }
@@ -293,13 +293,18 @@ namespace MathMatriceBasics
                 validInputs = false;
             }
 
-            if(validInputs)
+            if (validInputs)
             {
                 processM1();
                 processV1();
                 calculateM1mulV1();
                 outputVL();
             }
+        }
+
+        private void buttonCalcMulM2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
