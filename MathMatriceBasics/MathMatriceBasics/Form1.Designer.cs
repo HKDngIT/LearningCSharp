@@ -66,8 +66,8 @@
             textBoxMLm2n2 = new TextBox();
             textBoxMLm1n1 = new TextBox();
             buttonCalcMulV1 = new Button();
-            textBox40 = new TextBox();
-            button3 = new Button();
+            textBoxDeterminant = new TextBox();
+            buttonDeterminant = new Button();
             label10 = new Label();
             label11 = new Label();
             button4 = new Button();
@@ -389,23 +389,23 @@
             buttonCalcMulV1.UseVisualStyleBackColor = true;
             buttonCalcMulV1.Click += buttonCalcMulV1_Click;
             // 
-            // textBox40
+            // textBoxDeterminant
             // 
-            textBox40.Font = new Font("Segoe UI", 37F);
-            textBox40.Location = new Point(1061, 261);
-            textBox40.Name = "textBox40";
-            textBox40.Size = new Size(464, 73);
-            textBox40.TabIndex = 59;
+            textBoxDeterminant.Font = new Font("Segoe UI", 37F);
+            textBoxDeterminant.Location = new Point(1061, 261);
+            textBoxDeterminant.Name = "textBoxDeterminant";
+            textBoxDeterminant.Size = new Size(464, 73);
+            textBoxDeterminant.TabIndex = 59;
             // 
-            // button3
+            // buttonDeterminant
             // 
-            button3.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.Location = new Point(911, 261);
-            button3.Name = "button3";
-            button3.Size = new Size(132, 73);
-            button3.TabIndex = 60;
-            button3.Text = "=";
-            button3.UseVisualStyleBackColor = true;
+            buttonDeterminant.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            buttonDeterminant.Location = new Point(911, 261);
+            buttonDeterminant.Name = "buttonDeterminant";
+            buttonDeterminant.Size = new Size(132, 73);
+            buttonDeterminant.TabIndex = 60;
+            buttonDeterminant.Text = "=";
+            buttonDeterminant.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -615,8 +615,8 @@
             Controls.Add(button4);
             Controls.Add(label11);
             Controls.Add(label10);
-            Controls.Add(button3);
-            Controls.Add(textBox40);
+            Controls.Add(buttonDeterminant);
+            Controls.Add(textBoxDeterminant);
             Controls.Add(buttonCalcMulV1);
             Controls.Add(label8);
             Controls.Add(label9);
@@ -709,8 +709,8 @@
         private TextBox textBoxMLm2n2;
         private TextBox textBoxMLm1n1;
         private Button buttonCalcMulV1;
-        private TextBox textBox40;
-        private Button button3;
+        private TextBox textBoxDeterminant;
+        private Button buttonDeterminant;
         private Label label10;
         private Label label11;
         private Button button4;
