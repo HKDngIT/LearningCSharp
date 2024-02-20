@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MathMatriceBasics")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+581c85834445f2476e14ae78f64c1a270bfd06db")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+653477f7f8ed6e593703685a15cbee135a5f4f34")]
 [assembly: System.Reflection.AssemblyProductAttribute("MathMatriceBasics")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MathMatriceBasics")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
