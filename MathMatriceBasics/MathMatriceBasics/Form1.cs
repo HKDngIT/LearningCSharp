@@ -17,6 +17,8 @@ namespace MathMatriceBasics
         double[] m_vector1 = new double[3];
         double[] m_vectorL = new double[3];
 
+        double m_determinant;
+
         // TEXTBOX INPUT CHECKS
         /*#############################################################################################################################*/
 
@@ -475,6 +477,21 @@ namespace MathMatriceBasics
             m_matrixL[2, 2] = m_matrix1[2, 2] - m_matrix2[2, 2];
         }
 
+        /* OPERATION 5
+         * calculating the determinant using rule of sarrus
+         */
+        private void calculateDeterminant()
+        {
+            m_determinant = m_matrix1[0, 0] * m_matrix1[1, 1] * m_matrix1[2, 2];
+            m_determinant += m_matrix1[0, 1] * m_matrix1[1, 2] * m_matrix1[2, 0];
+            m_determinant += m_matrix1[0, 2] * m_matrix1[1, 0] * m_matrix1[2, 1];
+
+            m_determinant -= m_matrix1[2, 0] * m_matrix1[1, 1] * m_matrix1[0, 2];
+            m_determinant -= m_matrix1[2, 1] * m_matrix1[1, 2] * m_matrix1[0, 0];
+            m_determinant -= m_matrix1[2, 2] * m_matrix1[1, 0] * m_matrix1[0, 1];
+        }
+
+
         // OUTPUT
         /*#############################################################################################################################*/
 
@@ -507,6 +524,13 @@ namespace MathMatriceBasics
 
         }
 
+        /* Determinant
+         * writes the content of determinant from the member variable to its textbox
+         */
+        private void outputDeterminant()
+        {
+            textBoxDeterminant.Text = m_determinant.ToString();
+        }
         // BUTTON PRESS
         /*#############################################################################################################################*/
 
@@ -605,6 +629,29 @@ namespace MathMatriceBasics
                 processM2();
                 calculateM1SubM2();
                 outputML();
+            }
+        }
+
+        /*
+         * BUTTON PRESS handling to calculate the determinant of matrix 1
+         */
+        private void buttonDeterminant_Click(object sender, EventArgs e)
+        {
+            bool validInputs = true;
+            if(checkM1HasNullOrEmpty())
+            {
+                validInputs = false;
+            }
+            if(checkM1HasNonNumber())
+            {
+                validInputs = false;
+            }
+
+            if(validInputs)
+            {
+                processM1();
+                calculateDeterminant();
+                outputDeterminant();
             }
         }
     }

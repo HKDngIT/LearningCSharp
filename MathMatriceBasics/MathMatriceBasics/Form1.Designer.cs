@@ -406,6 +406,7 @@
             buttonDeterminant.TabIndex = 60;
             buttonDeterminant.Text = "=";
             buttonDeterminant.UseVisualStyleBackColor = true;
+            buttonDeterminant.Click += buttonDeterminant_Click;
             // 
             // label10
             // 
