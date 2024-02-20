@@ -380,6 +380,9 @@ namespace MathMatriceBasics
             double.TryParse(textBoxM1m3n3.Text, out m_matrix1[2, 2]);
         }
 
+        /* MATRIX 2
+         * writes the value of the textboxes of matrix 2 into the member variable of matrix 2
+         */
         private void processM2()
         {
             double.TryParse(textBoxM2m1n1.Text, out m_matrix2[0, 0]);
@@ -418,6 +421,9 @@ namespace MathMatriceBasics
             m_vectorL[2] = m_matrix1[2, 0] * m_vector1[0] + m_matrix1[2, 1] * m_vector1[1] + m_matrix1[2, 2] * m_vector1[2];
         }
 
+        /* OPERATION 2
+         * multiplies the matrix 1 with matrix 2
+         */
         private void calculateM1MulM2()
         {
             m_matrixL[0, 0] = m_matrix1[0, 0] * m_matrix2[0, 0] + m_matrix1[0, 1] * m_matrix2[1, 0] + m_matrix1[0, 2] * m_matrix2[2, 0];
@@ -437,7 +443,7 @@ namespace MathMatriceBasics
         /*#############################################################################################################################*/
 
         /* Vector L
-         * writes the contents of vector 1 from the member variable to its textbox
+         * writes the contents of vector L from the member variable to its textboxes
          */
         private void outputVL()
         {
@@ -446,6 +452,9 @@ namespace MathMatriceBasics
             textBoxVL1m3.Text = m_vectorL[2].ToString();
         }
 
+        /* Matrix L
+         * writes the contents of Matrix L from the member variable to its textboxes
+         */
         private void outputML()
         {
             textBoxMLm1n1.Text = m_matrixL[0, 0].ToString();
@@ -489,6 +498,8 @@ namespace MathMatriceBasics
             }
         }
 
+        //MessageBox.Show("ALLGOOD!", "ALLGOOD", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         /*
          * BUTTON PRESS handling to multiply matrix with the other matrix
          */
@@ -506,7 +517,6 @@ namespace MathMatriceBasics
 
             if(validInputs)
             {
-                //MessageBox.Show("ALLGOOD!", "ALLGOOD", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 processM1();
                 processM2();
                 calculateM1MulM2();
