@@ -493,6 +493,9 @@ namespace MathMatriceBasics
             m_determinant -= m_matrix1[2, 2] * m_matrix1[1, 0] * m_matrix1[0, 1];
         }
 
+        /* OPERATION 6
+         * calculating the adjunct without transpose
+         */
         private void calculateAdjunct()
         {
             m_matrixAdjunct[0, 0] = (m_matrix1[1, 1] * m_matrix1[2, 2]) - (m_matrix1[1, 2] * m_matrix1[2, 1]);
@@ -508,6 +511,9 @@ namespace MathMatriceBasics
             m_matrixAdjunct[2, 2] = (m_matrix1[0, 0] * m_matrix1[1, 1]) - (m_matrix1[0, 1] * m_matrix1[1, 0]);
         }
 
+        /* OPERATION 6
+         * transposes the adjunct for real adjunct matrix
+         */
         private void transpose()
         {
             double save = m_matrixAdjunct[0, 1];
@@ -523,6 +529,9 @@ namespace MathMatriceBasics
             m_matrixAdjunct[2, 1] = save;
         }
 
+        /* OPERATION 6
+         * calculates the inverse using the determinant
+         */
         private void calculateInverse()
         {
             m_matrixInverse[0, 0] = 1.0 / m_determinant * m_matrixAdjunct[0, 0];
@@ -579,6 +588,9 @@ namespace MathMatriceBasics
             textBoxDeterminant.Text = m_determinant.ToString();
         }
 
+        /* Inverse
+         * writes the content of the inverse from the member variable to its textbox
+         */
         private void outputInverse()
         {
             textBoxMInvm1n1.Text = m_matrixInverse[0, 0].ToString();
@@ -716,7 +728,9 @@ namespace MathMatriceBasics
                 outputDeterminant();
             }
         }
-
+        /*
+         * BUTTON PRESS handling to calculate the inverse of matrix 1
+         */
         private void buttonInverse_Click(object sender, EventArgs e)
         {
             bool validInputs = true;
