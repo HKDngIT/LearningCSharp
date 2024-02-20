@@ -12,6 +12,8 @@ namespace MathMatriceBasics
         /*#############################################################################################################################*/
         double[,] m_matrix1 = new double[3, 3];
         double[,] m_matrix2 = new double[3, 3];
+        double[,] m_matrixL = new double[3, 3];
+
         double[] m_vector1 = new double[3];
         double[] m_vectorL = new double[3];
 
@@ -378,6 +380,21 @@ namespace MathMatriceBasics
             double.TryParse(textBoxM1m3n3.Text, out m_matrix1[2, 2]);
         }
 
+        private void processM2()
+        {
+            double.TryParse(textBoxM2m1n1.Text, out m_matrix2[0, 0]);
+            double.TryParse(textBoxM2m1n2.Text, out m_matrix2[0, 1]);
+            double.TryParse(textBoxM2m1n3.Text, out m_matrix2[0, 2]);
+
+            double.TryParse(textBoxM2m2n1.Text, out m_matrix2[1, 0]);
+            double.TryParse(textBoxM2m2n2.Text, out m_matrix2[1, 1]);
+            double.TryParse(textBoxM2m2n3.Text, out m_matrix2[1, 2]);
+
+            double.TryParse(textBoxM2m3n1.Text, out m_matrix2[2, 0]);
+            double.TryParse(textBoxM2m3n2.Text, out m_matrix2[2, 1]);
+            double.TryParse(textBoxM2m3n3.Text, out m_matrix2[2, 2]);
+        }
+
         /* VECTOR 1
          * writes the value of the textboxes of vector 1 into the member variables of vector 1
          */
@@ -401,6 +418,21 @@ namespace MathMatriceBasics
             m_vectorL[2] = m_matrix1[2, 0] * m_vector1[0] + m_matrix1[2, 1] * m_vector1[1] + m_matrix1[2, 2] * m_vector1[2];
         }
 
+        private void calculateM1MulM2()
+        {
+            m_matrixL[0, 0] = m_matrix1[0, 0] * m_matrix2[0, 0] + m_matrix1[0, 1] * m_matrix2[1, 0] + m_matrix1[0, 2] * m_matrix2[2, 0];
+            m_matrixL[1, 0] = m_matrix1[1, 0] * m_matrix2[0, 0] + m_matrix1[1, 1] * m_matrix2[1, 0] + m_matrix1[1, 2] * m_matrix2[2, 0];
+            m_matrixL[2, 0] = m_matrix1[2, 0] * m_matrix2[0, 0] + m_matrix1[2, 1] * m_matrix2[1, 0] + m_matrix1[2, 2] * m_matrix2[2, 0];
+
+            m_matrixL[0, 1] = m_matrix1[0, 0] * m_matrix2[0, 1] + m_matrix1[0, 1] * m_matrix2[1, 1] + m_matrix1[0, 2] * m_matrix2[2, 1];
+            m_matrixL[1, 1] = m_matrix1[1, 0] * m_matrix2[0, 1] + m_matrix1[1, 1] * m_matrix2[1, 1] + m_matrix1[1, 2] * m_matrix2[2, 1];
+            m_matrixL[2, 1] = m_matrix1[2, 0] * m_matrix2[0, 1] + m_matrix1[2, 1] * m_matrix2[1, 1] + m_matrix1[2, 2] * m_matrix2[2, 1];
+
+            m_matrixL[0, 2] = m_matrix1[0, 0] * m_matrix2[0, 2] + m_matrix1[0, 1] * m_matrix2[1, 2] + m_matrix1[0, 2] * m_matrix2[2, 2];
+            m_matrixL[1, 2] = m_matrix1[1, 0] * m_matrix2[0, 2] + m_matrix1[1, 1] * m_matrix2[1, 2] + m_matrix1[1, 2] * m_matrix2[2, 2];
+            m_matrixL[2, 2] = m_matrix1[2, 0] * m_matrix2[0, 2] + m_matrix1[2, 1] * m_matrix2[1, 2] + m_matrix1[2, 2] * m_matrix2[2, 2];
+        }
+
         // OUTPUT
         /*#############################################################################################################################*/
 
@@ -412,6 +444,22 @@ namespace MathMatriceBasics
             textBoxVL1m1.Text = m_vectorL[0].ToString();
             textBoxVL1m2.Text = m_vectorL[1].ToString();
             textBoxVL1m3.Text = m_vectorL[2].ToString();
+        }
+
+        private void outputML()
+        {
+            textBoxMLm1n1.Text = m_matrixL[0, 0].ToString();
+            textBoxMLm1n2.Text = m_matrixL[0, 1].ToString();
+            textBoxMLm1n3.Text = m_matrixL[0, 2].ToString();
+
+            textBoxMLm2n1.Text = m_matrixL[1, 0].ToString();
+            textBoxMLm2n2.Text = m_matrixL[1, 1].ToString();
+            textBoxMLm2n3.Text = m_matrixL[1, 2].ToString();
+
+            textBoxMLm3n1.Text = m_matrixL[2, 0].ToString();
+            textBoxMLm3n2.Text = m_matrixL[2, 1].ToString();
+            textBoxMLm3n3.Text = m_matrixL[2, 2].ToString();
+
         }
 
         // BUTTON PRESS
@@ -458,7 +506,11 @@ namespace MathMatriceBasics
 
             if(validInputs)
             {
-                MessageBox.Show("ALLGOOD!", "ALLGOOD", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("ALLGOOD!", "ALLGOOD", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                processM1();
+                processM2();
+                calculateM1MulM2();
+                outputML();
             }
         }
     }
