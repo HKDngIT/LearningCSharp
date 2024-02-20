@@ -70,18 +70,18 @@
             buttonDeterminant = new Button();
             label10 = new Label();
             label11 = new Label();
-            button4 = new Button();
+            buttonInverse = new Button();
             label12 = new Label();
             label13 = new Label();
-            textBox41 = new TextBox();
-            textBox42 = new TextBox();
-            textBox43 = new TextBox();
-            textBox44 = new TextBox();
-            textBox45 = new TextBox();
-            textBox46 = new TextBox();
-            textBox47 = new TextBox();
-            textBox48 = new TextBox();
-            textBox49 = new TextBox();
+            textBoxMInvm3n3 = new TextBox();
+            textBoxMInvm3n2 = new TextBox();
+            textBoxMInvm3n1 = new TextBox();
+            textBoxMInvm2n3 = new TextBox();
+            textBoxMInvm2n2 = new TextBox();
+            textBoxMInvm2n1 = new TextBox();
+            textBoxMInvm1n3 = new TextBox();
+            textBoxMInvm1n2 = new TextBox();
+            textBoxMInvm1n1 = new TextBox();
             textBoxVL1m2 = new TextBox();
             textBoxVL1m3 = new TextBox();
             textBoxMLm1n2 = new TextBox();
@@ -429,15 +429,16 @@
             label11.TabIndex = 62;
             label11.Text = "Inverse";
             // 
-            // button4
+            // buttonInverse
             // 
-            button4.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.Location = new Point(911, 381);
-            button4.Name = "button4";
-            button4.Size = new Size(132, 73);
-            button4.TabIndex = 63;
-            button4.Text = "=";
-            button4.UseVisualStyleBackColor = true;
+            buttonInverse.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            buttonInverse.Location = new Point(911, 381);
+            buttonInverse.Name = "buttonInverse";
+            buttonInverse.Size = new Size(132, 73);
+            buttonInverse.TabIndex = 63;
+            buttonInverse.Text = "=";
+            buttonInverse.UseVisualStyleBackColor = true;
+            buttonInverse.Click += buttonInverse_Click;
             // 
             // label12
             // 
@@ -459,68 +460,68 @@
             label13.TabIndex = 73;
             label13.Text = "(";
             // 
-            // textBox41
+            // textBoxMInvm3n3
             // 
-            textBox41.Location = new Point(1335, 438);
-            textBox41.Name = "textBox41";
-            textBox41.Size = new Size(100, 23);
-            textBox41.TabIndex = 72;
+            textBoxMInvm3n3.Location = new Point(1335, 438);
+            textBoxMInvm3n3.Name = "textBoxMInvm3n3";
+            textBoxMInvm3n3.Size = new Size(100, 23);
+            textBoxMInvm3n3.TabIndex = 72;
             // 
-            // textBox42
+            // textBoxMInvm3n2
             // 
-            textBox42.Location = new Point(1229, 438);
-            textBox42.Name = "textBox42";
-            textBox42.Size = new Size(100, 23);
-            textBox42.TabIndex = 71;
+            textBoxMInvm3n2.Location = new Point(1229, 438);
+            textBoxMInvm3n2.Name = "textBoxMInvm3n2";
+            textBoxMInvm3n2.Size = new Size(100, 23);
+            textBoxMInvm3n2.TabIndex = 71;
             // 
-            // textBox43
+            // textBoxMInvm3n1
             // 
-            textBox43.Location = new Point(1123, 438);
-            textBox43.Name = "textBox43";
-            textBox43.Size = new Size(100, 23);
-            textBox43.TabIndex = 70;
+            textBoxMInvm3n1.Location = new Point(1123, 438);
+            textBoxMInvm3n1.Name = "textBoxMInvm3n1";
+            textBoxMInvm3n1.Size = new Size(100, 23);
+            textBoxMInvm3n1.TabIndex = 70;
             // 
-            // textBox44
+            // textBoxMInvm2n3
             // 
-            textBox44.Location = new Point(1335, 409);
-            textBox44.Name = "textBox44";
-            textBox44.Size = new Size(100, 23);
-            textBox44.TabIndex = 69;
+            textBoxMInvm2n3.Location = new Point(1335, 409);
+            textBoxMInvm2n3.Name = "textBoxMInvm2n3";
+            textBoxMInvm2n3.Size = new Size(100, 23);
+            textBoxMInvm2n3.TabIndex = 69;
             // 
-            // textBox45
+            // textBoxMInvm2n2
             // 
-            textBox45.Location = new Point(1229, 409);
-            textBox45.Name = "textBox45";
-            textBox45.Size = new Size(100, 23);
-            textBox45.TabIndex = 68;
+            textBoxMInvm2n2.Location = new Point(1229, 409);
+            textBoxMInvm2n2.Name = "textBoxMInvm2n2";
+            textBoxMInvm2n2.Size = new Size(100, 23);
+            textBoxMInvm2n2.TabIndex = 68;
             // 
-            // textBox46
+            // textBoxMInvm2n1
             // 
-            textBox46.Location = new Point(1123, 409);
-            textBox46.Name = "textBox46";
-            textBox46.Size = new Size(100, 23);
-            textBox46.TabIndex = 67;
+            textBoxMInvm2n1.Location = new Point(1123, 409);
+            textBoxMInvm2n1.Name = "textBoxMInvm2n1";
+            textBoxMInvm2n1.Size = new Size(100, 23);
+            textBoxMInvm2n1.TabIndex = 67;
             // 
-            // textBox47
+            // textBoxMInvm1n3
             // 
-            textBox47.Location = new Point(1335, 380);
-            textBox47.Name = "textBox47";
-            textBox47.Size = new Size(100, 23);
-            textBox47.TabIndex = 66;
+            textBoxMInvm1n3.Location = new Point(1335, 380);
+            textBoxMInvm1n3.Name = "textBoxMInvm1n3";
+            textBoxMInvm1n3.Size = new Size(100, 23);
+            textBoxMInvm1n3.TabIndex = 66;
             // 
-            // textBox48
+            // textBoxMInvm1n2
             // 
-            textBox48.Location = new Point(1229, 380);
-            textBox48.Name = "textBox48";
-            textBox48.Size = new Size(100, 23);
-            textBox48.TabIndex = 65;
+            textBoxMInvm1n2.Location = new Point(1229, 380);
+            textBoxMInvm1n2.Name = "textBoxMInvm1n2";
+            textBoxMInvm1n2.Size = new Size(100, 23);
+            textBoxMInvm1n2.TabIndex = 65;
             // 
-            // textBox49
+            // textBoxMInvm1n1
             // 
-            textBox49.Location = new Point(1123, 380);
-            textBox49.Name = "textBox49";
-            textBox49.Size = new Size(100, 23);
-            textBox49.TabIndex = 64;
+            textBoxMInvm1n1.Location = new Point(1123, 380);
+            textBoxMInvm1n1.Name = "textBoxMInvm1n1";
+            textBoxMInvm1n1.Size = new Size(100, 23);
+            textBoxMInvm1n1.TabIndex = 64;
             // 
             // textBoxVL1m2
             // 
@@ -616,16 +617,16 @@
             Controls.Add(textBoxVL1m2);
             Controls.Add(label12);
             Controls.Add(label13);
-            Controls.Add(textBox41);
-            Controls.Add(textBox42);
-            Controls.Add(textBox43);
-            Controls.Add(textBox44);
-            Controls.Add(textBox45);
-            Controls.Add(textBox46);
-            Controls.Add(textBox47);
-            Controls.Add(textBox48);
-            Controls.Add(textBox49);
-            Controls.Add(button4);
+            Controls.Add(textBoxMInvm3n3);
+            Controls.Add(textBoxMInvm3n2);
+            Controls.Add(textBoxMInvm3n1);
+            Controls.Add(textBoxMInvm2n3);
+            Controls.Add(textBoxMInvm2n2);
+            Controls.Add(textBoxMInvm2n1);
+            Controls.Add(textBoxMInvm1n3);
+            Controls.Add(textBoxMInvm1n2);
+            Controls.Add(textBoxMInvm1n1);
+            Controls.Add(buttonInverse);
             Controls.Add(label11);
             Controls.Add(label10);
             Controls.Add(buttonDeterminant);
@@ -726,18 +727,18 @@
         private Button buttonDeterminant;
         private Label label10;
         private Label label11;
-        private Button button4;
+        private Button buttonInverse;
         private Label label12;
         private Label label13;
-        private TextBox textBox41;
-        private TextBox textBox42;
-        private TextBox textBox43;
-        private TextBox textBox44;
-        private TextBox textBox45;
-        private TextBox textBox46;
-        private TextBox textBox47;
-        private TextBox textBox48;
-        private TextBox textBox49;
+        private TextBox textBoxMInvm3n3;
+        private TextBox textBoxMInvm3n2;
+        private TextBox textBoxMInvm3n1;
+        private TextBox textBoxMInvm2n3;
+        private TextBox textBoxMInvm2n2;
+        private TextBox textBoxMInvm2n1;
+        private TextBox textBoxMInvm1n3;
+        private TextBox textBoxMInvm1n2;
+        private TextBox textBoxMInvm1n1;
         private TextBox textBoxVL1m2;
         private TextBox textBoxVL1m3;
         private TextBox textBoxMLm1n2;

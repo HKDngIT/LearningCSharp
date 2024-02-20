@@ -13,6 +13,8 @@ namespace MathMatriceBasics
         double[,] m_matrix1 = new double[3, 3];
         double[,] m_matrix2 = new double[3, 3];
         double[,] m_matrixL = new double[3, 3];
+        double[,] m_matrixAdjunct = new double[3, 3];
+        double[,] m_matrixInverse = new double[3, 3];
 
         double[] m_vector1 = new double[3];
         double[] m_vectorL = new double[3];
@@ -491,6 +493,41 @@ namespace MathMatriceBasics
             m_determinant -= m_matrix1[2, 2] * m_matrix1[1, 0] * m_matrix1[0, 1];
         }
 
+        private void calculateAdjunct()
+        {
+            m_matrixAdjunct[0, 0] = (m_matrix1[1, 1] * m_matrix1[2, 2]) - (m_matrix1[1, 2] * m_matrix1[2, 1]);
+            m_matrixAdjunct[0, 1] = -((m_matrix1[1, 0] * m_matrix1[2, 2]) - (m_matrix1[1, 2] * m_matrix1[2, 0]));
+            m_matrixAdjunct[0, 2] = (m_matrix1[1, 0] * m_matrix1[2, 1]) - (m_matrix1[1, 1] * m_matrix1[2, 0]);
+
+            m_matrixAdjunct[1, 0] = -((m_matrix1[0, 1] * m_matrix1[2, 2]) - (m_matrix1[0, 2] * m_matrix1[2, 1]));
+            m_matrixAdjunct[1, 1] = (m_matrix1[0, 0] * m_matrix1[2, 2]) - (m_matrix1[0, 2] * m_matrix1[2, 0]);
+            m_matrixAdjunct[1, 2] = -((m_matrix1[0, 0] * m_matrix1[2, 1]) - (m_matrix1[0, 1] * m_matrix1[2, 0]));
+
+            m_matrixAdjunct[2, 0] = (m_matrix1[0, 1] * m_matrix1[1, 2]) - (m_matrix1[0, 2] * m_matrix1[1, 1]);
+            m_matrixAdjunct[2, 1] = -((m_matrix1[0, 0] * m_matrix1[1, 2]) - (m_matrix1[0, 2] * m_matrix1[1, 0]));
+            m_matrixAdjunct[2, 2] = (m_matrix1[0, 0] * m_matrix1[1, 1]) - (m_matrix1[0, 1] * m_matrix1[1, 0]);
+        }
+
+        private void transpose()
+        {
+            
+        }
+
+        private void calculateInverse()
+        {
+            m_matrixInverse[0, 0] = 1.0 / m_determinant * m_matrixAdjunct[0, 0];
+            m_matrixInverse[0, 1] = 1.0 / m_determinant * m_matrixAdjunct[0, 1];
+            m_matrixInverse[0, 2] = 1.0 / m_determinant * m_matrixAdjunct[0, 2];
+
+            m_matrixInverse[1, 0] = 1.0 / m_determinant * m_matrixAdjunct[1, 0];
+            m_matrixInverse[1, 1] = 1.0 / m_determinant * m_matrixAdjunct[1, 1];
+            m_matrixInverse[1, 2] = 1.0 / m_determinant * m_matrixAdjunct[1, 2];
+
+            m_matrixInverse[2, 0] = 1.0 / m_determinant * m_matrixAdjunct[2, 0];
+            m_matrixInverse[2, 1] = 1.0 / m_determinant * m_matrixAdjunct[2, 1];
+            m_matrixInverse[2, 2] = 1.0 / m_determinant * m_matrixAdjunct[2, 2];
+        }
+
 
         // OUTPUT
         /*#############################################################################################################################*/
@@ -530,6 +567,21 @@ namespace MathMatriceBasics
         private void outputDeterminant()
         {
             textBoxDeterminant.Text = m_determinant.ToString();
+        }
+
+        private void outputInverse()
+        {
+            textBoxMInvm1n1.Text = m_matrixInverse[0, 0].ToString();
+            textBoxMInvm1n2.Text = m_matrixInverse[0, 1].ToString();
+            textBoxMInvm1n3.Text = m_matrixInverse[0, 2].ToString();
+
+            textBoxMInvm2n1.Text = m_matrixInverse[1, 0].ToString();
+            textBoxMInvm2n2.Text = m_matrixInverse[1, 1].ToString();
+            textBoxMInvm2n3.Text = m_matrixInverse[1, 2].ToString();
+
+            textBoxMInvm3n1.Text = m_matrixInverse[2, 0].ToString();
+            textBoxMInvm3n2.Text = m_matrixInverse[2, 1].ToString();
+            textBoxMInvm3n3.Text = m_matrixInverse[2, 2].ToString();
         }
         // BUTTON PRESS
         /*#############################################################################################################################*/
@@ -638,20 +690,50 @@ namespace MathMatriceBasics
         private void buttonDeterminant_Click(object sender, EventArgs e)
         {
             bool validInputs = true;
-            if(checkM1HasNullOrEmpty())
+            if (checkM1HasNullOrEmpty())
             {
                 validInputs = false;
             }
-            if(checkM1HasNonNumber())
+            if (checkM1HasNonNumber())
             {
                 validInputs = false;
             }
 
-            if(validInputs)
+            if (validInputs)
             {
                 processM1();
                 calculateDeterminant();
                 outputDeterminant();
+            }
+        }
+
+        private void buttonInverse_Click(object sender, EventArgs e)
+        {
+            bool validInputs = true;
+            if (checkM1HasNullOrEmpty())
+            {
+                validInputs = false;
+            }
+            if (checkM1HasNonNumber())
+            {
+                validInputs = false;
+            }
+
+            if (validInputs)
+            {
+                processM1();
+                calculateDeterminant();
+                outputDeterminant();
+
+                if(m_determinant == 0)
+                {
+                    MessageBox.Show("DETERMINANT IS '0' - THERE IS NO INVERSE!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                } else
+                {
+                    calculateAdjunct();
+                    calculateInverse();
+                    outputInverse();
+                }
             }
         }
     }
