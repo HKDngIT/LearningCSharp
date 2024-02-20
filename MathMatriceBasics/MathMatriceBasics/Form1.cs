@@ -12,6 +12,7 @@ namespace MathMatriceBasics
         /*#############################################################################################################################*/
         double[,] m_matrix1 = new double[3, 3];
         double[] m_vector1 = new double[3];
+        double[] m_vectorL = new double[3];
 
         // TEXTBOX INPUT CHECKS
         /*#############################################################################################################################*/
@@ -245,14 +246,30 @@ namespace MathMatriceBasics
         {
             double.TryParse(textBoxV1m1.Text, out m_vector1[0]);
             double.TryParse(textBoxV1m2.Text, out m_vector1[1]);
-            double.TryParse(textBoxV1m2.Text, out m_vector1[2]);
+            double.TryParse(textBoxV1m3.Text, out m_vector1[2]);
         }
 
         // CALCULATIONS
         /*#############################################################################################################################*/
+        
+        /* OPERATION 1
+         * multiplies the matrix 1 with vector 1
+         */
         private void calculateM1mulV1()
         {
+            m_vectorL[0] = m_matrix1[0, 0] * m_vector1[0] + m_matrix1[0, 1] * m_vector1[1] + m_matrix1[0, 2] * m_vector1[2];
+            m_vectorL[1] = m_matrix1[1, 0] * m_vector1[0] + m_matrix1[1, 1] * m_vector1[1] + m_matrix1[1, 2] * m_vector1[2];
+            m_vectorL[2] = m_matrix1[2, 0] * m_vector1[0] + m_matrix1[2, 1] * m_vector1[1] + m_matrix1[2, 2] * m_vector1[2];
+        }
 
+        // OUTPUT
+        /*#############################################################################################################################*/
+
+        private void outputVL()
+        {
+            textBoxVL1m1.Text = m_vectorL[0].ToString();
+            textBoxVL1m2.Text = m_vectorL[1].ToString();
+            textBoxVL1m3.Text = m_vectorL[2].ToString();
         }
 
         // BUTTON PRESS
@@ -277,6 +294,8 @@ namespace MathMatriceBasics
             {
                 processM1();
                 processV1();
+                calculateM1mulV1();
+                outputVL();
             }
         }
     }
