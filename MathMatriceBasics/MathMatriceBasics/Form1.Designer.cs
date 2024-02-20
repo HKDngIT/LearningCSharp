@@ -90,6 +90,7 @@
             buttonSubM2 = new Button();
             buttonAddM2 = new Button();
             buttonMulM2 = new Button();
+            label14 = new Label();
             SuspendLayout();
             // 
             // textBoxM1m1n1
@@ -589,11 +590,22 @@
             buttonMulM2.UseVisualStyleBackColor = true;
             buttonMulM2.Click += buttonMulM2_Click;
             // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.Location = new Point(21, 261);
+            label14.Name = "label14";
+            label14.Size = new Size(415, 37);
+            label14.TabIndex = 129;
+            label14.Text = "Use ',' instead of '.' for comma!";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1569, 492);
+            Controls.Add(label14);
             Controls.Add(buttonMulM2);
             Controls.Add(buttonAddM2);
             Controls.Add(buttonSubM2);
@@ -734,5 +746,6 @@
         private Button buttonSubM2;
         private Button buttonAddM2;
         private Button buttonMulM2;
+        private Label label14;
     }
 }
