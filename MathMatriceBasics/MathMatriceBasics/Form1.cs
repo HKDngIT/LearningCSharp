@@ -439,6 +439,21 @@ namespace MathMatriceBasics
             m_matrixL[2, 2] = m_matrix1[2, 0] * m_matrix2[0, 2] + m_matrix1[2, 1] * m_matrix2[1, 2] + m_matrix1[2, 2] * m_matrix2[2, 2];
         }
 
+        private void calculateM1AddM2()
+        {
+            m_matrixL[0, 0] = m_matrix1[0, 0] + m_matrix2[0, 0];
+            m_matrixL[1, 0] = m_matrix1[1, 0] + m_matrix2[1, 0];
+            m_matrixL[2, 0] = m_matrix1[2, 0] + m_matrix2[2, 0];
+
+            m_matrixL[0, 1] = m_matrix1[0, 1] + m_matrix2[0, 1];
+            m_matrixL[1, 1] = m_matrix1[1, 1] + m_matrix2[1, 1];
+            m_matrixL[2, 1] = m_matrix1[2, 1] + m_matrix2[2, 1];
+
+            m_matrixL[0, 2] = m_matrix1[0, 2] + m_matrix2[0, 2];
+            m_matrixL[1, 2] = m_matrix1[1, 2] + m_matrix2[1, 2];
+            m_matrixL[2, 2] = m_matrix1[2, 2] + m_matrix2[2, 2];
+        }
+
         // OUTPUT
         /*#############################################################################################################################*/
 
@@ -515,13 +530,39 @@ namespace MathMatriceBasics
                 validInputs = false;
             }
 
-            if(validInputs)
+            if (validInputs)
             {
                 processM1();
                 processM2();
                 calculateM1MulM2();
                 outputML();
             }
+        }
+
+        private void buttonAddM2_Click(object sender, EventArgs e)
+        {
+            bool validInputs = true;
+            if (checkM1HasNullOrEmpty() || checkM2HasNullOrEmpty())
+            {
+                validInputs = false;
+            }
+            if (checkM1HasNonNumber() || checkM2HasNonNumber())
+            {
+                validInputs = false;
+            }
+
+            if (validInputs)
+            {
+                processM1();
+                processM2();
+                calculateM1AddM2();
+                outputML();
+            }
+        }
+
+        private void buttonSubM2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

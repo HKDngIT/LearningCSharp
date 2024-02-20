@@ -564,6 +564,7 @@
             buttonSubM2.TabIndex = 126;
             buttonSubM2.Text = "-";
             buttonSubM2.UseVisualStyleBackColor = true;
+            buttonSubM2.Click += buttonSubM2_Click;
             // 
             // buttonAddM2
             // 
@@ -574,6 +575,7 @@
             buttonAddM2.TabIndex = 127;
             buttonAddM2.Text = "+";
             buttonAddM2.UseVisualStyleBackColor = true;
+            buttonAddM2.Click += buttonAddM2_Click;
             // 
             // buttonMulM2
             // 
