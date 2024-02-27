@@ -22,6 +22,9 @@ This Repository currently contains files for the following projects in C# using 
   - zero or negative values for the resistors
 - in case of an error, a message box will show up with further detailed information
 
+## Impedance Calculator (On hold)
+![ImpCalc](/Images/ImpedanceCalculator.png)
+
 # Programs for math problems
 ## Matrice operations
 ![Matrices](/Images/Matrices.jpg)
