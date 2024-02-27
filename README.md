@@ -27,6 +27,6 @@ This Repository currently contains files for the following projects in C# using 
 ![Matrices](/Images/Matrices.jpg)
 - error handling for invalid inputs(same as in the Star-Delta-Calculator)
 - basic matrice operations
-- can calculate determinante of a 3x3 matrix
-- can calculate inverse of a 3x3 matrix
+- can calculate determinant of a 3x3 matrix using the *Rule of Sarrus* https://en.wikipedia.org/wiki/Rule_of_Sarrus
+- can calculate inverse of a 3x3 matrix using the adjunct transposed matrix and the determinant
 - in case of no determinante/ 0-determinante an error window will pop up because no inverse exists
