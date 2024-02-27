@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\ImpedanceCalculator\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E45E6DA6-2784-4941-824E-22328D81463A}|ImpedanceCalculator\\ImpedanceCalculator.csproj|d:\\productive\\repos\\learningcsharp\\impedancecalculator\\impedancecalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E45E6DA6-2784-4941-824E-22328D81463A}|ImpedanceCalculator\\ImpedanceCalculator.csproj|solutionrelative:impedancecalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E45E6DA6-2784-4941-824E-22328D81463A}|ImpedanceCalculator\\ImpedanceCalculator.csproj|d:\\productive\\repos\\learningcsharp\\impedancecalculator\\impedancecalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E45E6DA6-2784-4941-824E-22328D81463A}|ImpedanceCalculator\\ImpedanceCalculator.csproj|solutionrelative:impedancecalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -27,14 +31,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
+              "Title": "Form1.cs",
               "DocumentMoniker": "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\ImpedanceCalculator\\ImpedanceCalculator\\Form1.cs",
               "RelativeDocumentMoniker": "ImpedanceCalculator\\Form1.cs",
-              "ToolTip": "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\ImpedanceCalculator\\ImpedanceCalculator\\Form1.cs [Design]",
-              "RelativeToolTip": "ImpedanceCalculator\\Form1.cs [Design]",
+              "ToolTip": "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\ImpedanceCalculator\\ImpedanceCalculator\\Form1.cs",
+              "RelativeToolTip": "ImpedanceCalculator\\Form1.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwBAAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T11:18:14.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Entwurf]",
+              "DocumentMoniker": "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\ImpedanceCalculator\\ImpedanceCalculator\\Form1.cs",
+              "RelativeDocumentMoniker": "ImpedanceCalculator\\Form1.cs",
+              "ToolTip": "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\ImpedanceCalculator\\ImpedanceCalculator\\Form1.cs [Entwurf]",
+              "RelativeToolTip": "ImpedanceCalculator\\Form1.cs [Entwurf]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-27T11:15:08.701Z",
-              "EditorCaption": " [Design]"
+              "EditorCaption": " [Entwurf]"
             }
           ]
         }

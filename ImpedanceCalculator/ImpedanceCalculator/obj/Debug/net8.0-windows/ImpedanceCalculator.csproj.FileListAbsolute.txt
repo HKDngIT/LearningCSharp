@@ -1,0 +1,17 @@
+D:\PRODUCTIVE\Repos\LearningCSharp\ImpedanceCalculator\ImpedanceCalculator\bin\Debug\net8.0-windows\ImpedanceCalculator.exe
+D:\PRODUCTIVE\Repos\LearningCSharp\ImpedanceCalculator\ImpedanceCalculator\bin\Debug\net8.0-windows\ImpedanceCalculator.deps.json
+D:\PRODUCTIVE\Repos\LearningCSharp\ImpedanceCalculator\ImpedanceCalculator\bin\Debug\net8.0-windows\ImpedanceCalculator.runtimeconfig.json
+D:\PRODUCTIVE\Repos\LearningCSharp\ImpedanceCalculator\ImpedanceCalculator\bin\Debug\net8.0-windows\ImpedanceCalculator.dll
+D:\PRODUCTIVE\Repos\LearningCSharp\ImpedanceCalculator\ImpedanceCalculator\bin\Debug\net8.0-windows\ImpedanceCalculator.pdb
+D:\PRODUCTIVE\Repos\LearningCSharp\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\net8.0-windows\ImpedanceCalculator.Form1.resources
+D:\PRODUCTIVE\Repos\LearningCSharp\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\net8.0-windows\ImpedanceCalculator.csproj.GenerateResource.cache
+D:\PRODUCTIVE\Repos\LearningCSharp\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\net8.0-windows\ImpedanceCalculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRODUCTIVE\Repos\LearningCSharp\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\net8.0-windows\ImpedanceCalculator.AssemblyInfoInputs.cache
+D:\PRODUCTIVE\Repos\LearningCSharp\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\net8.0-windows\ImpedanceCalculator.AssemblyInfo.cs
+D:\PRODUCTIVE\Repos\LearningCSharp\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\net8.0-windows\ImpedanceCalculator.csproj.CoreCompileInputs.cache
+D:\PRODUCTIVE\Repos\LearningCSharp\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\net8.0-windows\ImpedanceCalculator.sourcelink.json
+D:\PRODUCTIVE\Repos\LearningCSharp\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\net8.0-windows\ImpedanceCalculator.dll
+D:\PRODUCTIVE\Repos\LearningCSharp\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\net8.0-windows\refint\ImpedanceCalculator.dll
+D:\PRODUCTIVE\Repos\LearningCSharp\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\net8.0-windows\ImpedanceCalculator.pdb
+D:\PRODUCTIVE\Repos\LearningCSharp\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\net8.0-windows\ImpedanceCalculator.genruntimeconfig.cache
+D:\PRODUCTIVE\Repos\LearningCSharp\ImpedanceCalculator\ImpedanceCalculator\obj\Debug\net8.0-windows\ref\ImpedanceCalculator.dll

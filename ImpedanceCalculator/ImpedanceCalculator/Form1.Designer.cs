@@ -40,6 +40,7 @@
             textBoxImgImp = new TextBox();
             textBoxAbsValue = new TextBox();
             label6 = new Label();
+            buttonRESET = new Button();
             SuspendLayout();
             // 
             // label2
@@ -97,6 +98,7 @@
             buttonResADDSerial.TabIndex = 5;
             buttonResADDSerial.Text = "+ SERIAL";
             buttonResADDSerial.UseVisualStyleBackColor = true;
+            buttonResADDSerial.Click += buttonResADDSerial_Click;
             // 
             // buttonResADDParallel
             // 
@@ -107,6 +109,7 @@
             buttonResADDParallel.TabIndex = 6;
             buttonResADDParallel.Text = "+ PARALLEL";
             buttonResADDParallel.UseVisualStyleBackColor = true;
+            buttonResADDParallel.Click += buttonResADDParallel_Click;
             // 
             // label4
             // 
@@ -154,11 +157,23 @@
             label6.TabIndex = 10;
             label6.Text = "|Z| = ";
             // 
+            // buttonRESET
+            // 
+            buttonRESET.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonRESET.Location = new Point(1390, 46);
+            buttonRESET.Name = "buttonRESET";
+            buttonRESET.Size = new Size(173, 48);
+            buttonRESET.TabIndex = 12;
+            buttonRESET.Text = "RESET";
+            buttonRESET.UseVisualStyleBackColor = true;
+            buttonRESET.Click += buttonRESET_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1753, 953);
+            Controls.Add(buttonRESET);
             Controls.Add(textBoxAbsValue);
             Controls.Add(label6);
             Controls.Add(textBoxImgImp);
@@ -190,5 +205,6 @@
         private TextBox textBoxImgImp;
         private TextBox textBoxAbsValue;
         private Label label6;
+        private Button buttonRESET;
     }
 }
