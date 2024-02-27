@@ -72,6 +72,7 @@
             textBoxFrequency = new TextBox();
             label15 = new Label();
             label16 = new Label();
+            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -470,6 +471,8 @@
             textBoxFrequency.Name = "textBoxFrequency";
             textBoxFrequency.Size = new Size(252, 43);
             textBoxFrequency.TabIndex = 41;
+            textBoxFrequency.Text = "1000";
+            textBoxFrequency.TextAlign = HorizontalAlignment.Right;
             // 
             // label15
             // 
@@ -491,11 +494,22 @@
             label16.TabIndex = 42;
             label16.Text = "Hz";
             // 
+            // button5
+            // 
+            button5.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.Location = new Point(549, 551);
+            button5.Name = "button5";
+            button5.Size = new Size(141, 48);
+            button5.TabIndex = 43;
+            button5.Text = "Update";
+            button5.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1452, 633);
+            Controls.Add(button5);
             Controls.Add(label16);
             Controls.Add(textBoxFrequency);
             Controls.Add(label15);
@@ -592,5 +606,6 @@
         private TextBox textBoxFrequency;
         private Label label15;
         private Label label16;
+        private Button button5;
     }
 }
