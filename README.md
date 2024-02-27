@@ -25,3 +25,8 @@ This Repository currently contains files for the following projects in C# using 
 # Programs for math problems
 ## Matrice operations
 ![Matrices](/Images/Matrices.jpg)
+- error handling for invalid inputs(same as in the Star-Delta-Calculator)
+- basic matrice operations
+- can calculate determinante of a 3x3 matrix
+- can calculate inverse of a 3x3 matrix
+- in case of no determinante/ 0-determinante an error window will pop up because no inverse exists
