@@ -7,6 +7,9 @@ namespace ImpedanceCalculator
 
         private double m_real = 0.0;
 
+        // Toggles
+        private bool m_ResistorKiloisToggled = false;
+
         public Form1()
         {
             InitializeComponent();
@@ -44,6 +47,18 @@ namespace ImpedanceCalculator
         {
             m_real = 0.0;
             update();
+        }
+
+        private void buttonResistorKilo_Click(object sender, EventArgs e)
+        {
+            m_ResistorKiloisToggled = !m_ResistorKiloisToggled;
+            if(m_ResistorKiloisToggled)
+            {
+                buttonResistorKilo.BackColor = Color.Gray;
+            } else
+            {
+                buttonResistorKilo.BackColor = DefaultBackColor;
+            }
         }
     }
 }

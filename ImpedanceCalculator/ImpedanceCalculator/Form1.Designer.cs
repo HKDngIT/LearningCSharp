@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label2 = new Label();
             label1 = new Label();
             textBoxReImp = new TextBox();
@@ -51,7 +52,7 @@
             textBox2 = new TextBox();
             label9 = new Label();
             label10 = new Label();
-            button5 = new Button();
+            buttonResistorKilo = new Button();
             button6 = new Button();
             button7 = new Button();
             button8 = new Button();
@@ -65,6 +66,15 @@
             label13 = new Label();
             label14 = new Label();
             textBox5 = new TextBox();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            textBoxFrequency = new TextBox();
+            label15 = new Label();
+            label16 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // label2
@@ -81,7 +91,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(270, 425);
+            label1.Location = new Point(688, 291);
             label1.Name = "label1";
             label1.Size = new Size(38, 37);
             label1.TabIndex = 1;
@@ -99,7 +109,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(12, 382);
+            label3.Location = new Point(430, 248);
             label3.Name = "label3";
             label3.Size = new Size(141, 37);
             label3.TabIndex = 3;
@@ -108,7 +118,7 @@
             // textBoxResistor
             // 
             textBoxResistor.Font = new Font("Segoe UI", 20F);
-            textBoxResistor.Location = new Point(12, 422);
+            textBoxResistor.Location = new Point(430, 288);
             textBoxResistor.Name = "textBoxResistor";
             textBoxResistor.Size = new Size(252, 43);
             textBoxResistor.TabIndex = 4;
@@ -116,7 +126,7 @@
             // buttonResADDSerial
             // 
             buttonResADDSerial.Font = new Font("Segoe UI", 20F);
-            buttonResADDSerial.Location = new Point(509, 419);
+            buttonResADDSerial.Location = new Point(927, 285);
             buttonResADDSerial.Name = "buttonResADDSerial";
             buttonResADDSerial.Size = new Size(141, 48);
             buttonResADDSerial.TabIndex = 5;
@@ -127,7 +137,7 @@
             // buttonResADDParallel
             // 
             buttonResADDParallel.Font = new Font("Segoe UI", 20F);
-            buttonResADDParallel.Location = new Point(656, 419);
+            buttonResADDParallel.Location = new Point(1074, 285);
             buttonResADDParallel.Name = "buttonResADDParallel";
             buttonResADDParallel.Size = new Size(173, 48);
             buttonResADDParallel.TabIndex = 6;
@@ -184,7 +194,7 @@
             // buttonRESET
             // 
             buttonRESET.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonRESET.Location = new Point(1390, 46);
+            buttonRESET.Location = new Point(1261, 119);
             buttonRESET.Name = "buttonRESET";
             buttonRESET.Size = new Size(173, 48);
             buttonRESET.TabIndex = 12;
@@ -195,7 +205,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 20F);
-            button1.Location = new Point(656, 505);
+            button1.Location = new Point(1074, 387);
             button1.Name = "button1";
             button1.Size = new Size(173, 48);
             button1.TabIndex = 17;
@@ -205,7 +215,7 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 20F);
-            button2.Location = new Point(509, 505);
+            button2.Location = new Point(927, 387);
             button2.Name = "button2";
             button2.Size = new Size(141, 48);
             button2.TabIndex = 16;
@@ -215,7 +225,7 @@
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 20F);
-            textBox1.Location = new Point(12, 508);
+            textBox1.Location = new Point(430, 390);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(252, 43);
             textBox1.TabIndex = 15;
@@ -224,7 +234,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(12, 468);
+            label7.Location = new Point(430, 350);
             label7.Name = "label7";
             label7.Size = new Size(157, 37);
             label7.TabIndex = 14;
@@ -234,7 +244,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(270, 511);
+            label8.Location = new Point(688, 393);
             label8.Name = "label8";
             label8.Size = new Size(38, 37);
             label8.TabIndex = 13;
@@ -243,7 +253,7 @@
             // button3
             // 
             button3.Font = new Font("Segoe UI", 20F);
-            button3.Location = new Point(656, 593);
+            button3.Location = new Point(1074, 489);
             button3.Name = "button3";
             button3.Size = new Size(173, 48);
             button3.TabIndex = 22;
@@ -253,7 +263,7 @@
             // button4
             // 
             button4.Font = new Font("Segoe UI", 20F);
-            button4.Location = new Point(509, 593);
+            button4.Location = new Point(927, 489);
             button4.Name = "button4";
             button4.Size = new Size(141, 48);
             button4.TabIndex = 21;
@@ -263,7 +273,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI", 20F);
-            textBox2.Location = new Point(12, 596);
+            textBox2.Location = new Point(430, 492);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(252, 43);
             textBox2.TabIndex = 20;
@@ -272,7 +282,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(12, 556);
+            label9.Location = new Point(430, 452);
             label9.Name = "label9";
             label9.Size = new Size(166, 37);
             label9.TabIndex = 19;
@@ -282,26 +292,27 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(270, 599);
+            label10.Location = new Point(688, 495);
             label10.Name = "label10";
             label10.Size = new Size(31, 37);
             label10.TabIndex = 18;
             label10.Text = "F";
             // 
-            // button5
+            // buttonResistorKilo
             // 
-            button5.Font = new Font("Segoe UI", 20F);
-            button5.Location = new Point(314, 419);
-            button5.Name = "button5";
-            button5.Size = new Size(52, 48);
-            button5.TabIndex = 23;
-            button5.Text = "k";
-            button5.UseVisualStyleBackColor = true;
+            buttonResistorKilo.Font = new Font("Segoe UI", 20F);
+            buttonResistorKilo.Location = new Point(732, 285);
+            buttonResistorKilo.Name = "buttonResistorKilo";
+            buttonResistorKilo.Size = new Size(52, 48);
+            buttonResistorKilo.TabIndex = 23;
+            buttonResistorKilo.Text = "k";
+            buttonResistorKilo.UseVisualStyleBackColor = true;
+            buttonResistorKilo.Click += buttonResistorKilo_Click;
             // 
             // button6
             // 
             button6.Font = new Font("Segoe UI", 20F);
-            button6.Location = new Point(314, 505);
+            button6.Location = new Point(732, 387);
             button6.Name = "button6";
             button6.Size = new Size(52, 48);
             button6.TabIndex = 24;
@@ -311,7 +322,7 @@
             // button7
             // 
             button7.Font = new Font("Segoe UI", 20F);
-            button7.Location = new Point(372, 505);
+            button7.Location = new Point(790, 387);
             button7.Name = "button7";
             button7.Size = new Size(52, 48);
             button7.TabIndex = 25;
@@ -321,7 +332,7 @@
             // button8
             // 
             button8.Font = new Font("Segoe UI", 20F);
-            button8.Location = new Point(430, 505);
+            button8.Location = new Point(848, 387);
             button8.Name = "button8";
             button8.Size = new Size(52, 48);
             button8.TabIndex = 26;
@@ -331,7 +342,7 @@
             // button9
             // 
             button9.Font = new Font("Segoe UI", 20F);
-            button9.Location = new Point(430, 593);
+            button9.Location = new Point(848, 489);
             button9.Name = "button9";
             button9.Size = new Size(52, 48);
             button9.TabIndex = 29;
@@ -341,7 +352,7 @@
             // button10
             // 
             button10.Font = new Font("Segoe UI", 20F);
-            button10.Location = new Point(372, 593);
+            button10.Location = new Point(790, 489);
             button10.Name = "button10";
             button10.Size = new Size(52, 48);
             button10.TabIndex = 28;
@@ -351,7 +362,7 @@
             // button11
             // 
             button11.Font = new Font("Segoe UI", 20F);
-            button11.Location = new Point(314, 593);
+            button11.Location = new Point(732, 489);
             button11.Name = "button11";
             button11.Size = new Size(52, 48);
             button11.TabIndex = 27;
@@ -407,10 +418,10 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.Location = new Point(12, 216);
+            label14.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label14.Location = new Point(840, 560);
             label14.Name = "label14";
-            label14.Size = new Size(175, 37);
+            label14.Size = new Size(168, 37);
             label14.TabIndex = 35;
             label14.Text = "w = 2 * pi * f";
             // 
@@ -422,11 +433,75 @@
             textBox5.Size = new Size(252, 43);
             textBox5.TabIndex = 36;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(12, 248);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(412, 96);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 37;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(12, 350);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(412, 96);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 38;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(12, 452);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(412, 96);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 39;
+            pictureBox3.TabStop = false;
+            // 
+            // textBoxFrequency
+            // 
+            textBoxFrequency.Font = new Font("Segoe UI", 20F);
+            textBoxFrequency.Location = new Point(234, 554);
+            textBoxFrequency.Name = "textBoxFrequency";
+            textBoxFrequency.Size = new Size(252, 43);
+            textBoxFrequency.TabIndex = 41;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label15.Location = new Point(46, 557);
+            label15.Name = "label15";
+            label15.Size = new Size(199, 37);
+            label15.TabIndex = 40;
+            label15.Text = "Frequency f = ";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label16.Location = new Point(492, 557);
+            label16.Name = "label16";
+            label16.Size = new Size(51, 37);
+            label16.TabIndex = 42;
+            label16.Text = "Hz";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1753, 953);
+            ClientSize = new Size(1452, 633);
+            Controls.Add(label16);
+            Controls.Add(textBoxFrequency);
+            Controls.Add(label15);
+            Controls.Add(pictureBox3);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Controls.Add(textBox5);
             Controls.Add(label14);
             Controls.Add(label13);
@@ -440,7 +515,7 @@
             Controls.Add(button8);
             Controls.Add(button7);
             Controls.Add(button6);
-            Controls.Add(button5);
+            Controls.Add(buttonResistorKilo);
             Controls.Add(button3);
             Controls.Add(button4);
             Controls.Add(textBox2);
@@ -466,6 +541,9 @@
             Controls.Add(textBoxReImp);
             Name = "Form1";
             Text = "Impedance Calculator";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -494,7 +572,7 @@
         private TextBox textBox2;
         private Label label9;
         private Label label10;
-        private Button button5;
+        private Button buttonResistorKilo;
         private Button button6;
         private Button button7;
         private Button button8;
@@ -508,5 +586,11 @@
         private Label label13;
         private Label label14;
         private TextBox textBox5;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
+        private TextBox textBoxFrequency;
+        private Label label15;
+        private Label label16;
     }
 }
