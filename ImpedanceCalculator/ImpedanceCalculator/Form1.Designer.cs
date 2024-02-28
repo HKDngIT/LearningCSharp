@@ -59,7 +59,6 @@
             button9 = new Button();
             button10 = new Button();
             button11 = new Button();
-            label14 = new Label();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
@@ -67,6 +66,7 @@
             label15 = new Label();
             label16 = new Label();
             button5 = new Button();
+            label11 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -373,16 +373,6 @@
             button11.Text = "m";
             button11.UseVisualStyleBackColor = true;
             // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label14.Location = new Point(840, 410);
-            label14.Name = "label14";
-            label14.Size = new Size(168, 37);
-            label14.TabIndex = 35;
-            label14.Text = "w = 2 * pi * f";
-            // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
@@ -453,11 +443,22 @@
             button5.Text = "Update";
             button5.UseVisualStyleBackColor = true;
             // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.Location = new Point(732, 407);
+            label11.Name = "label11";
+            label11.Size = new Size(275, 37);
+            label11.TabIndex = 44;
+            label11.Text = "Use ',' instead of '.' !";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1354, 463);
+            Controls.Add(label11);
             Controls.Add(button5);
             Controls.Add(label16);
             Controls.Add(textBoxFrequency);
@@ -465,7 +466,6 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
-            Controls.Add(label14);
             Controls.Add(button9);
             Controls.Add(button10);
             Controls.Add(button11);
@@ -536,7 +536,6 @@
         private Button button9;
         private Button button10;
         private Button button11;
-        private Label label14;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
@@ -544,5 +543,6 @@
         private Label label15;
         private Label label16;
         private Button button5;
+        private Label label11;
     }
 }

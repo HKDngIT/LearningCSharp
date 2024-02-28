@@ -6,28 +6,110 @@ namespace ImpedanceCalculator
         /*####################################################################################################*/
 
         private double m_real = 0.0;
+        private double m_img = 0.0;
+        private double m_impedance = 0.0;
 
         // Toggles
         private bool m_ResistorKiloisToggled = false;
 
+        // Special functions
+        /*####################################################################################################*/
+
+        // Initializer
         public Form1()
         {
             InitializeComponent();
         }
 
+        // UPDATE TEXTBOXES
+        /*####################################################################################################*/
         private void update()
         {
-            textBoxReImp.Text = m_real.ToString();
+            textBoxReImp.Text = m_real.ToString() + " \u2126";
         }
 
+        // CHECK TEXTBOXES
+        /*####################################################################################################*/
+
+        /* RESISTOR CHECK (1/2)
+         * checks if the textboxes for resistor is empty or not
+         * returns true if it is empty
+         * returns false if it is not empty
+         */
+        private bool checkResistorTextBoxIsEmpty()
+        {
+            bool check = false;
+            if(string.IsNullOrEmpty(textBoxResistor.Text))
+            {
+                check = true;
+            }
+            if(check == true)
+            {
+                MessageBox.Show("Resistor text box is empty!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            return check;
+        }
+
+        /* RESISTOR CHECK (2/2)
+         * checks if the textboxes for the resistor contains any non numbers
+         * returns true is there is a non number
+         * returns false if not
+         */
+        private bool checkResistorTextBoxHasNonNumber()
+        {
+            bool check = false;
+            foreach(char c in textBoxResistor.Text)
+            {
+                if(!char.IsDigit(c) && c != '-' && c != ',')
+                {
+                    check = true;
+                }
+            }
+            if (check == true)
+            {
+                MessageBox.Show("Resistor text box contains non-digits!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            return check;
+        }
+
+        /* RESISTOR CHECK (X)
+         * sumarizes the checks into one compact operation
+         * returns true if the values are valid
+         * return false if not
+         */
+        private bool checkResistorTextBoxIsValid()
+        {
+            bool check = true;
+            if(checkResistorTextBoxIsEmpty() == true)
+            {
+                check = false;
+            }
+            if(checkResistorTextBoxHasNonNumber() == true)
+            {
+                check = false;
+            }
+            return check;
+        }
+
+        // BUTTON HANDLING
+        /*####################################################################################################*/
+
+        /* BUTTON ADD Resistor SERIAL
+         */
         private void buttonResADDSerial_Click(object sender, EventArgs e)
         {
             double resistor;
-            double.TryParse(textBoxResistor.Text, out resistor);
-            m_real += resistor;
-            update();
+            bool validInput = checkResistorTextBoxIsValid();
+            if(validInput == true)
+            {
+                double.TryParse(textBoxResistor.Text, out resistor);
+                m_real += resistor;
+                update();
+            }
         }
 
+        /* BUTTON ADD Resistor SERIAL
+         */
         private void buttonResADDParallel_Click(object sender, EventArgs e)
         {
             double resistor;
@@ -43,12 +125,18 @@ namespace ImpedanceCalculator
             update();
         }
 
+        /* BUTTON RESET resistor values
+         */
         private void buttonRESET_Click(object sender, EventArgs e)
         {
             m_real = 0.0;
+            m_img = 0.0;
+            m_impedance = 0.0;
             update();
         }
 
+        /* BUTTON TOGGLE RESISTOR kg
+         */
         private void buttonResistorKilo_Click(object sender, EventArgs e)
         {
             m_ResistorKiloisToggled = !m_ResistorKiloisToggled;
