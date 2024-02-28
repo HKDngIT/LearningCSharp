@@ -130,6 +130,10 @@ namespace ImpedanceCalculator
             if(validInput == true)
             {
                 double.TryParse(textBoxResistor.Text, out resistor);
+                if(m_ResistorKiloisToggled)
+                {
+                    resistor *= 1000;
+                }
                 m_real += resistor;
                 update();
             }
@@ -140,16 +144,24 @@ namespace ImpedanceCalculator
         private void buttonResADDParallel_Click(object sender, EventArgs e)
         {
             double resistor;
-            double.TryParse(textBoxResistor.Text, out resistor);
-            if (m_real == 0.0)
+            bool validInput = checkResistorTextBoxIsValid();
+            if(validInput == true)
             {
-                m_real = resistor;
+                double.TryParse(textBoxResistor.Text, out resistor);
+                if (m_ResistorKiloisToggled)
+                {
+                    resistor *= 1000;
+                }
+                if (m_real == 0.0)
+                {
+                    m_real = resistor;
+                }
+                else
+                {
+                    m_real = (m_real * resistor) / (m_real + resistor);
+                }
+                update();
             }
-            else
-            {
-                m_real = (m_real * resistor) / (m_real + resistor);
-            }
-            update();
         }
 
         /* BUTTON RESET resistor values
