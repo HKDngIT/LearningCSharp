@@ -42,9 +42,9 @@
             textBoxAbsValue = new TextBox();
             label6 = new Label();
             buttonRESET = new Button();
-            button1 = new Button();
-            button2 = new Button();
-            textBox1 = new TextBox();
+            buttonIndADDParallel = new Button();
+            buttonIndADDSerial = new Button();
+            textBoxInductor = new TextBox();
             label7 = new Label();
             label8 = new Label();
             button3 = new Button();
@@ -53,9 +53,9 @@
             label9 = new Label();
             label10 = new Label();
             buttonResistorKilo = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
+            buttonIndMil = new Button();
+            buttonIndmic = new Button();
+            buttonIndNano = new Button();
             button9 = new Button();
             button10 = new Button();
             button11 = new Button();
@@ -182,7 +182,7 @@
             textBoxAbsValue.ReadOnly = true;
             textBoxAbsValue.Size = new Size(252, 43);
             textBoxAbsValue.TabIndex = 11;
-            textBoxAbsValue.Text = "0 Ω + jw 0 Ω";
+            textBoxAbsValue.Text = "0 Ω + j 0 Ω";
             textBoxAbsValue.TextAlign = HorizontalAlignment.Center;
             // 
             // label6
@@ -206,33 +206,33 @@
             buttonRESET.UseVisualStyleBackColor = true;
             buttonRESET.Click += buttonRESET_Click;
             // 
-            // button1
+            // buttonIndADDParallel
             // 
-            button1.Font = new Font("Segoe UI", 20F);
-            button1.Location = new Point(1074, 237);
-            button1.Name = "button1";
-            button1.Size = new Size(173, 48);
-            button1.TabIndex = 17;
-            button1.Text = "+ PARALLEL";
-            button1.UseVisualStyleBackColor = true;
+            buttonIndADDParallel.Font = new Font("Segoe UI", 20F);
+            buttonIndADDParallel.Location = new Point(1074, 237);
+            buttonIndADDParallel.Name = "buttonIndADDParallel";
+            buttonIndADDParallel.Size = new Size(173, 48);
+            buttonIndADDParallel.TabIndex = 17;
+            buttonIndADDParallel.Text = "+ PARALLEL";
+            buttonIndADDParallel.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // buttonIndADDSerial
             // 
-            button2.Font = new Font("Segoe UI", 20F);
-            button2.Location = new Point(927, 237);
-            button2.Name = "button2";
-            button2.Size = new Size(141, 48);
-            button2.TabIndex = 16;
-            button2.Text = "+ SERIAL";
-            button2.UseVisualStyleBackColor = true;
+            buttonIndADDSerial.Font = new Font("Segoe UI", 20F);
+            buttonIndADDSerial.Location = new Point(927, 237);
+            buttonIndADDSerial.Name = "buttonIndADDSerial";
+            buttonIndADDSerial.Size = new Size(141, 48);
+            buttonIndADDSerial.TabIndex = 16;
+            buttonIndADDSerial.Text = "+ SERIAL";
+            buttonIndADDSerial.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // textBoxInductor
             // 
-            textBox1.Font = new Font("Segoe UI", 20F);
-            textBox1.Location = new Point(430, 240);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(252, 43);
-            textBox1.TabIndex = 15;
+            textBoxInductor.Font = new Font("Segoe UI", 20F);
+            textBoxInductor.Location = new Point(430, 240);
+            textBoxInductor.Name = "textBoxInductor";
+            textBoxInductor.Size = new Size(252, 43);
+            textBoxInductor.TabIndex = 15;
             // 
             // label7
             // 
@@ -313,35 +313,35 @@
             buttonResistorKilo.UseVisualStyleBackColor = true;
             buttonResistorKilo.Click += buttonResistorKilo_Click;
             // 
-            // button6
+            // buttonIndMil
             // 
-            button6.Font = new Font("Segoe UI", 20F);
-            button6.Location = new Point(732, 237);
-            button6.Name = "button6";
-            button6.Size = new Size(52, 48);
-            button6.TabIndex = 24;
-            button6.Text = "m";
-            button6.UseVisualStyleBackColor = true;
+            buttonIndMil.Font = new Font("Segoe UI", 20F);
+            buttonIndMil.Location = new Point(732, 237);
+            buttonIndMil.Name = "buttonIndMil";
+            buttonIndMil.Size = new Size(52, 48);
+            buttonIndMil.TabIndex = 24;
+            buttonIndMil.Text = "m";
+            buttonIndMil.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // buttonIndmic
             // 
-            button7.Font = new Font("Segoe UI", 20F);
-            button7.Location = new Point(790, 237);
-            button7.Name = "button7";
-            button7.Size = new Size(52, 48);
-            button7.TabIndex = 25;
-            button7.Text = "µ";
-            button7.UseVisualStyleBackColor = true;
+            buttonIndmic.Font = new Font("Segoe UI", 20F);
+            buttonIndmic.Location = new Point(790, 237);
+            buttonIndmic.Name = "buttonIndmic";
+            buttonIndmic.Size = new Size(52, 48);
+            buttonIndmic.TabIndex = 25;
+            buttonIndmic.Text = "µ";
+            buttonIndmic.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // buttonIndNano
             // 
-            button8.Font = new Font("Segoe UI", 20F);
-            button8.Location = new Point(848, 237);
-            button8.Name = "button8";
-            button8.Size = new Size(52, 48);
-            button8.TabIndex = 26;
-            button8.Text = "n";
-            button8.UseVisualStyleBackColor = true;
+            buttonIndNano.Font = new Font("Segoe UI", 20F);
+            buttonIndNano.Location = new Point(848, 237);
+            buttonIndNano.Name = "buttonIndNano";
+            buttonIndNano.Size = new Size(52, 48);
+            buttonIndNano.TabIndex = 26;
+            buttonIndNano.Text = "n";
+            buttonIndNano.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
@@ -469,18 +469,18 @@
             Controls.Add(button9);
             Controls.Add(button10);
             Controls.Add(button11);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button6);
+            Controls.Add(buttonIndNano);
+            Controls.Add(buttonIndmic);
+            Controls.Add(buttonIndMil);
             Controls.Add(buttonResistorKilo);
             Controls.Add(button3);
             Controls.Add(button4);
             Controls.Add(textBox2);
             Controls.Add(label9);
             Controls.Add(label10);
-            Controls.Add(button1);
-            Controls.Add(button2);
-            Controls.Add(textBox1);
+            Controls.Add(buttonIndADDParallel);
+            Controls.Add(buttonIndADDSerial);
+            Controls.Add(textBoxInductor);
             Controls.Add(label7);
             Controls.Add(label8);
             Controls.Add(buttonRESET);
@@ -519,9 +519,9 @@
         private TextBox textBoxAbsValue;
         private Label label6;
         private Button buttonRESET;
-        private Button button1;
-        private Button button2;
-        private TextBox textBox1;
+        private Button buttonIndADDParallel;
+        private Button buttonIndADDSerial;
+        private TextBox textBoxInductor;
         private Label label7;
         private Label label8;
         private Button button3;
@@ -530,9 +530,9 @@
         private Label label9;
         private Label label10;
         private Button buttonResistorKilo;
-        private Button button6;
-        private Button button7;
-        private Button button8;
+        private Button buttonIndMil;
+        private Button buttonIndmic;
+        private Button buttonIndNano;
         private Button button9;
         private Button button10;
         private Button button11;

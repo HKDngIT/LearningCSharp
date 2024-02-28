@@ -30,7 +30,7 @@ namespace ImpedanceCalculator
             m_real = Math.Round(m_real, 2);
             textBoxReImp.Text = m_real.ToString() + " \u2126";
             textBoxImgImp.Text = m_img.ToString() + " \u2126";
-            textBoxAbsValue.Text = m_real.ToString() + " \u2126 + jw " + m_img.ToString() + " \u2126";
+            textBoxAbsValue.Text = m_real.ToString() + " \u2126 + j " + m_img.ToString() + " \u2126";
         }
 
         // CHECK TEXTBOXES
