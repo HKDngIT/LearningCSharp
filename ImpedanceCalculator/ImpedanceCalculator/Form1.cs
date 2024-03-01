@@ -37,7 +37,7 @@ namespace ImpedanceCalculator
         /*####################################################################################################*/
 
         /* RESISTOR CHECK (1/3)
-         * checks if the textboxes for resistor is empty or not
+         * checks if the textbox for resistor is empty or not
          * returns true if it is empty
          * returns false if it is not empty
          */
@@ -56,7 +56,7 @@ namespace ImpedanceCalculator
         }
 
         /* RESISTOR CHECK (2/3)
-         * checks if the textboxes for the resistor contains any non numbers
+         * checks if the textbox for the resistor contains any non numbers
          * returns true is there is a non number
          * returns false if not
          */
@@ -107,11 +107,93 @@ namespace ImpedanceCalculator
             {
                 check = false;
             }
-            if(checkResistorTextBoxHasNonNumber() == true)
+            if(checkResistorTextBoxHasNonNumber() == true && check == true)
             {
                 check = false;
             }
-            if(checkResistorIsNullOrNegative() == true)
+            if(checkResistorIsNullOrNegative() == true && check == true)
+            {
+                check = false;
+            }
+            return check;
+        }
+
+        /* INDUCTOR CHECK (1/3)
+         * checks if the textbox for the inductor is empty or not
+         * returns true if it is empty
+         * returns false if it is not empty
+         */
+        private bool checkIndTBIsEmpty()
+        {
+            bool check = false;
+            if(string.IsNullOrEmpty(textBoxInductor.Text))
+            {
+                check = true;
+            }
+            if(check == true)
+            {
+                MessageBox.Show("Resistor text box is empty!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            return check;
+        }
+
+        /* INDUCTOR CHECK (2/3)
+         * checks if the textbox for the inductor contains any non numbers
+         * returns ture if there is a non number
+         * returns fals if not
+         */
+        private bool checkIndTBHasNonNumber()
+        {
+            bool check = false;
+            foreach(char c in textBoxInductor.Text)
+            {
+                if(!char.IsDigit(c) && c != '-' && c!= ',')
+                {
+                    check = true;
+                }
+            }
+            if(check == true)
+            {
+                MessageBox.Show("Inductor text box contains non-digits!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            return check;
+        }
+
+        /* INDUCTOR CHECK (3/3)
+         * checks if the input value is null or negative
+         * returns true if null or negative
+         * returns fals if not
+         */
+        private bool checkIndIsNullOrNegative()
+        {
+            bool check = false;
+            double value;
+            double.TryParse(textBoxInductor.Text, out value);
+            if(value <= 0)
+            {
+                check = true;
+                MessageBox.Show("Inductor value cannot be zero or negative!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            return check;
+        }
+
+        /* INDUCTOR CHECK (X)
+         * sumarizes the checks into one compact operation
+         * returns true if the values are valid
+         * returns false if not
+         */
+        private bool checkIndTBIsValid()
+        {
+            bool check = true;
+            if(checkIndTBIsEmpty() == true)
+            {
+                check = false;
+            }
+            if(checkIndTBHasNonNumber() == true && check == true)
+            {
+                check = false;
+            }
+            if (checkIndIsNullOrNegative() == true && check == true)
             {
                 check = false;
             }
