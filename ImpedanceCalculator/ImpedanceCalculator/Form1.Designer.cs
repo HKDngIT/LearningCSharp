@@ -323,6 +323,7 @@
             buttonIndMil.TabIndex = 24;
             buttonIndMil.Text = "m";
             buttonIndMil.UseVisualStyleBackColor = true;
+            buttonIndMil.Click += buttonIndMil_Click;
             // 
             // buttonIndmic
             // 

@@ -252,6 +252,27 @@ namespace ImpedanceCalculator
             update();
         }
 
+        /* BUTTON ADD Inductor SERIAL
+         */
+        private void buttonIndADDSerial_Click(object sender, EventArgs e)
+        {
+            double inductor;
+            bool validInput = checkIndTBIsValid();
+            if (validInput == true)
+            {
+                double.TryParse(textBoxInductor.Text, out inductor);
+                if (m_IndMilIsToggled)
+                {
+                    inductor *= 0.001;
+                }
+                m_img += 2 * Math.PI * m_frequency * inductor;
+                update();
+            }
+        }
+
+        // TOGGLE BUTTON HANDLING
+        /*####################################################################################################*/
+
         /* BUTTON TOGGLE RESISTOR kg
          */
         private void buttonResistorKilo_Click(object sender, EventArgs e)
@@ -267,21 +288,18 @@ namespace ImpedanceCalculator
             }
         }
 
-        /* BUTTON ADD Inductor SERIAL
+        /* BUTTON TOGGLE INDUCTOR milli
          */
-        private void buttonIndADDSerial_Click(object sender, EventArgs e)
+        private void buttonIndMil_Click(object sender, EventArgs e)
         {
-            double inductor;
-            bool validInput = checkIndTBIsValid();
-            if(validInput == true)
+            m_IndMilIsToggled = !m_IndMilIsToggled;
+            if(m_IndMilIsToggled)
             {
-                double.TryParse(textBoxInductor.Text, out inductor);
-                if(m_IndMilIsToggled)
-                {
-                    inductor *= 0.001;
-                }
-                m_img += 2 * Math.PI * m_frequency * inductor;
-                update();
+                buttonIndMil.BackColor = Color.Gray;
+            }
+            else
+            {
+                buttonIndMil.BackColor = DefaultBackColor;
             }
         }
     }

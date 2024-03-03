@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImpedanceCalculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85eabfe128327b0f18c1fa559d507d09582e4059")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ed3a8073c8fd12300fed9256edfcb7f6f85b530")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImpedanceCalculator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImpedanceCalculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
