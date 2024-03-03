@@ -8,10 +8,14 @@ namespace ImpedanceCalculator
         private double m_real = 0.0;
         private double m_img = 0.0;
 
-        private double frequency = 1000;
+        private double m_frequency = 1000;
 
         // Toggles
         private bool m_ResistorKiloisToggled = false;
+
+        private bool m_IndMilIsToggled = false;
+        private bool m_IndMikroIsToggled = false;
+        private bool m_IndNanoIsToggled = false;
 
         // Special functions
         /*####################################################################################################*/
@@ -44,11 +48,11 @@ namespace ImpedanceCalculator
         private bool checkResistorTextBoxIsEmpty()
         {
             bool check = false;
-            if(string.IsNullOrEmpty(textBoxResistor.Text))
+            if (string.IsNullOrEmpty(textBoxResistor.Text))
             {
                 check = true;
             }
-            if(check == true)
+            if (check == true)
             {
                 MessageBox.Show("Resistor text box is empty!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -63,9 +67,9 @@ namespace ImpedanceCalculator
         private bool checkResistorTextBoxHasNonNumber()
         {
             bool check = false;
-            foreach(char c in textBoxResistor.Text)
+            foreach (char c in textBoxResistor.Text)
             {
-                if(!char.IsDigit(c) && c != '-' && c != ',')
+                if (!char.IsDigit(c) && c != '-' && c != ',')
                 {
                     check = true;
                 }
@@ -87,7 +91,7 @@ namespace ImpedanceCalculator
             bool check = false;
             double value;
             double.TryParse(textBoxResistor.Text, out value);
-            if(value <= 0)
+            if (value <= 0)
             {
                 check = true;
                 MessageBox.Show("Resistor value cannot be zero or negative!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -103,15 +107,15 @@ namespace ImpedanceCalculator
         private bool checkResistorTextBoxIsValid()
         {
             bool check = true;
-            if(checkResistorTextBoxIsEmpty() == true)
+            if (checkResistorTextBoxIsEmpty() == true)
             {
                 check = false;
             }
-            if(checkResistorTextBoxHasNonNumber() == true && check == true)
+            if (checkResistorTextBoxHasNonNumber() == true && check == true)
             {
                 check = false;
             }
-            if(checkResistorIsNullOrNegative() == true && check == true)
+            if (checkResistorIsNullOrNegative() == true && check == true)
             {
                 check = false;
             }
@@ -126,11 +130,11 @@ namespace ImpedanceCalculator
         private bool checkIndTBIsEmpty()
         {
             bool check = false;
-            if(string.IsNullOrEmpty(textBoxInductor.Text))
+            if (string.IsNullOrEmpty(textBoxInductor.Text))
             {
                 check = true;
             }
-            if(check == true)
+            if (check == true)
             {
                 MessageBox.Show("Resistor text box is empty!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -145,14 +149,14 @@ namespace ImpedanceCalculator
         private bool checkIndTBHasNonNumber()
         {
             bool check = false;
-            foreach(char c in textBoxInductor.Text)
+            foreach (char c in textBoxInductor.Text)
             {
-                if(!char.IsDigit(c) && c != '-' && c!= ',')
+                if (!char.IsDigit(c) && c != '-' && c != ',')
                 {
                     check = true;
                 }
             }
-            if(check == true)
+            if (check == true)
             {
                 MessageBox.Show("Inductor text box contains non-digits!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -169,7 +173,7 @@ namespace ImpedanceCalculator
             bool check = false;
             double value;
             double.TryParse(textBoxInductor.Text, out value);
-            if(value <= 0)
+            if (value <= 0)
             {
                 check = true;
                 MessageBox.Show("Inductor value cannot be zero or negative!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -185,11 +189,11 @@ namespace ImpedanceCalculator
         private bool checkIndTBIsValid()
         {
             bool check = true;
-            if(checkIndTBIsEmpty() == true)
+            if (checkIndTBIsEmpty() == true)
             {
                 check = false;
             }
-            if(checkIndTBHasNonNumber() == true && check == true)
+            if (checkIndTBHasNonNumber() == true && check == true)
             {
                 check = false;
             }
@@ -209,10 +213,10 @@ namespace ImpedanceCalculator
         {
             double resistor;
             bool validInput = checkResistorTextBoxIsValid();
-            if(validInput == true)
+            if (validInput == true)
             {
                 double.TryParse(textBoxResistor.Text, out resistor);
-                if(m_ResistorKiloisToggled)
+                if (m_ResistorKiloisToggled)
                 {
                     resistor *= 1000;
                 }
@@ -221,27 +225,20 @@ namespace ImpedanceCalculator
             }
         }
 
-        /* BUTTON ADD Resistor SERIAL
+        /* BUTTON ADD Resistor PARALLEL
          */
         private void buttonResADDParallel_Click(object sender, EventArgs e)
         {
             double resistor;
             bool validInput = checkResistorTextBoxIsValid();
-            if(validInput == true)
+            if (validInput == true)
             {
                 double.TryParse(textBoxResistor.Text, out resistor);
                 if (m_ResistorKiloisToggled)
                 {
                     resistor *= 1000;
                 }
-                if (m_real == 0.0)
-                {
-                    m_real = resistor;
-                }
-                else
-                {
-                    m_real = (m_real * resistor) / (m_real + resistor);
-                }
+                m_real = (m_real * resistor) / (m_real + resistor);
                 update();
             }
         }
@@ -260,12 +257,31 @@ namespace ImpedanceCalculator
         private void buttonResistorKilo_Click(object sender, EventArgs e)
         {
             m_ResistorKiloisToggled = !m_ResistorKiloisToggled;
-            if(m_ResistorKiloisToggled)
+            if (m_ResistorKiloisToggled)
             {
                 buttonResistorKilo.BackColor = Color.Gray;
-            } else
+            }
+            else
             {
                 buttonResistorKilo.BackColor = DefaultBackColor;
+            }
+        }
+
+        /* BUTTON ADD Inductor SERIAL
+         */
+        private void buttonIndADDSerial_Click(object sender, EventArgs e)
+        {
+            double inductor;
+            bool validInput = checkIndTBIsValid();
+            if(validInput == true)
+            {
+                double.TryParse(textBoxInductor.Text, out inductor);
+                if(m_IndMilIsToggled)
+                {
+                    inductor *= 0.001;
+                }
+                m_img += 2 * Math.PI * m_frequency * inductor;
+                update();
             }
         }
     }

@@ -225,6 +225,7 @@
             buttonIndADDSerial.TabIndex = 16;
             buttonIndADDSerial.Text = "+ SERIAL";
             buttonIndADDSerial.UseVisualStyleBackColor = true;
+            buttonIndADDSerial.Click += buttonIndADDSerial_Click;
             // 
             // textBoxInductor
             // 
