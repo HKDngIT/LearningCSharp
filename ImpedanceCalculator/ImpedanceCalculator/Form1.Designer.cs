@@ -47,9 +47,9 @@
             textBoxInductor = new TextBox();
             label7 = new Label();
             label8 = new Label();
-            button3 = new Button();
-            button4 = new Button();
-            textBox2 = new TextBox();
+            buttonCapADDParallel = new Button();
+            buttonCapADDSerial = new Button();
+            textBoxCapacitor = new TextBox();
             label9 = new Label();
             label10 = new Label();
             buttonResistorKilo = new Button();
@@ -215,6 +215,7 @@
             buttonIndADDParallel.TabIndex = 17;
             buttonIndADDParallel.Text = "+ PARALLEL";
             buttonIndADDParallel.UseVisualStyleBackColor = true;
+            buttonIndADDParallel.Click += buttonIndADDParallel_Click;
             // 
             // buttonIndADDSerial
             // 
@@ -255,33 +256,33 @@
             label8.TabIndex = 13;
             label8.Text = "H";
             // 
-            // button3
+            // buttonCapADDParallel
             // 
-            button3.Font = new Font("Segoe UI", 20F);
-            button3.Location = new Point(1074, 339);
-            button3.Name = "button3";
-            button3.Size = new Size(173, 48);
-            button3.TabIndex = 22;
-            button3.Text = "+ PARALLEL";
-            button3.UseVisualStyleBackColor = true;
+            buttonCapADDParallel.Font = new Font("Segoe UI", 20F);
+            buttonCapADDParallel.Location = new Point(1074, 339);
+            buttonCapADDParallel.Name = "buttonCapADDParallel";
+            buttonCapADDParallel.Size = new Size(173, 48);
+            buttonCapADDParallel.TabIndex = 22;
+            buttonCapADDParallel.Text = "+ PARALLEL";
+            buttonCapADDParallel.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // buttonCapADDSerial
             // 
-            button4.Font = new Font("Segoe UI", 20F);
-            button4.Location = new Point(927, 339);
-            button4.Name = "button4";
-            button4.Size = new Size(141, 48);
-            button4.TabIndex = 21;
-            button4.Text = "+ SERIAL";
-            button4.UseVisualStyleBackColor = true;
+            buttonCapADDSerial.Font = new Font("Segoe UI", 20F);
+            buttonCapADDSerial.Location = new Point(927, 339);
+            buttonCapADDSerial.Name = "buttonCapADDSerial";
+            buttonCapADDSerial.Size = new Size(141, 48);
+            buttonCapADDSerial.TabIndex = 21;
+            buttonCapADDSerial.Text = "+ SERIAL";
+            buttonCapADDSerial.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // textBoxCapacitor
             // 
-            textBox2.Font = new Font("Segoe UI", 20F);
-            textBox2.Location = new Point(430, 342);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(252, 43);
-            textBox2.TabIndex = 20;
+            textBoxCapacitor.Font = new Font("Segoe UI", 20F);
+            textBoxCapacitor.Location = new Point(430, 342);
+            textBoxCapacitor.Name = "textBoxCapacitor";
+            textBoxCapacitor.Size = new Size(252, 43);
+            textBoxCapacitor.TabIndex = 20;
             // 
             // label9
             // 
@@ -475,9 +476,9 @@
             Controls.Add(buttonIndmic);
             Controls.Add(buttonIndMil);
             Controls.Add(buttonResistorKilo);
-            Controls.Add(button3);
-            Controls.Add(button4);
-            Controls.Add(textBox2);
+            Controls.Add(buttonCapADDParallel);
+            Controls.Add(buttonCapADDSerial);
+            Controls.Add(textBoxCapacitor);
             Controls.Add(label9);
             Controls.Add(label10);
             Controls.Add(buttonIndADDParallel);
@@ -526,9 +527,9 @@
         private TextBox textBoxInductor;
         private Label label7;
         private Label label8;
-        private Button button3;
-        private Button button4;
-        private TextBox textBox2;
+        private Button buttonCapADDParallel;
+        private Button buttonCapADDSerial;
+        private TextBox textBoxCapacitor;
         private Label label9;
         private Label label10;
         private Button buttonResistorKilo;

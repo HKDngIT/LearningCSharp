@@ -143,8 +143,8 @@ namespace ImpedanceCalculator
 
         /* INDUCTOR CHECK (2/3)
          * checks if the textbox for the inductor contains any non numbers
-         * returns ture if there is a non number
-         * returns fals if not
+         * returns true if there is a non number
+         * returns false if not
          */
         private bool checkIndTBHasNonNumber()
         {
@@ -166,7 +166,7 @@ namespace ImpedanceCalculator
         /* INDUCTOR CHECK (3/3)
          * checks if the input value is null or negative
          * returns true if null or negative
-         * returns fals if not
+         * returns false if not
          */
         private bool checkIndIsNullOrNegative()
         {
@@ -204,6 +204,84 @@ namespace ImpedanceCalculator
             return check;
         }
 
+        /* CAPACITOR CHECK (1/3)
+         * checks if the textbox for capacitor is empty or not
+         * returns ture if it is empty
+         * returns false if it is not empty
+         */
+        private bool checkCapTBisEmpty()
+        {
+            bool check = false;
+            if(string.IsNullOrEmpty(textBoxCapacitor.Text))
+            {
+                check = true;
+            }
+            if(check)
+            {
+                MessageBox.Show("Capacitor text box is empty!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            return check;
+        }
+
+        /* CAPACITOR CHECK(2/3)
+         * checks if the textbox for the inductor contains any non numbers
+         * returns true if there is a non number
+         * returns false if not
+         */
+        private bool checkCapTBHasNonNumber()
+        {
+            bool check = false;
+            foreach(char c in textBoxCapacitor.Text)
+            {
+                if(!char.IsDigit(c) && c!= '-' && c != ',')
+                {
+                    check = true;
+                }
+            }
+            if(check)
+            {
+                MessageBox.Show("Capacitor text box contains non-digits!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            return check;
+        }
+
+        /* CAPACITOR CHECK (3/3)
+         * checks if the input value is null or negative
+         * returns true if null or negative
+         * returns false if not
+         */
+        private bool checkCapIsNullOrNegative()
+        {
+            bool check = false;
+            double value;
+            double.TryParse(textBoxCapacitor.Text, out value);
+            if(value <= 0)
+            {
+                check = true;
+                MessageBox.Show("Capacitor value cannot be zero or negative!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            return check;
+        }
+
+        /* CAPACITOR CHECK (X)
+         */
+        private bool checkCapTBIsValid()
+        {
+            bool check = true;
+            if(checkCapTBisEmpty() == true)
+            {
+                check = false;
+            }
+            if(checkCapTBHasNonNumber() && check)
+            {
+                check = false;
+            }
+            if(checkCapIsNullOrNegative() && check)
+            {
+                check = false;
+            }
+            return check;
+        }
         // BUTTON HANDLING
         /*####################################################################################################*/
 
@@ -270,6 +348,20 @@ namespace ImpedanceCalculator
             }
         }
 
+        /* BUTTON ADD Inductor PARALLEL - TO BE IMPLEMENTED FURTHER!!!!!!!!!!!!!!!!!!!!!!!!!
+         */
+        private void buttonIndADDParallel_Click(object sender, EventArgs e)
+        {
+            double inductor;
+            bool validInput = checkIndTBIsValid();
+            if(validInput == true)
+            {
+                double.TryParse(textBoxInductor.Text, out inductor);
+                m_img = (m_img * inductor) / (m_img + inductor); // THIS IS FALSE!
+                update();
+            }
+        }
+
         // TOGGLE BUTTON HANDLING
         /*####################################################################################################*/
 
@@ -293,7 +385,7 @@ namespace ImpedanceCalculator
         private void buttonIndMil_Click(object sender, EventArgs e)
         {
             m_IndMilIsToggled = !m_IndMilIsToggled;
-            if(m_IndMilIsToggled)
+            if (m_IndMilIsToggled)
             {
                 buttonIndMil.BackColor = Color.Gray;
             }
@@ -302,5 +394,7 @@ namespace ImpedanceCalculator
                 buttonIndMil.BackColor = DefaultBackColor;
             }
         }
+
+        
     }
 }
