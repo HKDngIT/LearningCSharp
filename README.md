@@ -37,7 +37,7 @@ This Repository currently contains files for the following projects in C# using 
 ![impedance](/Images/01Imp.jpg)
 ![impedance](/Images/02Imp.jpg)    
 - Due to the structure of the program I have to start from the outermost components - the two capacitors and resistor.
-- The nano toggle button for the capacitor and kilo toggle button for the resistor works as inteded
+- The nano toggle button for the capacitor and kilo toggle button for the resistor are working as inteded
 - After further input of the inductor and last resistor the programs is in the state of the UI screenshot as shown further above
 - The right values can be validated with the results
 - [Video which shows this exercise](https://drive.google.com/file/d/118y5wbZ0eJ8UPwxWVg7EMrRSjVxhzm4O/view?usp=drive_link)
