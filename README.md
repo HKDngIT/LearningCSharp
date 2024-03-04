@@ -34,9 +34,9 @@ This Repository currently contains files for the following projects in C# using 
 ![impedance](/Images/02Imp.jpg)
 - Due to the structure of the program I have to start to input the complex from the outermost components - the two capacitors and resistor.
 - The nano toggle button for the capacitor and kilo toggle button for the resistor works as inteded
-![impedance](/Images/03Imp.jpg)
 - After further input of the inductor and last resistor the programs is in the state of the UI screenshot as shown further above
 - The right values can be validated with the results
+![impedance](/Images/03Imp.jpg)
 ![impedance](/Images/04Imp.jpg)
 ![impedance](/Images/05Imp.jpg)
 
