@@ -352,6 +352,14 @@ namespace ImpedanceCalculator
                 {
                     inductor *= 0.001;
                 }
+                if(m_IndMikroIsToggled)
+                {
+                    inductor *= 0.000001;
+                }
+                if(m_IndNanoIsToggled)
+                {
+                    inductor *= 0.000000001;
+                }
                 m_img += 2 * Math.PI * m_frequency * inductor;
                 update();
             }
@@ -366,6 +374,18 @@ namespace ImpedanceCalculator
             if (validInput == true)
             {
                 double.TryParse(textBoxInductor.Text, out inductor);
+                if (m_IndMilIsToggled)
+                {
+                    inductor *= 0.001;
+                }
+                if (m_IndMikroIsToggled)
+                {
+                    inductor *= 0.000001;
+                }
+                if (m_IndNanoIsToggled)
+                {
+                    inductor *= 0.000000001;
+                }
                 inductor = 2 * Math.PI * m_frequency * inductor;
                 Complex z1 = new Complex(m_real, m_img);
                 Complex z2 = new Complex(0, inductor);
@@ -443,6 +463,36 @@ namespace ImpedanceCalculator
             else
             {
                 buttonIndMil.BackColor = DefaultBackColor;
+            }
+        }
+
+        /* BUTTON TOGGLE INDUCTOR micro
+         */
+        private void buttonIndMic_Click(object sender, EventArgs e)
+        {
+            m_IndMikroIsToggled = !m_IndMikroIsToggled;
+            if(m_IndMikroIsToggled)
+            {
+                buttonIndMic.BackColor = Color.Gray;
+            }
+            else
+            {
+                buttonIndMic.BackColor = DefaultBackColor;
+            }
+        }
+
+        /* BUTTON TOGGLE INDUCTOR nano
+         */
+        private void buttonIndNano_Click(object sender, EventArgs e)
+        {
+            m_IndNanoIsToggled = !m_IndNanoIsToggled;
+            if(m_IndNanoIsToggled)
+            {
+                buttonIndNano.BackColor = Color.Gray;
+            }
+            else
+            {
+                buttonIndNano.BackColor = DefaultBackColor;
             }
         }
     }

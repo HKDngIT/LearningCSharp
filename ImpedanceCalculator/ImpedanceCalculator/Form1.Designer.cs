@@ -54,7 +54,7 @@
             label10 = new Label();
             buttonResistorKilo = new Button();
             buttonIndMil = new Button();
-            buttonIndmic = new Button();
+            buttonIndMic = new Button();
             buttonIndNano = new Button();
             button9 = new Button();
             button10 = new Button();
@@ -328,15 +328,16 @@
             buttonIndMil.UseVisualStyleBackColor = true;
             buttonIndMil.Click += buttonIndMil_Click;
             // 
-            // buttonIndmic
+            // buttonIndMic
             // 
-            buttonIndmic.Font = new Font("Segoe UI", 20F);
-            buttonIndmic.Location = new Point(790, 237);
-            buttonIndmic.Name = "buttonIndmic";
-            buttonIndmic.Size = new Size(52, 48);
-            buttonIndmic.TabIndex = 25;
-            buttonIndmic.Text = "µ";
-            buttonIndmic.UseVisualStyleBackColor = true;
+            buttonIndMic.Font = new Font("Segoe UI", 20F);
+            buttonIndMic.Location = new Point(790, 237);
+            buttonIndMic.Name = "buttonIndMic";
+            buttonIndMic.Size = new Size(52, 48);
+            buttonIndMic.TabIndex = 25;
+            buttonIndMic.Text = "µ";
+            buttonIndMic.UseVisualStyleBackColor = true;
+            buttonIndMic.Click += buttonIndMic_Click;
             // 
             // buttonIndNano
             // 
@@ -347,6 +348,7 @@
             buttonIndNano.TabIndex = 26;
             buttonIndNano.Text = "n";
             buttonIndNano.UseVisualStyleBackColor = true;
+            buttonIndNano.Click += buttonIndNano_Click;
             // 
             // button9
             // 
@@ -475,7 +477,7 @@
             Controls.Add(button10);
             Controls.Add(button11);
             Controls.Add(buttonIndNano);
-            Controls.Add(buttonIndmic);
+            Controls.Add(buttonIndMic);
             Controls.Add(buttonIndMil);
             Controls.Add(buttonResistorKilo);
             Controls.Add(buttonCapADDParallel);
@@ -536,7 +538,7 @@
         private Label label10;
         private Button buttonResistorKilo;
         private Button buttonIndMil;
-        private Button buttonIndmic;
+        private Button buttonIndMic;
         private Button buttonIndNano;
         private Button button9;
         private Button button10;
