@@ -357,7 +357,7 @@ namespace ImpedanceCalculator
             }
         }
 
-        /* BUTTON ADD Inductor PARALLEL - TO BE IMPLEMENTED FURTHER!!!!!!!!!!!!!!!!!!!!!!!!!
+        /* BUTTON ADD Inductor PARALLEL
          */
         private void buttonIndADDParallel_Click(object sender, EventArgs e)
         {
@@ -366,7 +366,14 @@ namespace ImpedanceCalculator
             if (validInput == true)
             {
                 double.TryParse(textBoxInductor.Text, out inductor);
-                m_img = (m_img * inductor) / (m_img + inductor); // THIS IS FALSE!
+                inductor = 2 * Math.PI * m_frequency * inductor;
+                Complex z1 = new Complex(m_real, m_img);
+                Complex z2 = new Complex(0, inductor);
+
+                Complex z3 = (z1 * z2) / (z1 + z2);
+
+                m_real = z3.Real;
+                m_img = z3.Imaginary;
                 update();
             }
         }
