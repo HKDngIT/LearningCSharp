@@ -27,6 +27,7 @@ This Repository currently contains files for the following projects in C# using 
 - Handles impedances when added serial and parallel ideal components correctly
 - Frequency can be freely adjusted
 - For ease to input values, toggle buttons for unit prefix can be used (kilo, milli, mikro µ and nano)
+- Uses the [Complex Struct](https://learn.microsoft.com/en-us/dotnet/api/system.numerics.complex?view=net-8.0) to calculate with complex numbers/ values of the components
 
 ### Validation/ Verification of Impedance Calculator
 - To verify the correct program behavior I used an old exercise
