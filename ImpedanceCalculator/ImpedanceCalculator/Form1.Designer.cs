@@ -56,16 +56,16 @@
             buttonIndMil = new Button();
             buttonIndMic = new Button();
             buttonIndNano = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
+            buttonCapNano = new Button();
+            buttonCapMic = new Button();
+            buttonCapMil = new Button();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             textBoxFrequency = new TextBox();
             label15 = new Label();
             label16 = new Label();
-            button5 = new Button();
+            buttonFrequencyUpdate = new Button();
             label11 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -350,35 +350,38 @@
             buttonIndNano.UseVisualStyleBackColor = true;
             buttonIndNano.Click += buttonIndNano_Click;
             // 
-            // button9
+            // buttonCapNano
             // 
-            button9.Font = new Font("Segoe UI", 20F);
-            button9.Location = new Point(848, 339);
-            button9.Name = "button9";
-            button9.Size = new Size(52, 48);
-            button9.TabIndex = 29;
-            button9.Text = "n";
-            button9.UseVisualStyleBackColor = true;
+            buttonCapNano.Font = new Font("Segoe UI", 20F);
+            buttonCapNano.Location = new Point(848, 339);
+            buttonCapNano.Name = "buttonCapNano";
+            buttonCapNano.Size = new Size(52, 48);
+            buttonCapNano.TabIndex = 29;
+            buttonCapNano.Text = "n";
+            buttonCapNano.UseVisualStyleBackColor = true;
+            buttonCapNano.Click += buttonCapNano_Click;
             // 
-            // button10
+            // buttonCapMic
             // 
-            button10.Font = new Font("Segoe UI", 20F);
-            button10.Location = new Point(790, 339);
-            button10.Name = "button10";
-            button10.Size = new Size(52, 48);
-            button10.TabIndex = 28;
-            button10.Text = "µ";
-            button10.UseVisualStyleBackColor = true;
+            buttonCapMic.Font = new Font("Segoe UI", 20F);
+            buttonCapMic.Location = new Point(790, 339);
+            buttonCapMic.Name = "buttonCapMic";
+            buttonCapMic.Size = new Size(52, 48);
+            buttonCapMic.TabIndex = 28;
+            buttonCapMic.Text = "µ";
+            buttonCapMic.UseVisualStyleBackColor = true;
+            buttonCapMic.Click += buttonCapMic_Click;
             // 
-            // button11
+            // buttonCapMil
             // 
-            button11.Font = new Font("Segoe UI", 20F);
-            button11.Location = new Point(732, 339);
-            button11.Name = "button11";
-            button11.Size = new Size(52, 48);
-            button11.TabIndex = 27;
-            button11.Text = "m";
-            button11.UseVisualStyleBackColor = true;
+            buttonCapMil.Font = new Font("Segoe UI", 20F);
+            buttonCapMil.Location = new Point(732, 339);
+            buttonCapMil.Name = "buttonCapMil";
+            buttonCapMil.Size = new Size(52, 48);
+            buttonCapMil.TabIndex = 27;
+            buttonCapMil.Text = "m";
+            buttonCapMil.UseVisualStyleBackColor = true;
+            buttonCapMil.Click += buttonCapMil_Click;
             // 
             // pictureBox1
             // 
@@ -440,15 +443,16 @@
             label16.TabIndex = 42;
             label16.Text = "Hz";
             // 
-            // button5
+            // buttonFrequencyUpdate
             // 
-            button5.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.Location = new Point(549, 401);
-            button5.Name = "button5";
-            button5.Size = new Size(141, 48);
-            button5.TabIndex = 43;
-            button5.Text = "Update";
-            button5.UseVisualStyleBackColor = true;
+            buttonFrequencyUpdate.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonFrequencyUpdate.Location = new Point(549, 401);
+            buttonFrequencyUpdate.Name = "buttonFrequencyUpdate";
+            buttonFrequencyUpdate.Size = new Size(141, 48);
+            buttonFrequencyUpdate.TabIndex = 43;
+            buttonFrequencyUpdate.Text = "Update";
+            buttonFrequencyUpdate.UseVisualStyleBackColor = true;
+            buttonFrequencyUpdate.Click += buttonFrequencyUpdate_Click;
             // 
             // label11
             // 
@@ -466,16 +470,16 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1354, 463);
             Controls.Add(label11);
-            Controls.Add(button5);
+            Controls.Add(buttonFrequencyUpdate);
             Controls.Add(label16);
             Controls.Add(textBoxFrequency);
             Controls.Add(label15);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
-            Controls.Add(button9);
-            Controls.Add(button10);
-            Controls.Add(button11);
+            Controls.Add(buttonCapNano);
+            Controls.Add(buttonCapMic);
+            Controls.Add(buttonCapMil);
             Controls.Add(buttonIndNano);
             Controls.Add(buttonIndMic);
             Controls.Add(buttonIndMil);
@@ -540,16 +544,16 @@
         private Button buttonIndMil;
         private Button buttonIndMic;
         private Button buttonIndNano;
-        private Button button9;
-        private Button button10;
-        private Button button11;
+        private Button buttonCapNano;
+        private Button buttonCapMic;
+        private Button buttonCapMil;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private TextBox textBoxFrequency;
         private Label label15;
         private Label label16;
-        private Button button5;
+        private Button buttonFrequencyUpdate;
         private Label label11;
     }
 }

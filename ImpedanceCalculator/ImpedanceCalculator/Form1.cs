@@ -19,6 +19,10 @@ namespace ImpedanceCalculator
         private bool m_IndMikroIsToggled = false;
         private bool m_IndNanoIsToggled = false;
 
+        private bool m_CapMilIsToggled = false;
+        private bool m_CapMikroIsToggled = false;
+        private bool m_CapNanoIsToggled = false;
+
         // Special functions
         /*####################################################################################################*/
 
@@ -352,11 +356,11 @@ namespace ImpedanceCalculator
                 {
                     inductor *= 0.001;
                 }
-                if(m_IndMikroIsToggled)
+                if (m_IndMikroIsToggled)
                 {
                     inductor *= 0.000001;
                 }
-                if(m_IndNanoIsToggled)
+                if (m_IndNanoIsToggled)
                 {
                     inductor *= 0.000000001;
                 }
@@ -407,6 +411,18 @@ namespace ImpedanceCalculator
             if (validInput)
             {
                 double.TryParse(textBoxCapacitor.Text, out capacitor);
+                if (m_CapMilIsToggled)
+                {
+                    capacitor *= 0.001;
+                }
+                if (m_CapMikroIsToggled)
+                {
+                    capacitor *= 0.000001;
+                }
+                if (m_CapNanoIsToggled)
+                {
+                    capacitor *= 0.000000001;
+                }
                 m_img += -(1.0 / (2.0 * Math.PI * m_frequency * capacitor));
                 update();
             }
@@ -421,6 +437,18 @@ namespace ImpedanceCalculator
             if (validInput)
             {
                 double.TryParse(textBoxCapacitor.Text, out capacitor);
+                if (m_CapMilIsToggled)
+                {
+                    capacitor *= 0.001;
+                }
+                if (m_CapMikroIsToggled)
+                {
+                    capacitor *= 0.000001;
+                }
+                if (m_CapNanoIsToggled)
+                {
+                    capacitor *= 0.000000001;
+                }
                 capacitor = -(1.0 / (2.0 * Math.PI * m_frequency * capacitor));
                 Complex z1 = new Complex(m_real, m_img);
                 Complex z2 = new Complex(0, capacitor);
@@ -471,7 +499,7 @@ namespace ImpedanceCalculator
         private void buttonIndMic_Click(object sender, EventArgs e)
         {
             m_IndMikroIsToggled = !m_IndMikroIsToggled;
-            if(m_IndMikroIsToggled)
+            if (m_IndMikroIsToggled)
             {
                 buttonIndMic.BackColor = Color.Gray;
             }
@@ -486,7 +514,7 @@ namespace ImpedanceCalculator
         private void buttonIndNano_Click(object sender, EventArgs e)
         {
             m_IndNanoIsToggled = !m_IndNanoIsToggled;
-            if(m_IndNanoIsToggled)
+            if (m_IndNanoIsToggled)
             {
                 buttonIndNano.BackColor = Color.Gray;
             }
@@ -494,6 +522,58 @@ namespace ImpedanceCalculator
             {
                 buttonIndNano.BackColor = DefaultBackColor;
             }
+        }
+
+        /* BUTTON TOGGLE CAPACITOR milli
+         */
+        private void buttonCapMil_Click(object sender, EventArgs e)
+        {
+            m_CapMilIsToggled = !m_CapMilIsToggled;
+            if (m_CapMilIsToggled)
+            {
+                buttonCapMil.BackColor = Color.Gray;
+            }
+            else
+            {
+                buttonCapMil.BackColor = DefaultBackColor;
+            }
+        }
+
+        /* BUTTON TOGGLE CAPACITOR micro
+         */
+        private void buttonCapMic_Click(object sender, EventArgs e)
+        {
+            m_CapMikroIsToggled = !m_CapMikroIsToggled;
+            if (m_CapMikroIsToggled)
+            {
+                buttonCapMic.BackColor = Color.Gray;
+            }
+            else
+            {
+                buttonCapMic.BackColor = DefaultBackColor;
+            }
+        }
+
+        /* BUTTON TOGGLE CAPACITOR nano
+         */
+        private void buttonCapNano_Click(object sender, EventArgs e)
+        {
+            m_CapNanoIsToggled = !m_CapNanoIsToggled;
+            if (m_CapNanoIsToggled)
+            {
+                buttonCapNano.BackColor = Color.Gray;
+            }
+            else
+            {
+                buttonCapNano.BackColor = DefaultBackColor;
+            }
+        }
+
+        /* BUTTON FREQUENCY UPDATE
+         */
+        private void buttonFrequencyUpdate_Click(object sender, EventArgs e)
+        {
+            double.TryParse(textBoxFrequency.Text, out m_frequency);
         }
     }
 }
