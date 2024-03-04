@@ -1,3 +1,5 @@
+using System.Numerics;
+
 namespace ImpedanceCalculator
 {
     public partial class Form1 : Form
@@ -368,10 +370,31 @@ namespace ImpedanceCalculator
         {
             double capacitor;
             bool validInput = checkCapTBIsValid();
-            if(validInput)
+            if (validInput)
             {
                 double.TryParse(textBoxCapacitor.Text, out capacitor);
-                m_img += - (1.0 / (2.0 * Math.PI * m_frequency * capacitor));
+                m_img += -(1.0 / (2.0 * Math.PI * m_frequency * capacitor));
+                update();
+            }
+        }
+
+        /* BUTTON ADD Capacitor PARALLEL
+         */
+        private void buttonCapADDParallel_Click(object sender, EventArgs e)
+        {
+            double capacitor;
+            bool validInput = checkCapTBIsValid();
+            if (validInput)
+            {
+                double.TryParse(textBoxCapacitor.Text, out capacitor);
+                capacitor = -(1.0 / (2.0 * Math.PI * m_frequency * capacitor));
+                Complex z1 = new Complex(m_real, m_img);
+                Complex z2 = new Complex(0, capacitor);
+
+                Complex z3 = (z1 * z2) / (z1 + z2);
+
+                m_real = z3.Real;
+                m_img = z3.Imaginary;
                 update();
             }
         }

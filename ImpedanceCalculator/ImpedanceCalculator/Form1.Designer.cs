@@ -265,6 +265,7 @@
             buttonCapADDParallel.TabIndex = 22;
             buttonCapADDParallel.Text = "+ PARALLEL";
             buttonCapADDParallel.UseVisualStyleBackColor = true;
+            buttonCapADDParallel.Click += buttonCapADDParallel_Click;
             // 
             // buttonCapADDSerial
             // 
