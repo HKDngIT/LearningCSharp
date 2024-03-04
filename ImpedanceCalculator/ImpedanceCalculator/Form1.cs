@@ -212,11 +212,11 @@ namespace ImpedanceCalculator
         private bool checkCapTBisEmpty()
         {
             bool check = false;
-            if(string.IsNullOrEmpty(textBoxCapacitor.Text))
+            if (string.IsNullOrEmpty(textBoxCapacitor.Text))
             {
                 check = true;
             }
-            if(check)
+            if (check)
             {
                 MessageBox.Show("Capacitor text box is empty!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -231,14 +231,14 @@ namespace ImpedanceCalculator
         private bool checkCapTBHasNonNumber()
         {
             bool check = false;
-            foreach(char c in textBoxCapacitor.Text)
+            foreach (char c in textBoxCapacitor.Text)
             {
-                if(!char.IsDigit(c) && c!= '-' && c != ',')
+                if (!char.IsDigit(c) && c != '-' && c != ',')
                 {
                     check = true;
                 }
             }
-            if(check)
+            if (check)
             {
                 MessageBox.Show("Capacitor text box contains non-digits!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -255,7 +255,7 @@ namespace ImpedanceCalculator
             bool check = false;
             double value;
             double.TryParse(textBoxCapacitor.Text, out value);
-            if(value <= 0)
+            if (value <= 0)
             {
                 check = true;
                 MessageBox.Show("Capacitor value cannot be zero or negative!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -268,15 +268,15 @@ namespace ImpedanceCalculator
         private bool checkCapTBIsValid()
         {
             bool check = true;
-            if(checkCapTBisEmpty() == true)
+            if (checkCapTBisEmpty() == true)
             {
                 check = false;
             }
-            if(checkCapTBHasNonNumber() && check)
+            if (checkCapTBHasNonNumber() && check)
             {
                 check = false;
             }
-            if(checkCapIsNullOrNegative() && check)
+            if (checkCapIsNullOrNegative() && check == true)
             {
                 check = false;
             }
@@ -354,10 +354,24 @@ namespace ImpedanceCalculator
         {
             double inductor;
             bool validInput = checkIndTBIsValid();
-            if(validInput == true)
+            if (validInput == true)
             {
                 double.TryParse(textBoxInductor.Text, out inductor);
                 m_img = (m_img * inductor) / (m_img + inductor); // THIS IS FALSE!
+                update();
+            }
+        }
+
+        /* BUTTON ADD Capacitor SERIAL
+         */
+        private void buttonCapADDSerial_Click(object sender, EventArgs e)
+        {
+            double capacitor;
+            bool validInput = checkCapTBIsValid();
+            if(validInput)
+            {
+                double.TryParse(textBoxCapacitor.Text, out capacitor);
+                m_img += - (1.0 / (2.0 * Math.PI * m_frequency * capacitor));
                 update();
             }
         }
@@ -394,7 +408,5 @@ namespace ImpedanceCalculator
                 buttonIndMil.BackColor = DefaultBackColor;
             }
         }
-
-        
     }
 }

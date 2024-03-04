@@ -275,6 +275,7 @@
             buttonCapADDSerial.TabIndex = 21;
             buttonCapADDSerial.Text = "+ SERIAL";
             buttonCapADDSerial.UseVisualStyleBackColor = true;
+            buttonCapADDSerial.Click += buttonCapADDSerial_Click;
             // 
             // textBoxCapacitor
             // 
