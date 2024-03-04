@@ -24,6 +24,21 @@ This Repository currently contains files for the following projects in C# using 
 
 ## Impedance Calculator
 ![ImpCalc](/Images/ImpedanceCalculator.png)
+- Handles impedances when added serial and parallel ideal components correctly
+- Frequency can be freely adjusted
+- For ease to input values, toggle buttons for unit prefix can be used (kilo, milli, mikro µ and nano)
+
+### Validation/ Verification of Impedance Calculator
+- To verify the correct program behavior I used an old exercise
+![impedance](/Images/01Imp.jpg)
+![impedance](/Images/02Imp.jpg)
+- Due to the structure of the program I have to start to input the complex from the outermost components - the two capacitors and resistor.
+- The nano toggle button for the capacitor and kilo toggle button for the resistor works as inteded
+![impedance](/Images/03Imp.jpg)
+- After further input of the inductor and last resistor the programs is in the state of the UI screenshot as shown further above
+- The right values can be validated with the results
+![impedance](/Images/04Imp.jpg)
+![impedance](/Images/05Imp.jpg)
 
 # Programs for math problems
 ## Matrice operations
