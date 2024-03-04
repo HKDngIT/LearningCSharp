@@ -40,7 +40,7 @@ This Repository currently contains files for the following projects in C# using 
 - The nano toggle button for the capacitor and kilo toggle button for the resistor are working as intended
 - After further input of the inductor and last resistor the program is in the state of the UI screenshot as shown further above
 - The right values can be validated with the solutions below
-- [Video which shows this exercise](https://drive.google.com/file/d/118y5wbZ0eJ8UPwxWVg7EMrRSjVxhzm4O/view?usp=drive_link)
+- [Video which shows the program in action](https://drive.google.com/file/d/118y5wbZ0eJ8UPwxWVg7EMrRSjVxhzm4O/view?usp=drive_link)
 
   
 ![impedance](/Images/03Imp.jpg)
