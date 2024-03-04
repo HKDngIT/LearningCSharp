@@ -30,12 +30,17 @@ This Repository currently contains files for the following projects in C# using 
 
 ### Validation/ Verification of Impedance Calculator
 - To verify the correct program behavior I used an old exercise
+
+
 ![impedance](/Images/01Imp.jpg)
-![impedance](/Images/02Imp.jpg)
+![impedance](/Images/02Imp.jpg)    
 - Due to the structure of the program I have to start to input the complex from the outermost components - the two capacitors and resistor.
 - The nano toggle button for the capacitor and kilo toggle button for the resistor works as inteded
 - After further input of the inductor and last resistor the programs is in the state of the UI screenshot as shown further above
 - The right values can be validated with the results
+- ![Video which shows this exercise](https://drive.google.com/file/d/115gpF89dc3XINt9LFQyMg3vU5QrDaxeg/view?usp=sharing)
+
+  
 ![impedance](/Images/03Imp.jpg)
 ![impedance](/Images/04Imp.jpg)
 ![impedance](/Images/05Imp.jpg)
