@@ -67,6 +67,8 @@
             label16 = new Label();
             buttonFrequencyUpdate = new Button();
             label11 = new Label();
+            textBoxAbsValueTRUE = new TextBox();
+            label12 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -86,7 +88,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(688, 141);
+            label1.Location = new Point(688, 244);
             label1.Name = "label1";
             label1.Size = new Size(38, 37);
             label1.TabIndex = 1;
@@ -107,7 +109,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(430, 98);
+            label3.Location = new Point(430, 201);
             label3.Name = "label3";
             label3.Size = new Size(141, 37);
             label3.TabIndex = 3;
@@ -116,7 +118,7 @@
             // textBoxResistor
             // 
             textBoxResistor.Font = new Font("Segoe UI", 20F);
-            textBoxResistor.Location = new Point(430, 138);
+            textBoxResistor.Location = new Point(430, 241);
             textBoxResistor.Name = "textBoxResistor";
             textBoxResistor.Size = new Size(252, 43);
             textBoxResistor.TabIndex = 4;
@@ -124,7 +126,7 @@
             // buttonResADDSerial
             // 
             buttonResADDSerial.Font = new Font("Segoe UI", 20F);
-            buttonResADDSerial.Location = new Point(927, 135);
+            buttonResADDSerial.Location = new Point(927, 238);
             buttonResADDSerial.Name = "buttonResADDSerial";
             buttonResADDSerial.Size = new Size(141, 48);
             buttonResADDSerial.TabIndex = 5;
@@ -135,7 +137,7 @@
             // buttonResADDParallel
             // 
             buttonResADDParallel.Font = new Font("Segoe UI", 20F);
-            buttonResADDParallel.Location = new Point(1074, 135);
+            buttonResADDParallel.Location = new Point(1074, 238);
             buttonResADDParallel.Name = "buttonResADDParallel";
             buttonResADDParallel.Size = new Size(173, 48);
             buttonResADDParallel.TabIndex = 6;
@@ -191,9 +193,9 @@
             label6.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.Location = new Point(802, 52);
             label6.Name = "label6";
-            label6.Size = new Size(84, 37);
+            label6.Size = new Size(66, 37);
             label6.TabIndex = 10;
-            label6.Text = "|Z| = ";
+            label6.Text = "Z = ";
             // 
             // buttonRESET
             // 
@@ -209,7 +211,7 @@
             // buttonIndADDParallel
             // 
             buttonIndADDParallel.Font = new Font("Segoe UI", 20F);
-            buttonIndADDParallel.Location = new Point(1074, 237);
+            buttonIndADDParallel.Location = new Point(1074, 340);
             buttonIndADDParallel.Name = "buttonIndADDParallel";
             buttonIndADDParallel.Size = new Size(173, 48);
             buttonIndADDParallel.TabIndex = 17;
@@ -220,7 +222,7 @@
             // buttonIndADDSerial
             // 
             buttonIndADDSerial.Font = new Font("Segoe UI", 20F);
-            buttonIndADDSerial.Location = new Point(927, 237);
+            buttonIndADDSerial.Location = new Point(927, 340);
             buttonIndADDSerial.Name = "buttonIndADDSerial";
             buttonIndADDSerial.Size = new Size(141, 48);
             buttonIndADDSerial.TabIndex = 16;
@@ -231,7 +233,7 @@
             // textBoxInductor
             // 
             textBoxInductor.Font = new Font("Segoe UI", 20F);
-            textBoxInductor.Location = new Point(430, 240);
+            textBoxInductor.Location = new Point(430, 343);
             textBoxInductor.Name = "textBoxInductor";
             textBoxInductor.Size = new Size(252, 43);
             textBoxInductor.TabIndex = 15;
@@ -240,7 +242,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(430, 200);
+            label7.Location = new Point(430, 303);
             label7.Name = "label7";
             label7.Size = new Size(157, 37);
             label7.TabIndex = 14;
@@ -250,7 +252,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(688, 243);
+            label8.Location = new Point(688, 346);
             label8.Name = "label8";
             label8.Size = new Size(38, 37);
             label8.TabIndex = 13;
@@ -259,7 +261,7 @@
             // buttonCapADDParallel
             // 
             buttonCapADDParallel.Font = new Font("Segoe UI", 20F);
-            buttonCapADDParallel.Location = new Point(1074, 339);
+            buttonCapADDParallel.Location = new Point(1074, 442);
             buttonCapADDParallel.Name = "buttonCapADDParallel";
             buttonCapADDParallel.Size = new Size(173, 48);
             buttonCapADDParallel.TabIndex = 22;
@@ -270,7 +272,7 @@
             // buttonCapADDSerial
             // 
             buttonCapADDSerial.Font = new Font("Segoe UI", 20F);
-            buttonCapADDSerial.Location = new Point(927, 339);
+            buttonCapADDSerial.Location = new Point(927, 442);
             buttonCapADDSerial.Name = "buttonCapADDSerial";
             buttonCapADDSerial.Size = new Size(141, 48);
             buttonCapADDSerial.TabIndex = 21;
@@ -281,7 +283,7 @@
             // textBoxCapacitor
             // 
             textBoxCapacitor.Font = new Font("Segoe UI", 20F);
-            textBoxCapacitor.Location = new Point(430, 342);
+            textBoxCapacitor.Location = new Point(430, 445);
             textBoxCapacitor.Name = "textBoxCapacitor";
             textBoxCapacitor.Size = new Size(252, 43);
             textBoxCapacitor.TabIndex = 20;
@@ -290,7 +292,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(430, 302);
+            label9.Location = new Point(430, 405);
             label9.Name = "label9";
             label9.Size = new Size(166, 37);
             label9.TabIndex = 19;
@@ -300,7 +302,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(688, 345);
+            label10.Location = new Point(688, 448);
             label10.Name = "label10";
             label10.Size = new Size(31, 37);
             label10.TabIndex = 18;
@@ -309,7 +311,7 @@
             // buttonResistorKilo
             // 
             buttonResistorKilo.Font = new Font("Segoe UI", 20F);
-            buttonResistorKilo.Location = new Point(732, 135);
+            buttonResistorKilo.Location = new Point(732, 238);
             buttonResistorKilo.Name = "buttonResistorKilo";
             buttonResistorKilo.Size = new Size(52, 48);
             buttonResistorKilo.TabIndex = 23;
@@ -320,7 +322,7 @@
             // buttonIndMil
             // 
             buttonIndMil.Font = new Font("Segoe UI", 20F);
-            buttonIndMil.Location = new Point(732, 237);
+            buttonIndMil.Location = new Point(732, 340);
             buttonIndMil.Name = "buttonIndMil";
             buttonIndMil.Size = new Size(52, 48);
             buttonIndMil.TabIndex = 24;
@@ -331,7 +333,7 @@
             // buttonIndMic
             // 
             buttonIndMic.Font = new Font("Segoe UI", 20F);
-            buttonIndMic.Location = new Point(790, 237);
+            buttonIndMic.Location = new Point(790, 340);
             buttonIndMic.Name = "buttonIndMic";
             buttonIndMic.Size = new Size(52, 48);
             buttonIndMic.TabIndex = 25;
@@ -342,7 +344,7 @@
             // buttonIndNano
             // 
             buttonIndNano.Font = new Font("Segoe UI", 20F);
-            buttonIndNano.Location = new Point(848, 237);
+            buttonIndNano.Location = new Point(848, 340);
             buttonIndNano.Name = "buttonIndNano";
             buttonIndNano.Size = new Size(52, 48);
             buttonIndNano.TabIndex = 26;
@@ -353,7 +355,7 @@
             // buttonCapNano
             // 
             buttonCapNano.Font = new Font("Segoe UI", 20F);
-            buttonCapNano.Location = new Point(848, 339);
+            buttonCapNano.Location = new Point(848, 442);
             buttonCapNano.Name = "buttonCapNano";
             buttonCapNano.Size = new Size(52, 48);
             buttonCapNano.TabIndex = 29;
@@ -364,7 +366,7 @@
             // buttonCapMic
             // 
             buttonCapMic.Font = new Font("Segoe UI", 20F);
-            buttonCapMic.Location = new Point(790, 339);
+            buttonCapMic.Location = new Point(790, 442);
             buttonCapMic.Name = "buttonCapMic";
             buttonCapMic.Size = new Size(52, 48);
             buttonCapMic.TabIndex = 28;
@@ -375,7 +377,7 @@
             // buttonCapMil
             // 
             buttonCapMil.Font = new Font("Segoe UI", 20F);
-            buttonCapMil.Location = new Point(732, 339);
+            buttonCapMil.Location = new Point(732, 442);
             buttonCapMil.Name = "buttonCapMil";
             buttonCapMil.Size = new Size(52, 48);
             buttonCapMil.TabIndex = 27;
@@ -386,7 +388,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 98);
+            pictureBox1.Location = new Point(12, 201);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(412, 96);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -396,7 +398,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(12, 200);
+            pictureBox2.Location = new Point(12, 303);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(412, 96);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -406,7 +408,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(12, 302);
+            pictureBox3.Location = new Point(12, 405);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(412, 96);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -416,7 +418,7 @@
             // textBoxFrequency
             // 
             textBoxFrequency.Font = new Font("Segoe UI", 20F);
-            textBoxFrequency.Location = new Point(234, 404);
+            textBoxFrequency.Location = new Point(234, 507);
             textBoxFrequency.Name = "textBoxFrequency";
             textBoxFrequency.Size = new Size(252, 43);
             textBoxFrequency.TabIndex = 41;
@@ -427,7 +429,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.Location = new Point(46, 407);
+            label15.Location = new Point(46, 510);
             label15.Name = "label15";
             label15.Size = new Size(199, 37);
             label15.TabIndex = 40;
@@ -437,7 +439,7 @@
             // 
             label16.AutoSize = true;
             label16.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label16.Location = new Point(492, 407);
+            label16.Location = new Point(492, 510);
             label16.Name = "label16";
             label16.Size = new Size(51, 37);
             label16.TabIndex = 42;
@@ -446,7 +448,7 @@
             // buttonFrequencyUpdate
             // 
             buttonFrequencyUpdate.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonFrequencyUpdate.Location = new Point(549, 401);
+            buttonFrequencyUpdate.Location = new Point(549, 504);
             buttonFrequencyUpdate.Name = "buttonFrequencyUpdate";
             buttonFrequencyUpdate.Size = new Size(141, 48);
             buttonFrequencyUpdate.TabIndex = 43;
@@ -458,17 +460,40 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(732, 407);
+            label11.Location = new Point(732, 510);
             label11.Name = "label11";
             label11.Size = new Size(275, 37);
             label11.TabIndex = 44;
             label11.Text = "Use ',' instead of '.' !";
             // 
+            // textBoxAbsValueTRUE
+            // 
+            textBoxAbsValueTRUE.Font = new Font("Segoe UI", 20F);
+            textBoxAbsValueTRUE.Location = new Point(136, 122);
+            textBoxAbsValueTRUE.Name = "textBoxAbsValueTRUE";
+            textBoxAbsValueTRUE.ReadOnly = true;
+            textBoxAbsValueTRUE.Size = new Size(252, 43);
+            textBoxAbsValueTRUE.TabIndex = 46;
+            textBoxAbsValueTRUE.Text = "0 Ω";
+            textBoxAbsValueTRUE.TextAlign = HorizontalAlignment.Center;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.Location = new Point(46, 125);
+            label12.Name = "label12";
+            label12.Size = new Size(84, 37);
+            label12.TabIndex = 45;
+            label12.Text = "|Z| = ";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1354, 463);
+            ClientSize = new Size(1354, 574);
+            Controls.Add(textBoxAbsValueTRUE);
+            Controls.Add(label12);
             Controls.Add(label11);
             Controls.Add(buttonFrequencyUpdate);
             Controls.Add(label16);
@@ -555,5 +580,7 @@
         private Label label16;
         private Button buttonFrequencyUpdate;
         private Label label11;
+        private TextBox textBoxAbsValueTRUE;
+        private Label label12;
     }
 }

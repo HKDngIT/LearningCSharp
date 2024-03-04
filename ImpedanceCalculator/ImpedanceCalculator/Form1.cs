@@ -10,6 +10,8 @@ namespace ImpedanceCalculator
         private double m_real = 0.0;
         private double m_img = 0.0;
 
+        private double m_absValue = 0.0;
+
         private double m_frequency = 1000;
 
         // Toggles
@@ -41,6 +43,10 @@ namespace ImpedanceCalculator
             textBoxReImp.Text = m_real.ToString() + " \u2126";
             textBoxImgImp.Text = m_img.ToString() + " \u2126";
             textBoxAbsValue.Text = m_real.ToString() + " \u2126 + j " + m_img.ToString() + " \u2126";
+
+            m_absValue = Math.Sqrt((m_real * m_real) + (m_img * m_img));
+            m_absValue = Math.Round(m_absValue, 2);
+            textBoxAbsValueTRUE.Text = m_absValue + " \u2126";
         }
 
         // CHECK TEXTBOXES
