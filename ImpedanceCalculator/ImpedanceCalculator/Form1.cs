@@ -318,7 +318,14 @@ namespace ImpedanceCalculator
                 {
                     resistor *= 1000;
                 }
-                m_real = (m_real * resistor) / (m_real + resistor);
+                Complex z1 = new Complex(m_real, m_img);
+                Complex z2 = new Complex(resistor, 0);
+
+                Complex z3 = (z1 * z2) / (z1 + z2);
+
+                m_real = z3.Real;
+                m_img = z3.Imaginary;
+                update();
                 update();
             }
         }
