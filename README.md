@@ -24,6 +24,7 @@ This Repository currently contains files for the following projects in C# using 
 
 ## Impedance Calculator
 ![ImpCalc](/Images/ImpedanceCalculator.png)
+- [Wikipedia article about impedances](https://en.wikipedia.org/wiki/Electrical_impedance)
 - Handles impedances when adding serial and parallel ideal components correctly
 - Frequency can be freely adjusted
 - For ease to input values, toggle buttons for unit prefix can be used (kilo, milli, mikro µ and nano)
