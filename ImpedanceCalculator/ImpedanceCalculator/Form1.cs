@@ -14,6 +14,8 @@ namespace ImpedanceCalculator
 
         private double m_frequency = 1000;
 
+        private double m_phase = 0.0;
+
         // Toggles
         private bool m_ResistorKiloisToggled = false;
 
@@ -47,6 +49,10 @@ namespace ImpedanceCalculator
             m_absValue = Math.Sqrt((m_real * m_real) + (m_img * m_img));
             m_absValue = Math.Round(m_absValue, 2);
             textBoxAbsValueTRUE.Text = m_absValue + " \u2126";
+
+            m_phase = Math.Atan(m_img / m_real) * (180 / Math.PI);
+            m_phase = Math.Round(m_phase, 0);
+            textBoxPhase.Text = m_phase.ToString() + "°";
         }
 
         // CHECK TEXTBOXES

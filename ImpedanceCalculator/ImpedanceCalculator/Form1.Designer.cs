@@ -71,6 +71,7 @@
             label12 = new Label();
             textBoxPhase = new TextBox();
             label13 = new Label();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -497,7 +498,7 @@
             textBoxPhase.ReadOnly = true;
             textBoxPhase.Size = new Size(252, 43);
             textBoxPhase.TabIndex = 48;
-            textBoxPhase.Text = "0 Ω";
+            textBoxPhase.Text = "0°";
             textBoxPhase.TextAlign = HorizontalAlignment.Center;
             // 
             // label13
@@ -510,11 +511,23 @@
             label13.TabIndex = 47;
             label13.Text = "φ =";
             // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Segoe UI", 20F);
+            textBox1.Location = new Point(892, 122);
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
+            textBox1.Size = new Size(252, 43);
+            textBox1.TabIndex = 50;
+            textBox1.Text = "0 ⋅ e ^ j ⋅ 0°";
+            textBox1.TextAlign = HorizontalAlignment.Center;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1354, 574);
+            Controls.Add(textBox1);
             Controls.Add(textBoxPhase);
             Controls.Add(label13);
             Controls.Add(textBoxAbsValueTRUE);
@@ -609,5 +622,6 @@
         private Label label12;
         private TextBox textBoxPhase;
         private Label label13;
+        private TextBox textBox1;
     }
 }
