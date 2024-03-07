@@ -71,7 +71,7 @@
             label12 = new Label();
             textBoxPhase = new TextBox();
             label13 = new Label();
-            textBox1 = new TextBox();
+            textBoxPolar = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -511,23 +511,23 @@
             label13.TabIndex = 47;
             label13.Text = "φ =";
             // 
-            // textBox1
+            // textBoxPolar
             // 
-            textBox1.Font = new Font("Segoe UI", 20F);
-            textBox1.Location = new Point(892, 122);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(252, 43);
-            textBox1.TabIndex = 50;
-            textBox1.Text = "0 ⋅ e ^ j ⋅ 0°";
-            textBox1.TextAlign = HorizontalAlignment.Center;
+            textBoxPolar.Font = new Font("Segoe UI", 20F);
+            textBoxPolar.Location = new Point(892, 122);
+            textBoxPolar.Name = "textBoxPolar";
+            textBoxPolar.ReadOnly = true;
+            textBoxPolar.Size = new Size(446, 43);
+            textBoxPolar.TabIndex = 50;
+            textBoxPolar.Text = "0 ⋅ e ^ [ j ⋅ 0° ]";
+            textBoxPolar.TextAlign = HorizontalAlignment.Center;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1354, 574);
-            Controls.Add(textBox1);
+            Controls.Add(textBoxPolar);
             Controls.Add(textBoxPhase);
             Controls.Add(label13);
             Controls.Add(textBoxAbsValueTRUE);
@@ -622,6 +622,6 @@
         private Label label12;
         private TextBox textBoxPhase;
         private Label label13;
-        private TextBox textBox1;
+        private TextBox textBoxPolar;
     }
 }

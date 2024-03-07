@@ -53,6 +53,9 @@ namespace ImpedanceCalculator
             m_phase = Math.Atan(m_img / m_real) * (180 / Math.PI);
             m_phase = Math.Round(m_phase, 0);
             textBoxPhase.Text = m_phase.ToString() + "°";
+
+            textBoxPolar.Text = m_absValue + " \u22C5 e ^ [ j \u22C5 " + m_phase + "° ]";
+
         }
 
         // CHECK TEXTBOXES
