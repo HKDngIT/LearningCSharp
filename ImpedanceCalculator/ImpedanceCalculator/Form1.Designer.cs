@@ -69,6 +69,8 @@
             label11 = new Label();
             textBoxAbsValueTRUE = new TextBox();
             label12 = new Label();
+            textBoxPhase = new TextBox();
+            label13 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -487,11 +489,34 @@
             label12.TabIndex = 45;
             label12.Text = "|Z| = ";
             // 
+            // textBoxPhase
+            // 
+            textBoxPhase.Font = new Font("Segoe UI", 20F);
+            textBoxPhase.Location = new Point(492, 122);
+            textBoxPhase.Name = "textBoxPhase";
+            textBoxPhase.ReadOnly = true;
+            textBoxPhase.Size = new Size(252, 43);
+            textBoxPhase.TabIndex = 48;
+            textBoxPhase.Text = "0 Ω";
+            textBoxPhase.TextAlign = HorizontalAlignment.Center;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label13.Location = new Point(402, 125);
+            label13.Name = "label13";
+            label13.Size = new Size(63, 37);
+            label13.TabIndex = 47;
+            label13.Text = "φ =";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1354, 574);
+            Controls.Add(textBoxPhase);
+            Controls.Add(label13);
             Controls.Add(textBoxAbsValueTRUE);
             Controls.Add(label12);
             Controls.Add(label11);
@@ -582,5 +607,7 @@
         private Label label11;
         private TextBox textBoxAbsValueTRUE;
         private Label label12;
+        private TextBox textBoxPhase;
+        private Label label13;
     }
 }

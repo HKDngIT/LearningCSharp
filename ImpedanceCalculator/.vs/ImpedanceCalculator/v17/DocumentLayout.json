@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\ImpedanceCalculator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E45E6DA6-2784-4941-824E-22328D81463A}|ImpedanceCalculator\\ImpedanceCalculator.csproj|d:\\productive\\repos\\learningcsharp\\impedancecalculator\\impedancecalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E45E6DA6-2784-4941-824E-22328D81463A}|ImpedanceCalculator\\ImpedanceCalculator.csproj|solutionrelative:impedancecalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E45E6DA6-2784-4941-824E-22328D81463A}|ImpedanceCalculator\\ImpedanceCalculator.csproj|d:\\productive\\repos\\learningcsharp\\impedancecalculator\\impedancecalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E45E6DA6-2784-4941-824E-22328D81463A}|ImpedanceCalculator\\ImpedanceCalculator.csproj|solutionrelative:impedancecalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E45E6DA6-2784-4941-824E-22328D81463A}|ImpedanceCalculator\\ImpedanceCalculator.csproj|D:\\PRODUCTIVE\\Repos\\LearningCSharp\\ImpedanceCalculator\\impedancecalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E45E6DA6-2784-4941-824E-22328D81463A}|ImpedanceCalculator\\ImpedanceCalculator.csproj|solutionrelative:impedancecalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E45E6DA6-2784-4941-824E-22328D81463A}|ImpedanceCalculator\\ImpedanceCalculator.csproj|D:\\PRODUCTIVE\\Repos\\LearningCSharp\\ImpedanceCalculator\\impedancecalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E45E6DA6-2784-4941-824E-22328D81463A}|ImpedanceCalculator\\ImpedanceCalculator.csproj|solutionrelative:impedancecalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +30,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\ImpedanceCalculator\\ImpedanceCalculator\\Form1.cs",
               "RelativeDocumentMoniker": "ImpedanceCalculator\\Form1.cs",
@@ -43,7 +43,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Entwurf]",
               "DocumentMoniker": "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\ImpedanceCalculator\\ImpedanceCalculator\\Form1.cs",
               "RelativeDocumentMoniker": "ImpedanceCalculator\\Form1.cs",
