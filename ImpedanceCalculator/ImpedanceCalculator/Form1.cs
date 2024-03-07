@@ -16,7 +16,7 @@ namespace ImpedanceCalculator
 
         private double m_phase = 0.0;
 
-        // Toggles
+        // Toggles variables for unit prefixes
         private bool m_ResistorKiloisToggled = false;
 
         private bool m_IndMilIsToggled = false;
@@ -36,8 +36,10 @@ namespace ImpedanceCalculator
             InitializeComponent();
         }
 
-        // UPDATE TEXTBOXES
-        /*####################################################################################################*/
+        /* UPDATE TEXTBOXES
+         * this function calculates the current values of the impedances and rounds them
+         * it also handles the correct formating of the special characters
+         */
         private void update()
         {
             m_img = Math.Round(m_img, 2);
@@ -121,7 +123,7 @@ namespace ImpedanceCalculator
         }
 
         /* RESISTOR CHECK (X)
-         * sumarizes the checks into one compact operation
+         * summarizes the checks for the resistors into one compact function
          * returns true if the values are valid
          * return false if not
          */
@@ -203,7 +205,7 @@ namespace ImpedanceCalculator
         }
 
         /* INDUCTOR CHECK (X)
-         * sumarizes the checks into one compact operation
+         * summarizes the checks for the inductor into one compact function
          * returns true if the values are valid
          * returns false if not
          */
@@ -285,6 +287,9 @@ namespace ImpedanceCalculator
         }
 
         /* CAPACITOR CHECK (X)
+         * summarizes the checks for the capacitor into one compact function
+         * returns true if the values are valid
+         * returns false if not
          */
         private bool checkCapTBIsValid()
         {
@@ -307,6 +312,9 @@ namespace ImpedanceCalculator
         /*####################################################################################################*/
 
         /* BUTTON ADD Resistor SERIAL
+         * handles the action when the button for serial resistor is pressed
+         * first - the input is checked if it can be processed without any problems
+         * second - the value is being processed and the UI is updated with current values
          */
         private void buttonResADDSerial_Click(object sender, EventArgs e)
         {
@@ -325,6 +333,8 @@ namespace ImpedanceCalculator
         }
 
         /* BUTTON ADD Resistor PARALLEL
+         * handles the action when the button for parallel resistor is pressed
+         * same core procedure as serial with difference that the complex struct is being used to calculate new values
          */
         private void buttonResADDParallel_Click(object sender, EventArgs e)
         {
@@ -349,7 +359,8 @@ namespace ImpedanceCalculator
             }
         }
 
-        /* BUTTON RESET resistor values
+        /* BUTTON RESET impedance values
+         * resets the member variables for the impedance
          */
         private void buttonRESET_Click(object sender, EventArgs e)
         {
@@ -359,6 +370,7 @@ namespace ImpedanceCalculator
         }
 
         /* BUTTON ADD Inductor SERIAL
+         * same procedure as in add serial resistor but with further if checks for the unit prefixes
          */
         private void buttonIndADDSerial_Click(object sender, EventArgs e)
         {
@@ -385,6 +397,7 @@ namespace ImpedanceCalculator
         }
 
         /* BUTTON ADD Inductor PARALLEL
+         * same procedure as in add parallel resistor
          */
         private void buttonIndADDParallel_Click(object sender, EventArgs e)
         {
