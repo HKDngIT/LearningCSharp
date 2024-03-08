@@ -2,9 +2,9 @@
 This Repository currently contains files for the following projects in C#
 
 # Exercises in C# using Console
-## Dynamic memory
+## Dynamic memory [link to source code](https://github.com/HKDngIT/LearningCSharp/tree/main/CSharpExercises/dynamicMemory)
 - [x] Copy of an array with doubled array elements
-- [ ] Summarizing two arrays
+- [x] Summarizing two arrays
 - [ ] 2-Dimensional arrays
 - [ ] 2-Dimensional arrays with initial values
 - [ ] Pascal's Triangle
