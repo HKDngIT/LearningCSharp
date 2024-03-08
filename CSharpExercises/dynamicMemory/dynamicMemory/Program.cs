@@ -8,7 +8,8 @@ execute();
 void execute()
 {
     //exercise1();
-    exercise2();
+    //exercise2();
+    exercise3();
 }
 
 /*###########################################################################################################################################################*/
@@ -82,4 +83,33 @@ unsafe int* vadd(int[] arr1, int[] arr2, int length)
         arrx[i] = arr1[i] + arr2[i];
     }
     return arrx;
+}
+
+/*###########################################################################################################################################################*/
+/* Exercise 3
+ * 2-Dimensional arrays
+ */
+
+void exercise3()
+{
+    int iAS;
+    Console.Write("Arraysize: ");
+    iAS = Convert.ToInt32(Console.ReadLine());
+    int[,] array2D = new int[iAS, iAS];
+    for(int i = 0; i < iAS; i++)
+    {
+        for(int y = 0;  y < iAS; y++)
+        {
+            array2D[i, y] = i + y;
+        }
+    }
+
+    for(int i = 0; i < iAS; i++)
+    {
+        for(int y = 0; y < iAS; y++)
+        {
+            Console.Write("[{0}]", array2D[i, y]);
+        }
+        Console.WriteLine("\n");
+    }
 }
