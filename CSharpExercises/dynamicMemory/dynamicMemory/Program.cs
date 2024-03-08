@@ -7,13 +7,14 @@ using System.Runtime.InteropServices;
 execute();
 void execute()
 {
-    exercise1();
+    //exercise1();
+    exercise2();
 }
 
+/*###########################################################################################################################################################*/
 /* Exercise 1
- * Copy an Array with doubled array elements
+ * Copy an array with doubled array elements
  */
-
 unsafe void exercise1()
 {
     int[] iArray1 = { 1, 2, 3 };
@@ -35,7 +36,6 @@ unsafe void exercise1()
     Marshal.FreeHGlobal((IntPtr)iArray2);
 }
 
-
 unsafe int* twiceret(int[] arr, int length)
 {
     // Allocate the unmanaged memory for an int array of 3 integers
@@ -48,4 +48,38 @@ unsafe int* twiceret(int[] arr, int length)
         twice[index] = arr[index] * 2;
     }
     return twice;
+}
+
+/*###########################################################################################################################################################*/
+/* Exercise 2
+ * Summarizing 2 arrays
+ */
+unsafe void exercise2() {
+    int[] iArray1 = { 1, 2, 3 };
+    int[] iArray2 = { 4, 5, 6 };
+
+    int* iArrayAdd = vadd(iArray1, iArray2, 3);
+
+    // Print the result
+    for(int i = 0; i < 3; i++)
+    {
+        Console.Write(iArrayAdd[i] + " ");
+    }
+
+    // Free the allocated memory
+    Marshal.FreeHGlobal((IntPtr)iArrayAdd);
+}
+
+unsafe int* vadd(int[] arr1, int[] arr2, int length)
+{
+    // Allocate the unmanaged memory for an int array of 3 integers
+    IntPtr ptr = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(int)) * 3);
+
+    // Access and use the allocated memory
+    int* arrx = (int*)ptr.ToPointer();
+    for(int i = 0; i < length; i++)
+    {
+        arrx[i] = arr1[i] + arr2[i];
+    }
+    return arrx;
 }
