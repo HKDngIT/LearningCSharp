@@ -1,5 +1,5 @@
 # Content
-This Repository currently contains files for the following projects in C# using Windows Forms
+This Repository currently contains files for the following projects in C#
 
 # Exercises in C# using Console
 ## Dynamic memory
@@ -10,7 +10,7 @@ This Repository currently contains files for the following projects in C# using 
 - [ ] Pascal's Triangle
 - [ ] 3-Dimensional arrays
 
-# Simple programs
+# Simple programs using Windows Forms
 ## A calculator
 ![Calculator](./Images/Calc_SS.jpg)  
 - Basic arithmetic operations
