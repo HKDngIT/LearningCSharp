@@ -1,7 +1,16 @@
 # Content
-This Repository currently contains files for the following projects in C# using Windows Forms:
+This Repository currently contains files for the following projects in C#
 
-# Simple programs
+# Exercises in C# using Console
+## Dynamic memory [link to source code](https://github.com/HKDngIT/LearningCSharp/blob/main/CSharpExercises/dynamicMemory/dynamicMemory/Program.cs)
+- [x] Copy of an array with doubled array elements
+- [x] Summarizing two arrays
+- [ ] 2-Dimensional arrays
+- [ ] 2-Dimensional arrays with initial values
+- [ ] Pascal's Triangle
+- [ ] 3-Dimensional arrays
+
+# Simple programs using Windows Forms
 ## A calculator
 ![Calculator](./Images/Calc_SS.jpg)  
 - Basic arithmetic operations
