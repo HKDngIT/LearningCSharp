@@ -1,0 +1,15 @@
+D:\PRODUCTIVE\Repos\LearningCSharp\CSharpExercises\dynamicMemory\dynamicMemory\bin\Debug\net8.0\dynamicMemory.exe
+D:\PRODUCTIVE\Repos\LearningCSharp\CSharpExercises\dynamicMemory\dynamicMemory\bin\Debug\net8.0\dynamicMemory.deps.json
+D:\PRODUCTIVE\Repos\LearningCSharp\CSharpExercises\dynamicMemory\dynamicMemory\bin\Debug\net8.0\dynamicMemory.runtimeconfig.json
+D:\PRODUCTIVE\Repos\LearningCSharp\CSharpExercises\dynamicMemory\dynamicMemory\bin\Debug\net8.0\dynamicMemory.dll
+D:\PRODUCTIVE\Repos\LearningCSharp\CSharpExercises\dynamicMemory\dynamicMemory\bin\Debug\net8.0\dynamicMemory.pdb
+D:\PRODUCTIVE\Repos\LearningCSharp\CSharpExercises\dynamicMemory\dynamicMemory\obj\Debug\net8.0\dynamicMemory.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRODUCTIVE\Repos\LearningCSharp\CSharpExercises\dynamicMemory\dynamicMemory\obj\Debug\net8.0\dynamicMemory.AssemblyInfoInputs.cache
+D:\PRODUCTIVE\Repos\LearningCSharp\CSharpExercises\dynamicMemory\dynamicMemory\obj\Debug\net8.0\dynamicMemory.AssemblyInfo.cs
+D:\PRODUCTIVE\Repos\LearningCSharp\CSharpExercises\dynamicMemory\dynamicMemory\obj\Debug\net8.0\dynamicMemory.csproj.CoreCompileInputs.cache
+D:\PRODUCTIVE\Repos\LearningCSharp\CSharpExercises\dynamicMemory\dynamicMemory\obj\Debug\net8.0\dynamicMemory.sourcelink.json
+D:\PRODUCTIVE\Repos\LearningCSharp\CSharpExercises\dynamicMemory\dynamicMemory\obj\Debug\net8.0\dynamicMemory.dll
+D:\PRODUCTIVE\Repos\LearningCSharp\CSharpExercises\dynamicMemory\dynamicMemory\obj\Debug\net8.0\refint\dynamicMemory.dll
+D:\PRODUCTIVE\Repos\LearningCSharp\CSharpExercises\dynamicMemory\dynamicMemory\obj\Debug\net8.0\dynamicMemory.pdb
+D:\PRODUCTIVE\Repos\LearningCSharp\CSharpExercises\dynamicMemory\dynamicMemory\obj\Debug\net8.0\dynamicMemory.genruntimeconfig.cache
+D:\PRODUCTIVE\Repos\LearningCSharp\CSharpExercises\dynamicMemory\dynamicMemory\obj\Debug\net8.0\ref\dynamicMemory.dll
