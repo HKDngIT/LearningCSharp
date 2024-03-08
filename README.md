@@ -1,5 +1,14 @@
 # Content
-This Repository currently contains files for the following projects in C# using Windows Forms:
+This Repository currently contains files for the following projects in C# using Windows Forms
+
+# Exercises in C# using Console
+## Dynamic memory
+- [x] Copy of an array with doubled array elements
+- [ ] Summarizing two arrays
+- [ ] 2-Dimensional arrays
+- [ ] 2-Dimensional arrays with initial values
+- [ ] Pascal's Triangle
+- [ ] 3-Dimensional arrays
 
 # Simple programs
 ## A calculator
