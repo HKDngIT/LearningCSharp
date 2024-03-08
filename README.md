@@ -5,8 +5,8 @@ This Repository currently contains files for the following projects in C#
 ## Dynamic memory [link to source code](https://github.com/HKDngIT/LearningCSharp/blob/main/CSharpExercises/dynamicMemory/dynamicMemory/Program.cs)
 - [x] Copy of an array with doubled array elements
 - [x] Summarizing two arrays
-- [ ] 2-Dimensional arrays
-- [ ] 2-Dimensional arrays with initial values
+- [ ] 2-Dimensional arrays - DOUBLE POINTERS NOT POSSIBLE IN C# IMPLEMENTATION NON DYNAMIC
+- [ ] 2-Dimensional arrays with initial values - DOUBLE POINTERS NOT POSSIBLE IN C# IMPLEMENTATION NON DYNAMIC
 - [ ] Pascal's Triangle
 - [ ] 3-Dimensional arrays
 
