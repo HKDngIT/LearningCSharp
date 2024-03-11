@@ -11,7 +11,8 @@ void execute()
     //exercise1();
     //exercise2();
     //exercise3();
-    exercise4();
+    //exercise4();
+    exercise5();
 }
 
 /*###########################################################################################################################################################*/
@@ -172,3 +173,49 @@ void printArray(int[,] array)
         Console.Write("\n");
     }
 }
+
+/*###########################################################################################################################################################*/
+/* Exercise 5
+ * Pascal's Triangle
+ */
+
+void exercise5()
+{
+    int iValue;
+
+    Console.Write("Please enter the value: ");
+    iValue = Convert.ToInt32(Console.ReadLine());
+
+    // Using jaggedArray for flexible array/ dimensional array with varying lengths
+    int[][] jaggedArray = new int[iValue + 1][];
+    for (int i = 0; i <= iValue; i++)
+    {
+        jaggedArray[i] = new int[i + 1];
+    }
+
+    // Filling the pascal's triangle with values
+    for(int i = 0; i <= iValue; i++)
+    {
+        for(int w = 0; w <= i; w++)
+        {
+            if(w == 0 || w == i)
+            {
+                jaggedArray[i][w] = 1;
+            } else
+            {
+                jaggedArray[i][w] = jaggedArray[i - 1][w - 1] + jaggedArray[i - 1][w];
+            }
+        }
+    }
+
+    // Print the triangle
+    for(int i = 0; i <= iValue; i++)
+    {
+        for(int w = 0; w <= i; w++)
+        {
+            Console.Write("[{0}] ", jaggedArray[i][w]);
+        }
+        Console.Write("\n");
+    }
+}
+
