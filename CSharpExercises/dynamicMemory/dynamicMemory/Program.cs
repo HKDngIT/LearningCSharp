@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Data;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -9,7 +10,8 @@ void execute()
 {
     //exercise1();
     //exercise2();
-    exercise3();
+    //exercise3();
+    exercise4();
 }
 
 /*###########################################################################################################################################################*/
@@ -92,9 +94,8 @@ unsafe int* vadd(int[] arr1, int[] arr2, int length)
 
 void exercise3()
 {
-    int iAS;
     Console.Write("Arraysize: ");
-    iAS = Convert.ToInt32(Console.ReadLine());
+    int iAS = Convert.ToInt32(Console.ReadLine());
     int[,] array2D = new int[iAS, iAS];
     for(int i = 0; i < iAS; i++)
     {
@@ -111,5 +112,57 @@ void exercise3()
             Console.Write("[{0}]", array2D[i, y]);
         }
         Console.WriteLine("\n");
+    }
+}
+
+/*###########################################################################################################################################################*/
+/* Exercise 4
+ * 2-Dimensional arrays with initial value
+ */
+
+void exercise4()
+{
+    int iRow;
+    int iCollumn;
+    int iValue;
+
+    Console.Write("Please enter m: ");
+    iRow = Convert.ToInt32(Console.ReadLine());
+
+
+    Console.Write("Please enter n: ");
+    iCollumn = Convert.ToInt32(Console.ReadLine());
+
+
+    Console.Write("Please enter initial value: ");
+    iValue = Convert.ToInt32(Console.ReadLine());
+
+    int[,] iArray = new int[iRow, iCollumn];
+
+    fillArray(iArray, iValue);
+
+    printArray(iArray);
+}
+
+void fillArray(int[,] array, int initialValue)
+{
+    for (int rowindex = 0; rowindex < array.GetLength(0); rowindex++)
+    {
+        for (int collumnindex = 0; collumnindex < array.GetLength(1); collumnindex++)
+        {
+            array[rowindex, collumnindex] = initialValue;
+        }
+    }
+}
+
+void printArray(int[,] array)
+{
+    for (int rowindex = 0; rowindex < array.GetLength(0); rowindex++)
+    {
+        for (int collumnindex = 0; collumnindex < array.GetLength(1); collumnindex++)
+        {
+            Console.Write("[{0}] ", array[rowindex, collumnindex]);
+        }
+        Console.Write("\n");
     }
 }
