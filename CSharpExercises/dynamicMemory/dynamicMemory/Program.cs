@@ -12,7 +12,8 @@ void execute()
     //exercise2();
     //exercise3();
     //exercise4();
-    exercise5();
+    //exercise5();
+    exercise6();
 }
 
 /*###########################################################################################################################################################*/
@@ -219,3 +220,51 @@ void exercise5()
     }
 }
 
+/*###########################################################################################################################################################*/
+/* Exercise 6
+ * 3-Dimensional Array with keysum of indexes
+ */
+void exercise6() {
+    int x;
+    int y;
+    int z;
+
+    int[,,] iArray;
+
+    Console.Write("Please enter x: ");
+    x = Convert.ToInt32(Console.ReadLine());
+
+    Console.Write("Please enter y: ");
+    y = Convert.ToInt32(Console.ReadLine());
+
+    Console.Write("Please enter z: ");
+    z = Convert.ToInt32(Console.ReadLine());
+
+    iArray = new int[z, y, x];
+
+    // Filling the new array
+    for(int iz = 0; iz < z; iz++)
+    {
+        for(int iy = 0; iy < y; iy++)
+        {
+            for(int ix = 0; ix < x; ix ++)
+            {
+                iArray[iz, iy, ix] = iz + iy + ix;
+            }
+        }
+    }
+
+    // Output the array on console
+    for (int iz = 0; iz < z; iz++)
+    {
+        for (int iy = 0; iy < y; iy++)
+        {
+            for (int ix = 0; ix < x; ix++)
+            {
+                Console.Write("[{0}] ", iArray[iz, iy, ix]);
+            }
+            Console.Write("\n");
+        }
+        Console.Write("\n\n");
+    }
+}
