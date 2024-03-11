@@ -10,6 +10,13 @@ This Repository currently contains files for the following projects in C#
 - [x] Pascal's Triangle - DOUBLE POINTERS NOT POSSIBLE IN C# IMPLEMENTATION WITH JAGGED ARRAYS
 - [x] 3-Dimensional arrays
 
+## Strings and File Access
+- [ ] Minicalculator
+- [ ] Txt file copy
+- [ ] Greeting Assignment with Name List
+- [ ] Writing and Reading Binary Files
+- [ ] Simple handling with binary files and arrays
+
 # Simple programs using Windows Forms
 ## A calculator
 ![Calculator](./Images/Calc_SS.jpg)  
