@@ -12,7 +12,7 @@ This Repository currently contains files for the following projects in C#
 
 ## Strings and File Access
 - [ ] Minicalculator
-- [ ] Txt file copy
+- [ ] .txt file copy
 - [ ] Greeting Assignment with Name List
 - [ ] Writing and Reading Binary Files
 - [ ] Simple handling with binary files and arrays
