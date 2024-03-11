@@ -96,7 +96,10 @@ void exercise3()
 {
     Console.Write("Arraysize: ");
     int iAS = Convert.ToInt32(Console.ReadLine());
+
     int[,] array2D = new int[iAS, iAS];
+
+    // Filling the array
     for(int i = 0; i < iAS; i++)
     {
         for(int y = 0;  y < iAS; y++)
@@ -105,6 +108,7 @@ void exercise3()
         }
     }
 
+    // Output the array on the console
     for(int i = 0; i < iAS; i++)
     {
         for(int y = 0; y < iAS; y++)
@@ -144,6 +148,7 @@ void exercise4()
     printArray(iArray);
 }
 
+// Fills the array with the initial value
 void fillArray(int[,] array, int initialValue)
 {
     for (int rowindex = 0; rowindex < array.GetLength(0); rowindex++)
@@ -155,6 +160,7 @@ void fillArray(int[,] array, int initialValue)
     }
 }
 
+// Outputs the array on the console
 void printArray(int[,] array)
 {
     for (int rowindex = 0; rowindex < array.GetLength(0); rowindex++)
