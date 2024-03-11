@@ -8,7 +8,14 @@ This Repository currently contains files for the following projects in C#
 - [x] 2-Dimensional arrays - DOUBLE POINTERS NOT POSSIBLE IN C# IMPLEMENTATION NON DYNAMIC
 - [x] 2-Dimensional arrays with initial values - DOUBLE POINTERS NOT POSSIBLE IN C# IMPLEMENTATION NON DYNAMIC
 - [x] Pascal's Triangle - DOUBLE POINTERS NOT POSSIBLE IN C# IMPLEMENTATION WITH JAGGED ARRAYS
-- [ ] 3-Dimensional arrays
+- [x] 3-Dimensional arrays
+
+## Strings and File Access
+- [ ] Minicalculator
+- [ ] .txt file copy
+- [ ] Greeting Assignment with Name List
+- [ ] Writing and Reading Binary Files
+- [ ] Simple handling with binary files and arrays
 
 # Simple programs using Windows Forms
 ## A calculator
