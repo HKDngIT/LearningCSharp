@@ -7,7 +7,7 @@ This Repository currently contains files for the following projects in C#
 - [x] Summarizing two arrays
 - [x] 2-Dimensional arrays - DOUBLE POINTERS NOT POSSIBLE IN C# IMPLEMENTATION NON DYNAMIC
 - [x] 2-Dimensional arrays with initial values - DOUBLE POINTERS NOT POSSIBLE IN C# IMPLEMENTATION NON DYNAMIC
-- [ ] Pascal's Triangle
+- [x] Pascal's Triangle - DOUBLE POINTERS NOT POSSIBLE IN C# IMPLEMENTATION WITH JAGGED ARRAYS
 - [ ] 3-Dimensional arrays
 
 # Simple programs using Windows Forms
