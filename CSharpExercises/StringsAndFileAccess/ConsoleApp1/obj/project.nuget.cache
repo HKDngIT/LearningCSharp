@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SE2UhUvmtACqJVk4mG6zG8aFAu77Sd8Vs9zykWtov/A57NwrzWCur0t/I1LtVyVI0CVbrzKKGcjEeBRt9EY/EA==",
+  "dgSpecHash": "2HQpWRJYUxFylfil7G4MQ1DdoIYG4u5XI9wM8xWKhOWn3t0hOeiooEoImNxvnDtVLj9LzpQSJSv+H2uBGRNsuA==",
   "success": true,
-  "projectFilePath": "D:\\PRODUCTIVE\\Repos\\LearningCSharp\\CSharpExercises\\StringsAndFileAccess\\ConsoleApp1\\ConsoleApp1.csproj",
+  "projectFilePath": "/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/ConsoleApp1/ConsoleApp1.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dynamicMemory")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+024f8527d4a3a22c937f3685bbe2987cc3fe9aea")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9a9f9096cd75f572d132f6a818c3a1c95e1bebf")]
 [assembly: System.Reflection.AssemblyProductAttribute("dynamicMemory")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dynamicMemory")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
