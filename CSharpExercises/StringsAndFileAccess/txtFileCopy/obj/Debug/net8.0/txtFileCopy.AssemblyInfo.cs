@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("txtFileCopy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58b9bcedb49202f12729795057b35cd3101ca78e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c409c4a42c7bf9e7a03bd4ec2568a8d33f1eda96")]
 [assembly: System.Reflection.AssemblyProductAttribute("txtFileCopy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("txtFileCopy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
