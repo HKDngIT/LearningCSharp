@@ -12,7 +12,7 @@ This Repository currently contains files for the following projects in C#
 
 ## Strings and File Access 
 - [x] Simple Minicalculator [link to source code](https://github.com/HKDngIT/LearningCSharp/blob/main/CSharpExercises/StringsAndFileAccess/ConsoleApp1/Program.cs)
-- [ ] .txt file copy
+- [ ] .txt file copy https://github.com/HKDngIT/LearningCSharp/blob/main/CSharpExercises/StringsAndFileAccess/txtFileCopy/Program.cs
 - [ ] Greeting Assignment with Name List
 - [ ] Writing and Reading Binary Files
 - [ ] Simple handling with binary files and arrays
