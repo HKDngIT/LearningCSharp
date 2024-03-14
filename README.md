@@ -10,9 +10,9 @@ This Repository currently contains files for the following projects in C#
 - [x] Pascal's Triangle - DOUBLE POINTERS NOT POSSIBLE IN C# IMPLEMENTATION WITH JAGGED ARRAYS
 - [x] 3-Dimensional arrays
 
-## Strings and File Access [link to source code](https://github.com/HKDngIT/LearningCSharp/blob/main/CSharpExercises/StringsAndFileAccess/ConsoleApp1/Program.cs)
-- [x] Simple Minicalculator
-- [ ] .txt file copy
+## Strings and File Access 
+- [x] Simple Minicalculator [link to source code](https://github.com/HKDngIT/LearningCSharp/blob/main/CSharpExercises/StringsAndFileAccess/ConsoleApp1/Program.cs)
+- [ ] .txt file copy [link to source code](https://github.com/HKDngIT/LearningCSharp/blob/main/CSharpExercises/StringsAndFileAccess/txtFileCopy/Program.cs)
 - [ ] Greeting Assignment with Name List
 - [ ] Writing and Reading Binary Files
 - [ ] Simple handling with binary files and arrays
