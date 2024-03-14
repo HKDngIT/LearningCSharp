@@ -1,0 +1,15 @@
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/txtFileCopy/bin/Debug/net8.0/txtFileCopy
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/txtFileCopy/bin/Debug/net8.0/txtFileCopy.deps.json
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/txtFileCopy/bin/Debug/net8.0/txtFileCopy.runtimeconfig.json
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/txtFileCopy/bin/Debug/net8.0/txtFileCopy.dll
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/txtFileCopy/bin/Debug/net8.0/txtFileCopy.pdb
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/txtFileCopy/obj/Debug/net8.0/txtFileCopy.GeneratedMSBuildEditorConfig.editorconfig
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/txtFileCopy/obj/Debug/net8.0/txtFileCopy.AssemblyInfoInputs.cache
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/txtFileCopy/obj/Debug/net8.0/txtFileCopy.AssemblyInfo.cs
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/txtFileCopy/obj/Debug/net8.0/txtFileCopy.csproj.CoreCompileInputs.cache
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/txtFileCopy/obj/Debug/net8.0/txtFileCopy.sourcelink.json
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/txtFileCopy/obj/Debug/net8.0/txtFileCopy.dll
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/txtFileCopy/obj/Debug/net8.0/refint/txtFileCopy.dll
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/txtFileCopy/obj/Debug/net8.0/txtFileCopy.pdb
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/txtFileCopy/obj/Debug/net8.0/txtFileCopy.genruntimeconfig.cache
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/txtFileCopy/obj/Debug/net8.0/ref/txtFileCopy.dll
