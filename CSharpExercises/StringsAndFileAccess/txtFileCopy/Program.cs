@@ -5,7 +5,20 @@ using System.IO;
 main();
 
 void main() {
-    example();
+    //example();
+
+    // Specify the path to the text file
+    string filepath = "CopyThis.txt";
+
+    // Read all lines from the file and save into string array content
+    string[] content = File.ReadAllLines(filepath);
+
+    // Change filepath to new text file
+    filepath = "CopyIntoThis.txt";
+
+    // Write data into the file
+    File.WriteAllLines(filepath, content);
+    Console.WriteLine("Data has been copied from CopyThis.txt into CopyIntoThis.txt"); 
 }
 
 void example(){
