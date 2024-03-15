@@ -12,11 +12,11 @@ void main() {
     // Read all lines from the file and fill the array with female names
     string[] m_fNames = File.ReadAllLines(m_filepath);
 
-    // Test print all female Names
+    // Print all female Names
+    Console.WriteLine("Female Names: ");
     foreach(string line in m_fNames) {
-        Console.WriteLine(line);
+        Console.WriteLine("    " + line);
     }
-    Console.WriteLine($"m_fNames.length = {m_fNames.Length}");
 
     // Specify the path to the text file for male names
     m_filepath = "txtFiles/mNames.txt";
@@ -24,9 +24,9 @@ void main() {
     // Read all lines from the file and fill the array with male names
     string[] m_mNames = File.ReadAllLines(m_filepath);
     
-    // Test print all male Names
+    // Print all male Names
+    Console.WriteLine("\nMale Names: ");
     foreach(string line in m_mNames) {
-        Console.WriteLine(line);
+        Console.WriteLine("    " + line);
     }
-    Console.WriteLine($"m_mNames.length = {m_mNames.Length}");
 }
