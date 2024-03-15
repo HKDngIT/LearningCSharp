@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using Microsoft.Win32.SafeHandles;
 
 main();
 
@@ -29,4 +30,15 @@ void main() {
     foreach(string line in m_mNames) {
         Console.WriteLine("    " + line);
     }
+
+    /*###############################################################################*/
+
+    // Let user enter a name
+    string m_input;
+    Console.WriteLine("Please enter a Name(First name last name): ");
+    m_input = Convert.ToString(Console.ReadLine());
+
+    // Split up the entered name
+    
+
 }
