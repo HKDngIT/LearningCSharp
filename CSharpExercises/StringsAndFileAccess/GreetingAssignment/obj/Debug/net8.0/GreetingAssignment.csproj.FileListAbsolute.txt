@@ -1,0 +1,15 @@
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/GreetingAssignment/bin/Debug/net8.0/GreetingAssignment
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/GreetingAssignment/bin/Debug/net8.0/GreetingAssignment.deps.json
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/GreetingAssignment/bin/Debug/net8.0/GreetingAssignment.runtimeconfig.json
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/GreetingAssignment/bin/Debug/net8.0/GreetingAssignment.dll
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/GreetingAssignment/bin/Debug/net8.0/GreetingAssignment.pdb
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/GreetingAssignment/obj/Debug/net8.0/GreetingAssignment.GeneratedMSBuildEditorConfig.editorconfig
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/GreetingAssignment/obj/Debug/net8.0/GreetingAssignment.AssemblyInfoInputs.cache
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/GreetingAssignment/obj/Debug/net8.0/GreetingAssignment.AssemblyInfo.cs
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/GreetingAssignment/obj/Debug/net8.0/GreetingAssignment.csproj.CoreCompileInputs.cache
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/GreetingAssignment/obj/Debug/net8.0/GreetingAssignment.sourcelink.json
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/GreetingAssignment/obj/Debug/net8.0/GreetingAssignment.dll
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/GreetingAssignment/obj/Debug/net8.0/refint/GreetingAssignment.dll
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/GreetingAssignment/obj/Debug/net8.0/GreetingAssignment.pdb
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/GreetingAssignment/obj/Debug/net8.0/GreetingAssignment.genruntimeconfig.cache
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/GreetingAssignment/obj/Debug/net8.0/ref/GreetingAssignment.dll
