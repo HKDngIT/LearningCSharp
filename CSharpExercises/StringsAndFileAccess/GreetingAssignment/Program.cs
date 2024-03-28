@@ -39,6 +39,22 @@ void main() {
     m_input = Convert.ToString(Console.ReadLine());
 
     // Split up the entered name
-    
+    string[] parts = m_input.Split(' ');
+    string m_firstName = parts[0];
+    string m_surName = parts[1];
+
+    foreach(string line in m_fNames) {
+        if(line == m_firstName) {
+            Console.Write("Ms. ");
+        }
+    }
+
+    foreach(string line in m_mNames) {
+        if(line == m_firstName) {
+            Console.Write("Mr. ");
+        }
+    }
+
+    Console.Write($"{m_firstName} {m_surName} \n");
 
 }
