@@ -1,0 +1,15 @@
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/BinaryData/bin/Debug/net8.0/BinaryData
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/BinaryData/bin/Debug/net8.0/BinaryData.deps.json
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/BinaryData/bin/Debug/net8.0/BinaryData.runtimeconfig.json
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/BinaryData/bin/Debug/net8.0/BinaryData.dll
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/BinaryData/bin/Debug/net8.0/BinaryData.pdb
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/BinaryData/obj/Debug/net8.0/BinaryData.GeneratedMSBuildEditorConfig.editorconfig
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/BinaryData/obj/Debug/net8.0/BinaryData.AssemblyInfoInputs.cache
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/BinaryData/obj/Debug/net8.0/BinaryData.AssemblyInfo.cs
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/BinaryData/obj/Debug/net8.0/BinaryData.csproj.CoreCompileInputs.cache
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/BinaryData/obj/Debug/net8.0/BinaryData.sourcelink.json
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/BinaryData/obj/Debug/net8.0/BinaryData.dll
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/BinaryData/obj/Debug/net8.0/refint/BinaryData.dll
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/BinaryData/obj/Debug/net8.0/BinaryData.pdb
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/BinaryData/obj/Debug/net8.0/BinaryData.genruntimeconfig.cache
+/home/hkd/Files/Productive/GitRepos/LearningCSharp/CSharpExercises/StringsAndFileAccess/BinaryData/obj/Debug/net8.0/ref/BinaryData.dll
